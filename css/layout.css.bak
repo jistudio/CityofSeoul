@@ -1,0 +1,150 @@
+
+#wrapper{width: 100%;  }
+#header { width: 100%;  z-index:2; position:relative;  background-color: #fff; }
+#header .headerTop {   width: 100%;   height: 50px;    background-color: #0f94e1;   font-size: 13px;    color: white;}
+#header .headerTop .headerTopInner {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+#header .headerTop .headerTopInner:after {
+    display:block; content:""; clear:both;
+
+}
+
+#header .headerBot {
+    width: 100%;
+    height: 80px;
+    background-color:rgba(255,255,255,1);
+
+
+}
+#header .headerBot .headerBotInner {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#visual {
+    width: 100%;
+
+	position:relative;
+
+}
+
+#content {
+    width: 100%;
+
+    left: 0;
+    top: 0;
+    margin-top: -80px;
+	position:relative;
+}
+
+
+#content .conInner1 {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+#content .section{border-bottom:2px solid #ddd;  margin-bottom:40px; }
+
+#content .section.s1{    width: 1000px; min-height:420px; background-color:white; overflow:hidden; border-top:10px solid #0f94e1; }
+#content .section.s1 .s1Left {
+    width: 34%;
+    float: left;
+    background-color: #fff;
+	border-right:1px solid #ddd;
+	box-sizing: border-box; 
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+#content .section.s1 .news {
+    width: 66%;
+    float: left;
+    background-color: #fff;
+	position:relative;
+
+}
+
+#content .section.s2{min-height:300px; overflow:hidden; 
+		 border-bottom:2px solid #ddd;}
+#content .a31{width:34%; min-height:300px; float:left; 
+			background-image:url("../image/mayor.jpg"); 
+			background-repeat:no-repeat; background-size:100%; position:relative;}
+#content .a32{width:33%; min-height:300px;  float:left;  border-right:1px solid #ddd; 
+		 position:relative;
+		
+				box-sizing: border-box; 
+				-o-box-sizing: border-box;
+				-ms-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;}
+#content .a33 {
+    width: 33%;
+    min-height: 300px;
+    float: left;
+    background-color: #fff;
+    position: relative;
+}
+
+#content .section.s3{ overflow:hidden;  }
+
+#content .bannerZone{ width:50%;   float:left; border-bottom:2px solid #ddd; }
+
+#content .event {
+    width: 50%;
+   
+    float: left;
+    background-color: #fff;
+    position: relative;
+	padding-bottom: 22px;
+	margin-bottom:30px;
+	border-bottom:2px solid #ddd;
+}
+
+
+
+
+#content .conInner2{width:100%;   
+		 background-image: url("../image/seoul_view6.jpg");
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		min-height:600px;
+		background-color:#dce5ea;
+		padding-top:40px;
+	}
+
+#content .section.s4 {
+    min-height: 300px;
+    width: 1040px;
+    margin: 0 auto;
+    border-bottom: none;
+	position:relative;
+	}
+
+#footer {
+    width: 100%;
+    min-height: 100px;
+    background-color: #333;
+    font-size: 13px;
+    line-height: 15px;
+	color:#999;
+	
+
+	
+}
+#footer a{color:#999;}
+#footer .footerInner {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 40px 0;
+
+}
+
+
+

@@ -1,0 +1,40 @@
+	#header .headerTop a{color:white;}
+	#header .headerTop .sites{width:30%;   text-align:left; float:left; }
+	#header .headerTop .sites li{display:inline;}
+	#header .headerTop .sites li a{ padding:0 10px;  line-height:50px;  }
+	/* a에 padding 줄 수 있음*/
+	#header .headerTop .sites li a.mobile{padding-left:0;}
+	
+
+
+
+	#header .headerTop .utilLink{width:70%; float:right; text-align:right; }
+	#header .headerTop .utilLink li{display:inline; }
+	#header .headerTop .utilLink li a{padding:0 10px; line-height:50px; } 
+	/* a에 padding 줄 수 있음*/
+	#header .headerTop .utilLink li a.lang{padding-right:0;}
+	#header .headerTop .utilLink li a img{ padding-left:5px; padding-bottom:2px; width:9px; }
+	
+
+
+	#header .logo{position:absolute; top:5px; left:0; width:300px; height:70px;}
+	/* logo는 position:absolute로 잡아줌, 스크린 사이즈에 관계없이 왼쪽위에 고정*/
+	#header .headerBot nav{width:700px; height:80px; margin-left:300px; }
+	#header .headerBot nav .gnb{overflow:hidden;}
+	#header .headerBot nav .gnb li{width:110px; height:80px; float:left; text-align:right; }
+
+	#header .headerBot nav .gnb li.secInfo{width:125px; height:80px;}
+	#header .headerBot nav .gnb li a{display:block; width:100%; height:60px; line-height:80px; 
+		font-size:18px; font-weight:bold; color:#666;}
+
+	#header .headerBot nav .gnb li.allMenu{width:55px; height:60px;
+	                                                         padding-top:14px;  padding-left:25px;}
+	#header .headerBot nav .gnb li.allMenu img{width:40px; height:40px; border:1px solid #ddd;}
+
+	#header .headerBot nav .gnb li.search{width:55px; height:60px; padding-top:14px; }
+	#header .headerBot nav .gnb li.search img{width:40px; height:40px;  border:1px solid #ddd;}
+
+
+
+
+

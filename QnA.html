@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" >
+<title> 자주묻는 질문 | 서울특별시 웹사이트</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet"  type="text/css" href="css/base.css"/>
+<link rel="stylesheet"  type="text/css" href="css/layout.css"/>
+<link rel="stylesheet"  type="text/css" href="css/header.css"/>
+<link rel="stylesheet"  type="text/css" href="css/qna.css"/>
+<link rel="stylesheet"  type="text/css" href="css/footer.css"/>
+<link rel="stylesheet"  type="text/css" href="css/mediaQna.css"/> 
+																				
+
+<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie7.css"/>
+<![endif]-->
+
+<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie8.css"/>
+<![endif]-->
+
+<!--[if gt IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie89.css"/>
+<![endif]-->
+
+ <!-- html5shiv 플로그인 껴넣기-->
+  <!--[if lt IE 9]>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+	 </script>
+ <![endif]-->
+
+<style>
+/* ie 10 과 ie edge 크로스 브라우징 핵*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+		#header .headerBot nav .gnb LI.allMenu {
+
+		padding-top: 20px;
+
+		}
+
+	#header .headerBot nav .gnb LI.search {
+		
+		padding-top: 20px;
+		}
+}  
+
+/*firefox only hack*/
+@-moz-document url-prefix() { 
+
+ }
+
+</style>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/scrollTop.js"></script>
+<script src="js/mainGnb.js"></script>
+<script src="js/jquery.color.js"></script> 
+<script>
+/*	1. 패턴: 대상, 효과
+	대상: 설명부분 #acc dd
+	효과: 안보이게 숨기기 display:block;
+*/
+$(document).ready(function(){
+
+		$("#acc dd:not(:first)").hide();  // 첫번째 답변만 빼고 숨기기
+		$("#acc dt:first").children("a").css({"backgroundColor":"#0f94e1","color":"white"});
+		
+		
+
+		$("#acc dt").bind("click focusin", function(){
+
+			if($(this).next("dd").css("display")=="none"){ //display:none; 인 것만 효과주기
+
+				$("#acc dd").slideUp();   // 초기화 다 안보이게 설정
+				$("#acc dt").children("a").css({"backgroundColor":"#f1f1f1","color":"black"});
+			
+
+				$(this).next().slideDown();   // 클릭한 것만 보이게
+				$(this).children("a").css({"backgroundColor":"#0f94e1","color":"white"});
+			}
+			return false;
+		});
+
+});
+
+</script>
+</head>
+ <body>
+
+<!--바로가기 메뉴 => skip navigation,  h태그 필요없음 , base.css에 있음-->
+<ul id="skipnav">
+	<li><a href="#gnba">주메뉴 바로가기</a></li><!--gnb의 첫 번째  a에 id gnba 넣어줌-->
+	<li><a href="#maina">본문내용 바로가기</a></li>
+</ul>
+<!--  skip nav END  -->
+
+ <div id="wrapper">
+	 <!--  ############## header.php    넣기-->
+	 <?php	include "common/header.php";  ?>
+
+	 <div id="content">
+			<h2>주요 컨텐츠</h2>
+
+			<div class="breadInner">
+				<ul class="breadcrumb">
+					<li class="gohome"><a href="#" title="홈 바로가기"><img src="image/icon_home.png" alt="홈 아이콘"/></a></li>
+					<li><a href="#"  title="서울뉴스 바로가기" >서울 뉴스</a></li>
+					<li>
+						<a href="#"  title="새소식 바로가기">
+						새소식
+						<span class="breadDown"><img src="image/icon_arrowDown.png" alt="down arrow"/></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<section class="qnaInner">
+				<h3>자주 묻는 질문</h3>
+				<ul class="subnav">
+				<li class="subnavL"><a href="#" title="이전 페이지">previous</a></li>
+				<li class="subnavR"><a href="#" title="다음 페이지">next</a></li>
+				</ul>
+				<p class="qnaMain"><img src="image/qnaTop.jpg" alt="고객센터"/></p>
+
+				<form action="#" method="post" >
+
+				<fieldset>
+					<legend>주요질문 서치</legend>
+		
+
+							<p class="qnaSearch"><!--table 대신 요즘엔 p 태그씀-->
+							
+								<label for="qnaS" class="qnaP">질문검색</label> 
+								<input id="qnaS" name="qnaS" type="text"/>
+								<input type="button" value="검색" class="searchBtn"/>
+							</p>
+
+							<p class="qnaOption">
+						
+								<select id="qnaO" name="qnaO">
+									<option value="복지">전체 질문</option>
+									<option value="복지">복지</option>
+									<option value="여성·가족">여성·가족</option>
+									<option value="안전">안전</option>
+									<option value="주택·도시계획">주택·도시계획</option>
+									<option value="환경">환경</option>
+									<option value="문화관광">문화관광</option>
+									<option value="건강">건강</option>
+									<option value="교통건설">교통건설</option>
+									<option value="세금·재정">세금·재정</option>
+									<option value="행정">행정</option>
+								</select>
+							</p>
+					
+				</fieldset>
+			</form>
+				<div  id="acc">
+					<div>
+						<dl>
+							<dt class="qnaTop">
+								<a href="#">
+									<span class="category"><span class="num">1</span>행정</span>
+									<span class="title">주말부부 혼인신고는 어떻게 하면 될까?</span>
+									<span class="opendown"><img src="image/btn_open2.png" alt="오픈" /></span>
+								</a>
+							</dt>
+							<dd>
+								<span class="desc">혼인신고는 전국 시군구청 어디서나 가능합니다.(동주민센터는 불가) 신고기간은 정해져 있지 않고, 한쪽 혼인당사자가 신고하실 수 있습니다. 혼인당사자 1인이 신고하는 경우에는 혼인신고서와 함께 당사자뿐 아니라 불출석한 혼인 당사자의 신분증 원본과 도장을 지참하셔야 합니다. 예전 호적법에서는 마음만 먹으면 다른 사람의 승낙 없이 그 인장을 위조해 혼인신고서를 작성해 제출함으로써 혼인신고를 할 수 있었는데요.
+								</span>
+								<a href="#" class="link">상세보기 →</a>
+							</dd>
+						</dl>
+						<dl>
+								<dt>
+									<a href="#">
+										<span class="category"><span class="num">2</span>생활</span>
+										<span class="title">자동차세 미리 내면 10% 할인</span>
+										<span class="opendown"><img src="image/btn_open2.png" alt="오픈" /></span>
+									</a>
+								</dt>
+								<dd>
+									<span class="desc">
+									연초에 자동차세를 한꺼번에 납부하면 10%를 감면 받으실 수 있습니다. 1월에 선납 기회를 놓치셔도 3.6.9월에 납부하시면 12월까지 남은 기간에 대해서 10% 공제 혜택이 진행됩니다.
+									</span>
+									<a href="#" class="link">상세보기 →</a>
+								</dd>
+							</dl>
+						<dl>
+							<dt>
+								<a href="#">
+									<span class="category"><span class="num">3</span>행정</span>
+									<span class="title">서울에 있는 분수 중에서 볼만한 곳은 어디인지 알려주세요.</span>
+									<span class="opendown"><img src="image/btn_open2.png" alt="오픈" /></span>
+								</a>
+							</dt>
+							<dd>
+								<span class="desc">예술의 전당 광장의 음악분수는 명곡에 맞춰 분수의 춤사위가 연출되며 특히 밤이면 화려한 조명이
+   더해지면서 장관을 이뤄 시민들의 도심 속 휴식공간으로 사랑받고 있습니다.
+   가로 9m, 세로 43m의 인공 연못에 설치된 56대의 펌프가 825개의 노즐에 물을 공급하고 있습니다.
+   노즐에서 뿜어져 나오는 분수의 모양은 한국화를 형상화한 산맥 분수, 갓분수, 난초 분수, 학 날개 분수, 안개 분수와 발레 분수로 구성되었습니다. 세계음악분수쇼는 1회에 14곡의 음악을 사용합니다. 
+								</span>
+								<a href="#" class="link">상세보기 →</a>
+							</dd>
+						</dl>
+					
+						<dl>
+							<dt>
+								<a href="#">
+									<span class="category"><span class="num">4</span>생활</span>
+									<span class="title">1박2일 여행, 캠핑장 어때?</span>
+									<span class="opendown"><img src="image/btn_open2.png" alt="오픈" /></span>
+								</a>
+							</dt>
+							<dd>
+								<span class="desc">
+								봄나들이를 계획하고 있다면 가족과 함께 도심 속 캠핑 여행은 어떨까요. 서울의 공원 홈페이지
+   (http://parks.seoul.go.kr)에 들어가면 7개 캠핑장 예약이 가능하며 궁금한 사항은 120다산콜센터로
+   문의하면 됩니다.
+ 
+   오토캠핑이 가능한 ‘중랑캠핑숲’은 스파와 샤워장, 캠핑카페 등 편의시설이 완벽해 시설측면에서
+   ‘5성급 캠핑장’이라 불리는데요. 매월 15일이면 다음 달 예약을 개시합니다.
+								</span>
+								<a href="#" class="link">상세보기 →</a>
+							</dd>
+						</dl>
+							<dl>
+								<dt>
+									<a href="#">
+										<span class="category"><span class="num">5</span>생활</span>
+										<span class="title">거동 불편한 어머니의 전입신고는?</span>
+										<span class="opendown"><img src="image/btn_open2.png" alt="오픈" /></span>
+									</a>
+								</dt>
+								<dd>
+									<span class="desc">
+									전입신고는 주민등록법에 30일 이상 거주할 목적인 경우에 등록하여야 합니다.
+   단, 거주 의사 없이 업무출장, 관광, 교육 등의 목적으로 일시적 거소를 정하고 있는 자는 생활의 근거지에서 가족과 함께 주민등록을 하여야하므로 별도 전입신고를 하지 않아도 됩니다.
+
+   신고방법은 세대주 또는 세대를 관리하는 자, 세대주의 위임을 받은 배우자 또는 직계존비속(부모님, 배우자, 자녀)이 거주지 관할 동주민센터에 방문하셔서 접수하실 수 있고 ‘민원24’(http://www.minwon.go.kr)에 접속하셔서 신고하실 수 있습니다.
+   이때 세대주 공인인증서가 필요하니 참고 부탁드립니다.
+									</span>
+									<a href="#" class="link">상세보기 →</a>
+								</dd>
+							</dl>
+						<dl>
+							<dt>
+								<a href="#">
+									<span class="category"><span class="num">6</span>행정</span>
+									<span class="title">전월세 구할 때 사기 당하지 않으려면?</span>
+									<span class="opendown"><img src="image/btn_open2.png" alt="오픈" /></span>
+								</a>
+							</dt>
+							<dd>
+								<span class="desc">요즘 전월세 사기 사건이 빈번히 발생하고 있어 각별한 주의가 요망되니 무엇보다 거래 상대방과 중개업자의 신분을 꼭 확인한 뒤 거래하시는 것이 좋습니다. 임차건물 소유자가 맞는지 신분증, 임대차 건물 공과금 영수증, 등기권리증 등을 서로 대조 확인한 후에 계약금, 중도금, 잔금을 거래상대방에게 지급해야 합니다.
+ 
+								</span>
+								<a href="#" class="link">상세보기 →</a>
+							</dd>
+						</dl>
+					
+						<dl>
+							<dt>
+								<a href="#">
+									<span class="category"><span class="num">7</span>생활</span>
+									<span class="title">   퇴근 후 저녁시간에도 관공서의 민원업무를 볼 수 있는 방법이 없을까요?</span>
+									<span class="opendown"><img src="image/btn_open2.png" alt="오픈" /></span>
+								</a>
+							</dt>
+							<dd>
+								<span class="desc">
+								서울시의 방문민원서비스 공간인 열린민원실을 이용해 보시길 바랍니다!
+   서울시에서는 근무시간 내 민원을 보기 힘든 시민들을 위해 야간민원처리제를 실시하고 있습니다.
+   매주 화요일에는 저녁 9시까지 문을 열고 시민들이 각종 민원을 처리할 수 있도록 운영하는 것입니다.
+   서울시청 신청사 1층(중구 태평로1가)에 위치한 열린민원실에 오시면 각종 인ㆍ허가에서부터 진정, 질의 등 민원서류를 접수하실 수 있으며. 정기간행물 등록 및 변경, 개인택시운송사업면허증 재교부, 건설공사실적증명 등 총 27종의 민원업무를
+   해결하실 수 있습니다.
+								</span>
+								<a href="#" class="link">상세보기 →</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt >
+								<a href="#">
+									<span class="category"><span class="num">8</span>생활</span>
+									<span class="title">무료로 변호사 상담할 수 있는 방법</span>
+									<span class="opendown"><img src="image/btn_open2.png" alt="오픈" /></span>
+								</a>
+							</dt>
+							<dd>
+								<span class="desc">
+								원치 않더라도 일상생활 속에서 법률문제에 부딪힐 때가 있는데 막상 전문 변호사를 찾아가자니 비용 면에서도 그렇고 문턱이 높아 일반 시민들로서는 부담스럽기 그지 없습니다. 그럴때 찾아야 할 곳이 바로 서울시 무료법률상담실입니다.
+								</span>
+								<a href="#" class="link">상세보기 →</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">
+									<span class="category"><span class="num">9</span>행정</span>
+									<span class="title">주말부부 혼인신고는 어떻게 하면 될까?</span>
+									<span class="opendown"><img src="image/btn_open2.png" alt="오픈" /></span>
+								</a>
+							</dt>
+							<dd>
+								<span class="desc">혼인신고는 전국 시군구청 어디서나 가능합니다.(동주민센터는 불가) 신고기간은 정해져 있지 않고, 한쪽 혼인당사자가 신고하실 수 있습니다. 혼인당사자 1인이 신고하는 경우에는 혼인신고서와 함께 당사자뿐 아니라 불출석한 혼인 당사자의 신분증 원본과 도장을 지참하셔야 합니다. 예전 호적법에서는 마음만 먹으면 다른 사람의 승낙 없이 그 인장을 위조해 혼인신고서를 작성해 제출함으로써 혼인신고를 할 수 있었는데요.
+								</span>
+								<a href="#" class="link">상세보기 →</a>
+							</dd>
+						</dl>
+					
+						
+
+					</div>
+					
+				
+				</div><!--acc END-->
+				<p class="pageNum">
+				<a href="#" title="바로가기" ><img src="image/btn_first.gif" alt="왼쪽 화살표"/></a>
+				<a href="#" title="바로가기" class="pageDefault">1</a>
+				<a href="#" title="바로가기">2</a>
+				<a href="#" title="바로가기">3</a>
+				<a href="#" title="바로가기">4</a>
+				<a href="#" title="바로가기"><img src="image/btn_last.gif" alt="오른쪽 화살표"/></a>
+			</p>
+			</section><!--Inner END-->
+	</div><!--content END-->
+
+	<!--  ############## footer.php    넣기-->
+	<?php	include "common/footer.php";  ?>
+
+ </div>  <!--wrapper END-->
+ </body>
+</html>

@@ -1,0 +1,264 @@
+	/*1. mediaquery 쓸때 css맨뒤에 붙임 (앞에 쓰면 로딩속도 드려짐) 
+	2. [space] 과 [;] 주의
+	3. 디바이스별로 고치는부분만 첨가 
+	4. 바뀌는 거 없는 디바이스들도 남겨둠, 지우면 안됨, 에러남
+	5. min-width에 맞춘다*/
+
+
+
+	@media all and ( min-width:1600px ){ 
+		body{ }
+		
+}
+	@media all and ( min-width:1023px ) and ( max-width:1599px ){
+		body{  }
+}
+
+	@media all and ( min-width:768px ) and ( max-width:1022px ){ 
+		body{ }
+		#content{  padding:70px 0 50px 0;}
+
+		#content .dataInner1 {
+			width: 90%;}
+
+		#content .dataInner2 {
+			width: 92%;}
+
+		#content h3 {
+			font-size: 50px;
+				
+			padding: 60px;
+			
+			}
+		#content .subnav {
+
+			margin-top: -100px;
+			margin-bottom: 70px;
+		}
+
+
+	
+		#content .dataSample {
+			
+			margin-bottom: -10px;
+		}
+
+		#content .dataBoxTop1 a, #content .dataBoxTop2 a { height:300px;}
+
+		#content .dataBox dt a { height:130px;  } 
+
+		#content .dataBoxTop1 dd p, #content .dataBoxTop2 dd p {
+				padding: 30px 5%;
+				
+			}
+
+
+}
+
+	@media all and ( min-width:480px ) and ( max-width:767px ){ 
+		body{ }
+
+		#content{  padding:70px 0 50px 0;}
+
+		#content .dataInner1 {
+			width: 90%;}
+
+		#content .dataInner2 {
+			width: 94%;}
+
+		
+
+
+
+
+		#content h3 { font-size: 30px; padding: 35px 0;}
+
+
+		#content .subnav {
+		margin-top: -80px;
+		margin-bottom: 45px;
+		}
+
+
+
+
+	
+		#content .dataSample {
+			
+			margin-bottom: -10px;
+			}
+	 
+
+		#content .dataBoxTop1, #content .dataBoxTop2{width:100%; float:none; margin:0; }
+		#content .dataBoxTop1{ margin-bottom:15px;} 
+		#content .dataBoxTop1 dd p, #content .dataBoxTop2 dd p {
+				padding: 20px 5%; margin:0;
+				
+			}
+	
+
+		#content .dataBoxTop1 a, #content .dataBoxTop2 a  { width:100%; height:300px; margin:0; 
+			
+			border-bottom:5px solid #f1f1f1; }
+
+		#content .dataInner1 .dataListTop strong {
+			font-size: 18px;
+		
+			}
+		#content .dataInner1 .dataListTop p {
+			font-size: 14px;
+			line-height:20px;
+		
+			}
+		#content .dataBox{width:50%; float:left; margin-top:15px; }
+
+		#content .dataBox dt a {display:block; width:92%; height:150px; margin:0 4%; 
+			background: #fff no-repeat  top center ;  background-size:100%; } 
+
+		#content .dataBox1 dt a {
+			background-image:  url("../image/info_148.jpg");} 
+
+		#content .dataBox2 dt a {
+		background-image:  url("../image/info_147.jpg"); } 
+
+		#content .dataBox3 dt a {
+		background-image:  url("../image/info_150.jpg");} 
+
+		#content .dataBox4 dt a {
+			background-image:  url("../image/info_164.jpg");} 
+
+		#content .dataBox5 dt a {
+			background-image:  url("../image/info_153.jpg"); } 
+
+		#content .dataBox6 dt a {
+			background-image:  url("../image/info_154.jpg");} 
+
+		#content .dataBox7 dt a {
+			background-image:  url("../image/info_155.jpg");} 
+
+		#content .dataBox8 dt a {
+			background-image:  url("../image/info_162.jpg"); } 
+
+		#content .dataBox9 dt a {
+			background-image:  url("../image/info_148.jpg"); } 
+
+		#content .dataBox10 dt a {
+			background-image:  url("../image/info_147.jpg");} 
+
+		#content .dataBox11 dt a {
+			background-image:  url("../image/info_150.jpg");} 
+
+		#content .dataBox12 dt a {
+			background-image:  url("../image/info_164.jpg"); }
+
+}
+
+	@media all and ( max-width:479px ){ 
+	#content{  padding:70px 0 50px 0;}
+
+	#content .dataInner1 {
+			width: 90%;}
+
+		#content .dataInner2 {
+			width: 92%;}
+
+		
+
+
+
+
+		#content h3 { font-size: 30px; padding: 35px 0; letter-spacing:0;}
+
+
+		#content .subnav {
+			display:none;
+		}
+
+
+
+
+
+	
+		#content .dataSample {
+			
+			margin-bottom: -10px;
+			}
+	 
+
+		#content .dataBoxTop1, #content .dataBoxTop2{width:100%; float:none; margin:0; }
+		#content .dataBoxTop1{ margin-bottom:15px;} 
+		#content .dataBoxTop1 dd p, #content .dataBoxTop2 dd p {
+				padding: 20px 5%; margin:0;
+				
+			}
+	
+
+		#content .dataBoxTop1 a, #content .dataBoxTop2 a  { width:100%; height:300px; margin:0; 
+			
+			border-bottom:5px solid #f1f1f1; }
+
+		#content .dataInner1 .dataListTop strong {
+			font-size: 18px;
+		
+			}
+		#content .dataInner1 .dataListTop p {
+			font-size: 14px;
+			line-height:20px;
+		
+			}
+		#content .dataBox{width:100%; float:none; margin-top:15px; overflow:hidden; }
+
+		#content .dataBox dt a {display:block; width:30%; height:80px; margin:0; 
+			background: #fff no-repeat  top center ;  background-size:100%; 
+			float:left;
+			} 
+		#content .dataBox dd{width:69%;
+		float:left; }
+
+		#content .dataBox dd strong {
+			padding:15px; 
+			margin:0;
+	
+		
+		
+			}
+
+		#content .dataBox1 dt a {
+			background-image:  url("../image/info_148.jpg");} 
+
+		#content .dataBox2 dt a {
+		background-image:  url("../image/info_147.jpg"); } 
+
+		#content .dataBox3 dt a {
+		background-image:  url("../image/info_150.jpg");} 
+
+		#content .dataBox4 dt a {
+			background-image:  url("../image/info_164.jpg");} 
+
+		#content .dataBox5 dt a {
+			background-image:  url("../image/info_153.jpg"); } 
+
+		#content .dataBox6 dt a {
+			background-image:  url("../image/info_154.jpg");} 
+
+		#content .dataBox7 dt a {
+			background-image:  url("../image/info_155.jpg");} 
+
+		#content .dataBox8 dt a {
+			background-image:  url("../image/info_162.jpg"); } 
+
+		#content .dataBox9 dt a {
+			background-image:  url("../image/info_148.jpg"); } 
+
+		#content .dataBox10 dt a {
+			background-image:  url("../image/info_147.jpg");} 
+
+		#content .dataBox11 dt a {
+			background-image:  url("../image/info_150.jpg");} 
+
+		#content .dataBox12 dt a {
+			background-image:  url("../image/info_164.jpg"); }
+
+
+}
+	

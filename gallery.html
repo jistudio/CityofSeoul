@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" >
+  <title> 갤러리 서울 | 서울특별시 웹사이트</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/base.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/layout.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/header.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/gallery.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/footer.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/mediaGallery.css"/>
+
+<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie7.css"/>
+<![endif]-->
+
+<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie8.css"/>
+<![endif]-->
+
+<!--[if gt IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie89.css"/>
+<![endif]-->
+
+ <!-- html5shiv 플로그인 껴넣기-->
+  <!--[if lt IE 9]>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+	 </script>
+ <![endif]-->
+<style>
+/* ie 10 과 ie edge 크로스 브라우징 핵*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+		#header .headerBot nav .gnb LI.allMenu {
+
+		padding-top: 20px;
+
+		}
+
+	#header .headerBot nav .gnb LI.search {
+		
+		padding-top: 20px;
+		}
+}  
+
+/*firefox only hack*/
+@-moz-document url-prefix() { 
+
+ }
+
+</style>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/scrollTop.js"></script>
+<script src="js/mainGnb.js"></script>
+<script src="js/jquery.color.js"></script> 
+<script>
+  $(document).ready(function(){
+	  $('.boxgrid').hover(function(){
+		  $(".boxcaption", this).stop().animate({top:'0%'},{queue:false,duration:360});
+	
+	  }, function() {
+		  $(".boxcaption", this).stop().animate({top:'100%'},{queue:false,duration:360});
+		 
+
+	  });
+  });
+
+
+
+  $(document).ready(function(){
+
+	  // 1   .grayLayer와 overLayer안보이게 숨기기
+	$(".grayLayer, .overLayer, .closePhoto").hide();
+
+	
+
+	$(".boxcaption a").click(function(){
+		// 3	[대상]작은 그림을 [이벤트]클릭하면 [이벤트 핸들러 1]  .grayLayer와 .overLayer 보인다
+		$(".grayLayer, .overLayer, .closePhoto").fadeIn();
+	
+
+		// [이벤트 핸들러 2] 	overLayer 안에는 큰그림이 들어가 있고 페이지 정중앙에 배치하게 만든다		
+		// 대상: overLayer 안에는
+		// 효과1: 큰그림이 들어가 있고 => html('<img src="'+ $(this).attr("href") +'" alt=""/>')
+		// 효과2: 페이지 정중앙에 배치하게 만든다 => css({" ":" "," ":" "})
+		// =>css({"marginLeft":"-"+($(".overLayer").width()/2)+"px",
+		//              "marginTop":"-"+($(".overLayer").height()/2)+"px"})
+
+	
+
+		$(".overLayer").html('<img src="'+ $(this).attr("href")+'" alt="">')
+		// .overLayer안에 .html을 이용해서<img>가 새로생김
+							//	.animate({"width":"70%","height":"70%","opacity":"1"}, "slow","swing");
+								//.css({"marginLeft":"-"+($(".overLayer").width()/2)+"px","top":"200px"})
+									//  "marginTop":"-"+($(".overLayer").height()/2)+"px"});
+								.css({"marginLeft":"-"+($(".overLayer").width()/2)+"px",
+												"top":"200px"});
+
+			return false;
+	});
+
+
+	 // 2	.grayLayer와 overLayer를 클릭하면 .grayLayer와 overLayer 안보이게 숨기기
+	$(".grayLayer, .overLayer, .closePhoto").click(function(){
+		$(".grayLayer, .overLayer, .closePhoto").fadeOut();
+	});
+  
+  });
+
+  $(window).resize( function(){   //  resizing 할때마다
+		$(".overLayer").css({"marginLeft":"-"+($(".overLayer").width()/2)+"px",
+				"top":"200px"});
+
+  });
+
+</script>
+ </head>
+ <body><strong><strong></strong></strong>
+
+<!--바로가기 메뉴 => skip navigation,  h태그 필요없음 , base.css에 있음-->
+<ul id="skipnav">
+	<li><a href="#gnba">주메뉴 바로가기</a></li><!--gnb의 첫 번째  a에 id gnba 넣어줌-->
+	<li><a href="#maina">본문내용 바로가기</a></li>
+</ul>
+<!--  skip nav END  -->
+
+ <div id="wrapper">
+	 <!--  ############## header.php    넣기-->
+	<?php	include "common/header.php";  ?>
+
+
+ <div id="content">
+		<h2>주요 컨텐츠</h2>
+
+		<div class="breadInner">
+			<ul class="breadcrumb">
+				<li class="gohome"><a href="#" title="홈 바로가기"><img src="image/icon_home.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#"  title="서울뉴스 바로가기" >서울 뉴스</a></li>
+				<li>
+					<a href="#"  title="새소식 바로가기">
+					새소식
+					<span class="breadDown"><img src="image/icon_arrowDown.png" alt="down arrow"/></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<section class="galleryInner">
+			<h3>갤러리 서울</h3>
+			<ul class="subnav">
+				<li class="subnavL"><a href="#" title="이전 페이지">previous</a></li>
+				<li class="subnavR"><a href="#" title="다음 페이지">next</a></li>
+			</ul>
+			<div class="galleryList">
+				<div class="boxgrid caption">
+					<a href="#" title="제목보기"><img src="image/p1.jpg" alt="서울 사람들"/></a>
+					<dl class="boxcaption">
+						<a  href="image/p1_b.jpg" title="크게보기">
+							<dt>한강몽땅 사진 공모전</dt>
+							<dd>노을이 있는 콘서트_오권열(대상)<br/>
+									2015. 03. 30
+									
+							</dd>
+							<dd><img src="image/plus.png" alt="크게보기"/></dd>
+						</a>
+					</dl>
+			   </div>
+			   <div class="boxgrid caption">
+					<a href="#"  title="제목보기"><img src="image/p2.jpg" alt="서울 사람들"/></a>
+					<dl class="boxcaption">
+						<a href="image/p2_b.jpg" title="크게보기">
+							<dt>한강몽땅 사진 공모전</dt>
+							<dd>노을이 있는 콘서트_오권열(대상)<br/>
+									2015. 03. 30
+									
+							</dd>
+							<dd><img src="image/plus.png" alt="크게보기"/></dd>
+						</a>
+					</dl>
+			   </div>
+			   <div class="boxgrid caption">
+					<a href="#" title="제목보기"><img src="image/p3.jpg" alt="서울 사람들"/></a>
+					<dl class="boxcaption">
+						<a href="image/p3_b.jpg" title="크게보기">
+							<dt>한강몽땅 사진 공모전</dt>
+							<dd>노을이 있는 콘서트_오권열(대상)<br/>
+									2015. 03. 30
+									
+							</dd>
+							<dd><img src="image/plus.png" alt="크게보기"/></dd>
+						</a>
+					</dl>
+					
+			   </div>
+			   <div class="boxgrid caption">
+					<a href="#"  title="제목보기"><img src="image/p4.jpg" alt="서울 사람들"/></a>
+					<dl class="boxcaption">
+						<a href="image/p4_b.jpg" title="크게보기">
+							<dt>한강몽땅 사진 공모전</dt>
+							<dd>노을이 있는 콘서트_오권열(대상)<br/>
+									2015. 03. 30
+									
+							</dd>
+							<dd><img src="image/plus.png" alt="크게보기"/></dd>
+						</a>
+					</dl>
+			   </div>
+			   <div class="boxgrid caption">
+					<a href="#"  title="제목보기"><img src="image/p5.jpg" alt="서울 사람들"/></a>
+					<dl class="boxcaption">
+						<a href="image/p5_b.jpg" title="크게보기">
+							<dt>한강몽땅 사진 공모전</dt>
+							<dd>노을이 있는 콘서트_오권열(대상)<br/>
+									2015. 03. 30
+									
+							</dd>
+							<dd><img src="image/plus.png" alt="크게보기"/></dd>
+						</a>
+					</dl>
+			   </div>
+			   <div class="boxgrid caption">
+					<a href="#" title="제목보기"><img src="image/p6.jpg" alt="서울 사람들"/></a>
+					<dl class="boxcaption">
+						<a href="image/p6_b.jpg" title="크게보기">
+							<dt>한강몽땅 사진 공모전</dt>
+							<dd>노을이 있는 콘서트_오권열(대상)<br/>
+									2015. 03. 30
+									
+							</dd>
+							<dd><img src="image/plus.png" alt="크게보기"/></dd>
+						</a>
+					</dl>
+					
+			   </div>
+			   <div class="boxgrid caption">
+					<a href="#"  title="제목보기"><img src="image/p7.jpg" alt="서울 사람들"/></a>
+					<dl class="boxcaption">
+						<a href="image/p7_b.jpg" title="크게보기">
+							<dt>한강몽땅 사진 공모전</dt>
+							<dd>노을이 있는 콘서트_오권열(대상)<br/>
+									2015. 03. 30
+									
+							</dd>
+							<dd><img src="image/plus.png" alt="크게보기"/></dd>
+						</a>
+					</dl>
+			   </div>
+			   <div class="boxgrid caption">
+					<a href="#"  title="제목보기"><img src="image/p8.jpg" alt="서울 사람들"/></a>
+					<dl class="boxcaption">
+						<a href="image/p8_b.jpg" title="크게보기">
+							<dt>한강몽땅 사진 공모전</dt>
+							<dd>노을이 있는 콘서트_오권열(대상)<br/>
+									2015. 03. 30
+									
+							</dd>
+							<dd><img src="image/plus.png" alt="크게보기"/></dd>
+						</a>
+					</dl>
+			   </div>
+			   <div class="boxgrid caption">
+					<a href="#" title="제목보기"><img src="image/p9.jpg" alt="서울 사람들"/></a>
+					<dl class="boxcaption">
+						<a href="image/p9_b.jpg" title="크게보기">
+							<dt>한강몽땅 사진 공모전</dt>
+							<dd>노을이 있는 콘서트_오권열(대상)<br/>
+									2015. 03. 30
+									
+							</dd>
+							<dd><img src="image/plus.png" alt="크게보기"/></dd>
+						</a>
+					</dl>
+					
+			   </div>
+			   <div class="boxgrid caption">
+					<a href="#"  title="제목보기"><img src="image/p10.jpg" alt="서울 사람들"/></a>
+					<dl class="boxcaption">
+						<a href="image/p10_b.jpg" title="크게보기">
+							<dt>한강몽땅 사진 공모전</dt>
+							<dd>노을이 있는 콘서트_오권열(대상)<br/>
+									2015. 03. 30
+									
+							</dd>
+							<dd><img src="image/plus.png" alt="크게보기"/></dd>
+						</a>
+					</dl>
+			   </div>
+			   <div class="boxgrid caption">
+					<a href="#"  title="제목보기"><img src="image/p11.jpg" alt="서울 사람들"/></a>
+					<dl class="boxcaption">
+						<a href="image/p11_b.jpg" title="크게보기">
+							<dt>한강몽땅 사진 공모전</dt>
+							<dd>노을이 있는 콘서트_오권열(대상)<br/>
+									2015. 03. 30
+									
+							</dd>
+							<dd><img src="image/plus.png" alt="크게보기"/></dd>
+						</a>
+					</dl>
+			   </div>
+			   <div class="boxgrid caption">
+					<a href="#" title="제목보기"><img src="image/p12.jpg" alt="서울 사람들"/></a>
+					<dl class="boxcaption">
+						<a href="image/p12_b.jpg" title="크게보기">
+							<dt>한강몽땅 사진 공모전</dt>
+							<dd>노을이 있는 콘서트_오권열(대상)<br/>
+									2015. 03. 30
+									
+							</dd>
+							<dd><img src="image/plus.png" alt="크게보기"/></dd>
+						</a>
+					</dl>
+					
+			   </div>
+				
+			
+			
+			</div>
+			<div class="grayLayer"></div>
+			<div class="overLayer">
+			
+				
+			</div>
+			<div class="closePhoto"><img src="image/closeVideo.png" alt="닫기"/></div>
+
+
+		</section><!-- galleryInner END-->
+	
+		
+	 </div><!--content END-->
+
+<!--  ############## footer.php    넣기-->
+<?php	include "common/footer.php";  ?>
+
+</div>  <!--wrapper END-->
+</body>
+</html>

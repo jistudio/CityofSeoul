@@ -1,0 +1,70 @@
+	/*1. mediaquery 쓸때 css맨뒤에 붙임 (앞에 쓰면 로딩속도 드려짐) 
+	2. [space] 과 [;] 주의
+	3. 디바이스별로 고치는부분만 첨가 
+	4. 바뀌는 거 없는 디바이스들도 남겨둠, 지우면 안됨, 에러남
+	5. min-width에 맞춘다*/
+
+
+
+	@media all and ( min-width:1600px ){ 
+		body{ }
+		
+}
+	@media all and ( min-width:1023px ) and ( max-width:1599px ){
+		body{  }
+}
+
+	@media all and ( min-width:768px ) and ( max-width:1022px ){ 
+		body{ }
+		#content{  padding:70px 0 50px 0;}
+		#content h3 { font-size: 50px; padding: 60px 0;}
+	
+}
+
+	@media all and ( min-width:480px ) and ( max-width:767px ){ 
+		body{ }
+
+		#content .loginInner { width:400px;}
+		#content h3 {font-size:35px; padding: 40px; }
+		#content .loginInner form{  padding:50px;  }
+		#userid{width:64.2%; }
+		#userpass{width:64.2%; }
+		
+
+}
+	@media all and ( max-width:479px ){ 
+
+		body{}
+		
+		#wrapper{min-width:320px;} 
+
+		#content h3 { font-size: 30px; padding: 35px;}
+
+
+		#content .loginInner {width:320px;}
+	
+		#content .loginInner form{  padding:40px;}
+		#content .loginInner form label{margin-bottom:10px; display:block; }
+
+
+
+
+		#userid { width:100%; margin-left:0; }
+		#userpass{width:100%; margin-left:0; }
+
+
+		#content .loginInner ul li {height:90px;}
+		#content .loginInner ul li img{display:block; margin:0px auto; width:22px; padding-top:20px; }
+		#content .loginInner ul li a:link, #content .loginInner ul li a:visited {
+		
+			line-height: 40px; 
+			background-color: #f1f1f1;
+			font-size: 13px;
+			color: #666;
+			height:100%;
+			
+		}
+		
+
+
+}

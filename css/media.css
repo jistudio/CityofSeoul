@@ -1,0 +1,714 @@
+	/*1. mediaquery 쓸때 css맨뒤에 붙임 (앞에 쓰면 로딩속도 드려짐) 
+	2. [space] 과 [;] 주의
+	3. 디바이스별로 고치는부분만 첨가 
+	4. 바뀌는 거 없는 디바이스들도 남겨둠, 지우면 안됨, 에러남
+	5. min-width에 맞춘다*/
+
+
+
+	@media all and ( min-width:1600px ){ 
+		body{  }
+	
+	
+		}
+	@media all and ( min-width:1023px ) and ( max-width:1599px ){
+		body{  }
+
+				
+					
+		}
+
+	@media all and ( min-width:768px ) and ( max-width:1022px ){ 
+		body{  }
+	
+	
+	
+
+
+
+
+		/*  ---------------------  메인 sliding ---------------------   */
+
+#visual {}
+
+
+ .train li .sm_mv_text{   top: 25px; left: 5%;
+    margin-left: 0px; }  
+
+
+.train li .sm_mv_text strong{ font-size:16px; font-weight:bold; 
+letter-spacing:2px;  margin-bottom:0px;}
+
+ .train li .sm_mv_text a{display:inline-block; margin-top:-20px;}
+
+
+.train li .sm_mv_text span.visualTitle{font-size:50px; line-height:60px; }
+.train li .sm_mv_text span.visualDesc{font-size:20px; line-height:25px; margin-top:0px;}
+
+.train li .sm_mv_text a:link, 
+.train li .sm_mv_text a:visited{display:block; width:150px; height:40px; 
+	line-height:40px;  margin-top:10px; 
+	font-size:13px; }
+
+.sliderControl{position:absolute;  right:5%; top:30px;  margin-left:0px; left:auto;}		
+
+
+.prev{ top:34%; }
+.next{  top:34%;  }
+
+
+		#content .conInner1 {
+			width: 90%;
+			margin: 0 auto;}
+
+		#content .section{ margin-bottom:20px;}
+		#content .section.s1{   width:100%; min-height:420px; 
+			background-color:#f1f1f1; overflow:hidden; border-top:10px solid #0f94e1; }
+		#content .section.s1 .s1Left {
+			width: 100%;
+			float: none;
+			overflow:hidden;
+			border-right:none;
+			border-bottom:2px solid #ddd;
+			
+			}
+
+		#content .section.s1 .weather{ width:50%; float:left;
+				border-bottom:none;	 height: 215px;
+			}
+		#content .section.s1 .weatherToday{height:107px; border-bottom:1px solid #ddd; }
+
+
+	
+		#content .section.s1 .weatherToday li a{ line-height:107px; }
+		#content .section.s1 .weatherToday li.wDesc{ padding-top: 35px; ; }
+		
+
+		#content .section.s1 .traffic {
+			overflow: hidden;
+			height: auto;
+			
+		}
+		#content .section.s1 .traffic li {
+			width: 50%;
+			border-top:none;
+			height:100px;
+			
+			
+		}
+
+
+		#content .section.s1 .issue{ 
+		width:50%; float:left; margin:0%; padding: 0 30px 30px 30px;
+				border-left:1px solid #ddd;
+				box-sizing: border-box; 
+				-o-box-sizing: border-box;
+				-ms-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;}
+		#content .section.s1 .issue h3{width:86%; margin:30px 0 20px 0; }
+
+	
+		#content .section.s1 .news {
+			width: 100%; float: none;
+			margin-top:20px;
+		}
+
+
+
+
+
+		#content .section.s1 .news .newsWrapper {
+		
+			margin-bottom:0;
+			padding-bottom: 30px;
+		}
+
+
+			
+		#content .section.s1 .news .newsCategory{ 
+		
+		  width:92%;  
+		  margin:0 4% 30px 4%;
+		  padding:30px 0 0 0;}
+
+		 #content .section.s2{min-height:300px; 
+					}
+		#content .a31{width:100%; height:300px; float:left; 
+						background-image:url("../image/mayor3.jpg"); 
+						background-repeat:no-repeat; 
+						background-size:cover;
+					}
+		#content .a31 h3{margin-top:100px; margin-left: 55%; margin-right:5%; margin-bottom:0;
+					background-color:rgba(250,250,250, 0.8);
+					padding:20px;}
+		#content .a31 p{ margin-left: 55%; margin-right:5%; 
+					background-color:rgba(250,250,250, 0.8);
+					padding: 0 20px 20px 20px;}
+
+		#content .a32{width:50%; height:300px;  float:left; 
+				border-right:1px solid #ddd;}
+
+			
+
+		#content .a32 h3{ margin:30px 0 15px 30px ; padding:0; }
+
+		#content .a33 {
+				width: 50%;
+				height: 300px;
+				float:left;
+				}
+
+		#content .a33 h3{margin:0px 0 20px 30px ; padding:30px 0 0 0 ; }
+
+		#content .a33 ul{ margin:0 7%;}
+		
+	
+		#content .bannerZone{ width:100%;  }
+		#content .event {width: 100%; float: left;     margin-bottom: 20px;}
+
+		#content .event h3{ margin:30px 0 15px 30px ; padding:0;}
+		#content .event .eventSlide{width:92%; margin: 0 4%; }
+
+		#content .quickMenu li{width:25%; border-right:1px solid #ddd; }
+
+		#content .quickMenu .qlink4, #content .quickMenu .qlink8 {  border-right:none;  }
+		#content .quickMenu li a{display:block;   line-height:80px;  padding-left:  45% ;
+			font-size:14px; font-weight:bold; }
+		#content .quickMenu .qlink1 a{background:url("../image/qlink1.jpg") no-repeat 20% 15px;}
+		#content .quickMenu .qlink3 a{background:url("../image/qlink1.jpg") no-repeat 20% -40px;}
+		#content .quickMenu .qlink5 a{background:url("../image/qlink1.jpg") no-repeat 20% -90px; border-top:1px solid #ddd; }
+		#content .quickMenu .qlink7 a{background:url("../image/qlink1.jpg") no-repeat 20% -140px; border-top:1px solid #ddd; }
+
+		#content .quickMenu .qlink2 a{background:url("../image/qlink2.jpg") no-repeat 20% 15px; }
+		#content .quickMenu .qlink4 a{background:url("../image/qlink2.jpg") no-repeat 20% -40px;}
+		#content .quickMenu .qlink6 a{background:url("../image/qlink2.jpg") no-repeat 20% -90px; border-top:1px solid #ddd; }
+		#content .quickMenu .qlink8 a{background:url("../image/qlink2.jpg") no-repeat 20% -140px; border-top:1px solid #ddd; }
+
+
+
+
+
+		#content .conInner2{padding-bottom:0px;}
+		#content .section.s4 {
+		
+		width:520px;
+		margin:0 auto;
+
+		
+		
+		}
+		.tunnel3{  width:520px; } /* .train을 숨겨줌(mask)*/
+		.train3{  width:2080px; }
+
+		
+	
+		
+
+
+
+
+
+
+	}
+
+	@media all and ( min-width:480px ) and ( max-width:767px ){ 
+		body{ }
+		
+
+		#visual {  }
+
+ .train li .sm_mv_text{   top: 30px; left: 5%;
+    margin-left: 0px; }  
+
+
+.train li .sm_mv_text strong{display:none;}
+
+ .train li .sm_mv_text a{display:inline-block; margin-top:-20px;}
+
+
+.train li .sm_mv_text span.visualTitle{font-size:44px; line-height:52px; }
+.train li .sm_mv_text span.visualDesc{display:none;}
+
+.train li .sm_mv_text a:link, 
+.train li .sm_mv_text a:visited{  margin-top:10px; }
+
+.sliderControl{position:absolute; top:auto; right:5%; bottom:20px;  margin-left:0px; left:auto;}	
+
+
+.prev{ top:36%; }
+.next{  top:36%;  }
+
+	
+
+
+
+#content {
+   
+	 position:relative; 
+
+    margin-top: -16px;
+}
+
+
+		#content .conInner1 {
+			width: 90%;
+			margin: 0 auto;}
+
+		#content .section{ margin-bottom:20px;}
+		#content .section.s1{   width:100%; min-height:420px; 
+			background-color:#f1f1f1; overflow:hidden; border-top:10px solid #0f94e1; }
+		#content .section.s1 .s1Left {
+			width: 100%;
+			float: none;
+			overflow:hidden;
+			border-right:none;
+			border-bottom:2px solid #ddd;
+			
+			}
+
+		#content .section.s1 .weather{ 
+				display:none;
+			}
+	
+
+		#content .section.s1 .issue{ float:none; padding: 0 7% 7% 7%;
+				border-left:none; margin:0%; }
+		#content .section.s1 .issue h3{width:86%; margin:30px 0 20px 0; }
+	
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+		#content .section.s1 .news {
+			width: 100%; float: none;
+			margin-top:20px;
+			}
+
+
+		#content .section.s1 .news .newsWrapper {
+		
+			margin-bottom:0;
+			padding-bottom: 30px;}
+
+
+			
+		#content .section.s1 .news .newsCategory{ 
+		
+		  width:86%;  
+		  margin:0px 7% 0px 7%;
+		  padding:30px 0 0 0 ;}
+
+
+		#content .section.s1 .news .newsWrapper{overflow:hidden; margin-bottom:0px;}
+
+
+
+
+	#content .section.s1 .news .newsFirst{width:86%; float:none;  margin:0 7%;  }
+
+	#content .section.s1 .news .newsList{width:86%; float:none;  margin:30px 7% 0 7%; 
+			border-top:1px solid #ddd; padding-top:30px;}
+
+
+	.newsTab > li:nth-child(1) > a {
+        margin-left: 20%;
+}
+
+	.newsTab li {
+
+		float:left;
+	}
+	.newsTab > li:nth-child(1) {
+    width:35%;
+}
+
+	.newsTab > li:nth-child(2) {
+    width:25%;
+}
+	.newsTab > li:nth-child(3) {
+    width:33%;
+}
+	.newsTab > li:nth-child(4) {
+   display:none;
+}
+	.newsTab > li>a {
+
+	width:100%;
+	display:block;
+
+}
+
+
+
+
+
+
+
+
+		#content .section.s2{min-height:300px; 
+					}
+		#content .a31{width:100%; height:300px; float:left; 
+						background-image:url("../image/mayor3.jpg"); 
+						background-repeat:no-repeat; 
+						background-size:cover;
+						background-position:center;
+					
+					}
+
+				
+		#content .a31 h3{margin-top:80px; margin-left: 50%; margin-right:5%; margin-bottom:0;
+					background-color:rgba(250,250,250, 0.8);
+					padding:20px;}
+		#content .a31 p{ margin-left: 50%; margin-right:5%; 
+					background-color:rgba(250,250,250, 0.8);
+					padding: 0 20px 20px 20px; line-height:30px;}
+
+		#content .a32{width:100%;   float:left; 
+				border-right:none; border-bottom:1px solid #ddd;}
+
+			
+
+		#content .a32 h3{ margin:30px 0 15px 30px ; padding:0; }
+		
+		#content .a32 p {
+		 margin: 2% 26% 8% 30px;
+   
+		}
+
+		#content .a33 {
+				width: 100%;
+				height: 300px;
+				float:left;
+
+				}
+
+		#content .a33 h3{margin:0px 0 20px 30px ; padding:30px 0 0 0 ; }
+
+		#content .a33 ul{ margin:0 7%;}
+		
+	
+		#content .bannerZone{ width:100%;  }
+				.button2 {
+  
+    bottom: 10px;
+
+}
+		#content .event {width: 100%; float: left; margin-bottom:20px; }
+
+		#content .event h3{ margin:30px 0 15px 30px ; padding:0;}
+		#content .event .eventSlide{width:92%; margin: 0 4%; }
+		
+		#content .quickMenu li{width:25%; border-right:1px solid #ddd; }
+
+		#content .quickMenu .qlink4, #content .quickMenu .qlink8 {  border-right:none;  }
+		#content .quickMenu li a{display:block;   line-height:80px;  padding-left:  45% ;
+			font-size:14px; font-weight:bold; text-indent:-9999%; }
+		#content .quickMenu .qlink1 a{background:url("../image/qlink1.jpg") no-repeat 50% 15px;}
+		#content .quickMenu .qlink3 a{background:url("../image/qlink1.jpg") no-repeat 50% -40px;}
+		#content .quickMenu .qlink5 a{background:url("../image/qlink1.jpg") no-repeat 50% -90px; border-top:1px solid #ddd; }
+		#content .quickMenu .qlink7 a{background:url("../image/qlink1.jpg") no-repeat 50% -140px; border-top:1px solid #ddd; }
+
+		#content .quickMenu .qlink2 a{background:url("../image/qlink2.jpg") no-repeat 50% 15px; }
+		#content .quickMenu .qlink4 a{background:url("../image/qlink2.jpg") no-repeat 50% -40px;}
+		#content .quickMenu .qlink6 a{background:url("../image/qlink2.jpg") no-repeat 50% -90px; border-top:1px solid #ddd; }
+		#content .quickMenu .qlink8 a{background:url("../image/qlink2.jpg") no-repeat 50% -140px; border-top:1px solid #ddd; }
+
+
+
+		#content .conInner2{padding-bottom:0px;}
+		#content .section.s4 {
+			
+			width:260px;
+			margin:0 auto;
+
+			
+			
+			}
+		.tunnel3{  width:260px; } /* .train을 숨겨줌(mask)*/
+		.train3{  width:2080px; }
+
+		#content .s4 .keyleft { position:absolute; top:5px; right:55px;  }
+#content .s4 .keyright { position:absolute;  top:5px; right:20px; }
+
+#content .s4 .keyleft a img, 
+#content .s4 .keyright a img{width:30px; }
+	
+	
+		#footer .footerInner { width: 90%; }
+
+
+
+		
+	}
+	@media all and ( max-width:479px ){ 
+
+		body{}
+		#wrapper{min-width:320px;}
+	
+
+
+
+
+		
+
+
+#visual {  padding-bottom:30px; background-color:#0F94E1; }
+
+ .train li .sm_mv_text{   top: 20px; left: 5%;
+    margin-left: 0px;}  
+
+
+.train li .sm_mv_text strong{display:none;}
+
+ .train li .sm_mv_text a{display:inline-block; margin-top:-20px;}
+
+
+.train li .sm_mv_text span.visualTitle{font-size:34px; line-height:40px; }
+.train li .sm_mv_text span.visualDesc{display:none;}
+
+.train li .sm_mv_text a:link, 
+.train li .sm_mv_text a:visited{  margin-top:0px; width: 140px;
+    height: 40px; 
+
+    line-height: 40px; }
+
+.sliderControl{position:absolute; 
+top:auto; right:auto; bottom:0px;  margin-left:-70px; left:50%;}	
+
+
+
+.prev{ top:30%; }
+.next{  top:30%;  }
+
+	.newsTab > li:nth-child(1) > a {
+    margin-left:20px;
+}
+	.newsTab li {
+		width: 25%;
+		float:left;
+	}
+	.newsTab > li:nth-child(2) {
+    width:25%;
+}
+	.newsTab > li:nth-child(3) {
+    width:38%;
+}
+	.newsTab > li:nth-child(4) {
+   display:none;
+}
+	.newsTab > li>a {
+    margin-left: 20px;
+	width:100%;
+	display:block;
+font-size:20px;
+
+}
+
+.newsTab .newsWrapper {
+
+    top: 95px;
+  
+}	
+
+.plus {
+
+    right: 10px;
+   
+}
+
+
+				
+
+#content {
+   
+	 position:static; 
+
+    margin-top: -6px;
+}
+
+
+		#content .conInner1 {
+			width: 100%;}
+
+		#content .section{ margin-bottom:10px;}
+		#content .section.s1{   width:100%; min-height:420px; 
+			background-color:#f1f1f1; overflow:hidden; border-top:10px solid #0f94e1; }
+		#content .section.s1 .s1Left {
+			width: 100%;
+			float: none;
+			overflow:hidden;
+			border-right:none;
+			border-bottom:2px solid #ddd;
+			
+			}
+
+		#content .section.s1 .weather{ 
+				display:none;
+			}
+	
+
+		#content .section.s1 .issue{ float:none; padding: 0 7% 7% 7%;
+				border-left:none; margin:0%; }
+		#content .section.s1 .issue h3{width:86%; margin:30px 0 20px 0; }
+	
+	
+		
+		
+
+		#content .section.s1 .news {
+			width: 100%; float: none;
+			margin-top:10px;
+			}
+
+		#content .section.s1 .news .newsWrapper {
+		
+			margin-bottom:0;
+			padding-bottom: 20px;
+			overflow:hidden;}
+
+
+			
+		#content .section.s1 .news .newsCategory{ 
+		
+		  
+		  margin:0px 5% 0px 5%;
+		  padding:20px 0 0 0 ;}
+
+
+
+
+
+
+
+	#content .section.s1 .news .newsFirst{display:none;}
+
+
+
+	#content .section.s1 .news .newsList{width:90%; float:none;  margin:5% 5% 0 5%; 
+			border-top:none; padding-top:0px;}
+
+
+	#content .section.s1 .news .newsDesc p {
+    padding-left: 7%; }
+
+
+	#content .a31{width:100%; height:300px; float:left; 
+						background-image:url("../image/mayor3.jpg"); 
+						background-repeat:no-repeat; 
+						background-size:cover;
+						
+					}
+
+
+
+
+
+
+		#content .section.s2{min-height:300px; 
+					}
+		#content .a31{width:100%; height:300px; float:left; 
+						background-image:url("../image/mayor3.jpg"); 
+						background-repeat:no-repeat; 
+						background-size:cover;
+						background-position:center;
+					}
+		#content .a31 h3{margin-top:80px; margin-left: 50%; margin-right:5%; margin-bottom:0;
+					background-color:rgba(250,250,250, 0.8);
+					padding:10px;}
+		#content .a31 p{ margin-left: 50%; margin-right:5%; 
+					background-color:rgba(250,250,250, 0.8);
+					padding: 0 20px 20px 20px; line-height:30px;}
+
+		#content .a32{width:100%; height:300px;  float:left; 
+				border-right:none; border-bottom:1px solid #ddd;}
+
+			
+
+		#content .a32 h3{ margin:30px 0 15px 20px ; padding:0; }
+		#content .a32 p {
+		 margin: 2% 26% 8% 20px;
+   
+		}
+
+		#content .a33 {
+				width: 100%;
+				height: 300px;
+				float:left;
+
+				}
+
+		#content .a33 h3{margin:0px 0 20px 20px ; padding:30px 0 0 0 ; }
+
+		#content .a33 ul{ margin:0 7%;}
+		
+	
+		#content .bannerZone{ width:100%;  }
+		.button2 {
+  
+    bottom: 5px;
+
+}
+		#content .event {width: 100%; float: left; margin-bottom:10px;}
+
+		#content .event h3{ margin:30px 0 15px 20px ; padding:0;}
+		#content .event .eventSlide{width:92%; margin: 0 4%; }
+		
+		#content .quickMenu li{width:25%; border-right:1px solid #ddd; }
+
+		#content .quickMenu .qlink4, #content .quickMenu .qlink8 {  border-right:none;  }
+		#content .quickMenu li a{display:block;   line-height:80px;  padding-left:  40% ;
+			font-size:14px; font-weight:bold; text-indent:-9999%;}
+		#content .quickMenu .qlink1 a{background:url("../image/qlink1.jpg") no-repeat 50% 15px;}
+		#content .quickMenu .qlink3 a{background:url("../image/qlink1.jpg") no-repeat 50% -40px;}
+		#content .quickMenu .qlink5 a{background:url("../image/qlink1.jpg") no-repeat 50% -90px; border-top:1px solid #ddd; }
+		#content .quickMenu .qlink7 a{background:url("../image/qlink1.jpg") no-repeat 50% -140px; border-top:1px solid #ddd; }
+
+		#content .quickMenu .qlink2 a{background:url("../image/qlink2.jpg") no-repeat 50% 15px; }
+		#content .quickMenu .qlink4 a{background:url("../image/qlink2.jpg") no-repeat 50% -40px;}
+		#content .quickMenu .qlink6 a{background:url("../image/qlink2.jpg") no-repeat 50% -90px; border-top:1px solid #ddd; }
+		#content .quickMenu .qlink8 a{background:url("../image/qlink2.jpg") no-repeat 50% -140px; border-top:1px solid #ddd; }
+
+
+
+
+		#content .section.s1 .news .newsWrapper  .newsTab {
+			height: 1200px;
+		}
+	
+
+		#content .conInner2{ 
+				
+				min-height:200px;
+			padding-bottom:100px;
+				padding-top:40px;
+			}
+
+#content .section.s4 {
+			
+			width:260px;
+			margin:0 auto;
+	
+			
+			
+			}
+		.tunnel3{  width:260px;  } /* .train을 숨겨줌(mask)*/
+		.train3{  width:2080px; }
+	
+
+#content .s4 .keyleft { position:absolute; top:10px; right:55px;  }
+#content .s4 .keyright { position:absolute;  top:10px; right:20px; }
+
+#content .s4 .keyleft a img, 
+#content .s4 .keyright a img{width:30px; }
+	
+
+}

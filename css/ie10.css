@@ -1,0 +1,10 @@
+/*IE10 핵*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+
+
+
+
+	#content .section.s1 .weather{height:212px; }
+	#content .section.s1 .weatherToday{ height:206px;}
+
+} 

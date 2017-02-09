@@ -1,0 +1,27 @@
+.tabFirst{ margin-left:25px; }
+
+.newsTab .tabThird{
+    width: 25%;
+
+}
+
+.newsTab .tabLast{
+    width: 27%;
+
+}
+#content .newsInner FORM FIELDSET .newSearch .searchBtn {
+
+    vertical-align: bottom;
+}
+
+
+#content .newsInner FORM FIELDSET .newSearch .newsP {
+    display: inline-block;
+    vertical-align: top;
+	padding-top:4px;
+}
+
+#content .newsInner FORM FIELDSET .newsOption {
+   
+    margin-top: 5px;
+}

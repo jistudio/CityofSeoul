@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" >
+  <title>서울 인포그래픽스 | 서울특별시 웹사이트</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/base.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/layout.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/header.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/data.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/footer.css"/>
+
+  <link rel="stylesheet"  type="text/css" href="css/mediaData.css"/>
+
+<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie7.css"/>
+<![endif]-->
+
+<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie8.css"/>
+<![endif]-->
+
+<!--[if gt IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie89.css"/>
+<![endif]-->
+
+ <!-- html5shiv 플로그인 껴넣기-->
+  <!--[if lt IE 9]>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+	 </script>
+ <![endif]-->
+
+<style>
+/* ie 10 과 ie edge 크로스 브라우징 핵*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+		#header .headerBot nav .gnb LI.allMenu {
+
+		padding-top: 20px;
+
+		}
+
+	#header .headerBot nav .gnb LI.search {
+		
+		padding-top: 20px;
+		}
+}  
+
+/*firefox only hack*/
+@-moz-document url-prefix() { 
+
+ }
+
+</style>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/scrollTop.js"></script>
+<script src="js/mainGnb.js"></script>
+<script src="js/jquery.color.js"></script> 
+<body>
+
+<!--바로가기 메뉴 => skip navigation,  h태그 필요없음 , base.css에 있음-->
+<ul id="skipnav">
+	<li><a href="#gnba">주메뉴 바로가기</a></li><!--gnb의 첫 번째  a에 id gnba 넣어줌-->
+	<li><a href="#maina">본문내용 바로가기</a></li>
+</ul>
+<!--  skip nav END  -->
+
+<div id="wrapper">
+	<!--  ############## header.php    넣기-->
+	<?php	include "common/header.php";  ?>
+
+	<div id="content">
+		<h2>주요 컨텐츠</h2>
+
+		<div class="breadInner">
+			<ul class="breadcrumb">
+				<li class="gohome"><a href="#" title="홈 바로가기"><img src="image/icon_home.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#"  title="서울뉴스 바로가기" >서울 뉴스</a></li>
+				<li>
+					<a href="#"  title="새소식 바로가기">
+					새소식
+					<span class="breadDown"><img src="image/icon_arrowDown.png" alt="down arrow"/></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		
+		<div class="dataInner1">
+			<h3>서울 인포그래픽스</h3>
+			<ul class="subnav">
+				<li class="subnavL"><a href="#" title="이전 페이지">previous</a></li>
+				<li class="subnavR"><a href="#" title="다음 페이지">next</a></li>
+			</ul>
+			
+			<p class="dataSample"><a href="#" title="데이터와 함께 다시보는 서울 바로가기"><img src="image/dataTop.jpg" alt="서울 데이타 "/></a></p>
+		
+			<div class="dataListTop">
+				<dl class="dataBoxTop1">
+					<dt><a href="#" title="그래프 보러가기"></a></dt>
+					<dd>
+						<p>
+							<strong>서울시민 올해의 소득과 소비 생활 수준에 대해 어떻게 생각할까? </strong>
+							 2015년 서울 시민의 65.6%가 소득 수준이 ‘부족’하다고 응답한 반면 ‘적정함’, ‘여유 있음’ 응답은 34.4%에 불과
+							<span>발행일:2015-12-07  |  조회수:292</span>
+						</p>
+					</dd>
+				</dl>
+				<dl class="dataBoxTop2">
+					<dt ><a href="#" title="그래프 보러가기"></a></dt>
+					<dd>
+						<p>
+							<strong>서울에서 화재 얼마나 발생하나 궁금하세요? (서울인포그래픽스 제165호)</strong>
+							 서울에서 연평균 5천 6백여 건의 화재 발생, 발생장소는 공동주택(19.4%)이 가장 많아, 최근 5년간 서울에서 발생한
+							<span>발행일:2015-12-07  |  조회수:292</span>
+						</p>
+					</dd>
+				</dl>
+			</div><!-- dataListTop  -->
+		</div>	<!-- dataInner1  -->
+		<div class="dataInner2">
+		
+			<div class="dataListBot">
+				<dl class="dataBox dataBox1">
+					<dt><a href="#" title="그래프 보러가기"></a></dt>
+					<dd>
+						
+						<strong>서울시민 소득과 소비 생활 수준에 대해 어떻게? </strong>
+						
+					</dd>
+				</dl>
+				<dl class="dataBox dataBox2">
+					<dt ><a href="#" title="그래프 보러가기"></a></dt>
+					<dd>
+				
+						<strong>서울에서 화재 얼마나 발생하나 궁금하세요?</strong>
+					
+					</dd>
+				</dl>
+				<dl class="dataBox dataBox3">
+					<dt ><a href="#" title="그래프 보러가기"></a></dt>
+					<dd>
+					
+						<strong>서울시민 소득과 소비 생활 수준에 대해 어떻게? </strong>
+					
+					</dd>
+				</dl>
+				<dl class="dataBox dataBox4">
+					<dt ><a href="#" title="그래프 보러가기"></a></dt>
+					<dd>
+					
+						<strong>서울시민 소득과 소비 생활 수준에 대해 어떻게? </strong>
+						
+					</dd>
+				</dl>
+
+				<dl class="dataBox dataBox5">
+					<dt><a href="#" title="그래프 보러가기"></a></dt>
+					<dd>
+						
+						<strong>서울시민 소득과 소비 생활 수준에 대해 어떻게?  </strong>
+						
+					</dd>
+				</dl>
+				<dl class="dataBox dataBox6">
+					<dt ><a href="#" title="그래프 보러가기"></a></dt>
+					<dd>
+				
+						<strong>서울시민 소득과 소비 생활 수준에 대해 어떻게? </strong>
+					
+					</dd>
+				</dl>
+				<dl class="dataBox dataBox7">
+					<dt ><a href="#" title="그래프 보러가기"></a></dt>
+					<dd>
+					
+						<strong>서울시민 소득과 소비 생활 수준에 대해 어떻게? </strong>
+					
+					</dd>
+				</dl>
+				<dl class="dataBox dataBox8">
+					<dt ><a href="#" title="그래프 보러가기"></a></dt>
+					<dd>
+					
+						<strong>서울시민 소득과 소비 생활 수준에 대해 어떻게? </strong>
+						
+					</dd>
+				</dl>
+				<dl class="dataBox dataBox9">
+					<dt><a href="#" title="그래프 보러가기"></a></dt>
+					<dd>
+						
+						<strong>서울시민 소득과 소비 생활 수준에 대해 어떻게? </strong>
+						
+					</dd>
+				</dl>
+				<dl class="dataBox dataBox10">
+					<dt ><a href="#" title="그래프 보러가기"></a></dt>
+					<dd>
+				
+						<strong>서울시민 소득과 소비 생활 수준에 대해 어떻게? </strong>
+					
+					</dd>
+				</dl>
+				<dl class="dataBox dataBox11">
+					<dt ><a href="#" title="그래프 보러가기"></a></dt>
+					<dd>
+					
+						<strong>서울시민 소득과 소비 생활 수준에 대해 어떻게? </strong>
+					
+					</dd>
+				</dl>
+				<dl class="dataBox dataBox12">
+					<dt ><a href="#" title="그래프 보러가기"></a></dt>
+					<dd>
+					
+						<strong>서울시민 소득과 소비 생활 수준에 대해 어떻게? </strong>
+						
+					</dd>
+				</dl>
+			</div><!-- dataListBot  -->
+		</div><!-- dataInner2  -->
+
+		<p class="pageNum">
+				<a href="#" title="바로가기" ><img src="image/btn_first.gif" alt="왼쪽 화살표"/></a>
+				<a href="#" title="바로가기" class="pageDefault">1</a>
+				<a href="#" title="바로가기">2</a>
+				<a href="#" title="바로가기">3</a>
+				<a href="#" title="바로가기">4</a>
+				<a href="#" title="바로가기"><img src="image/btn_last.gif" alt="오른쪽 화살표"/></a>
+		</p>
+
+	
+	
+		
+	</div><!--content END-->
+
+	<!--  ############## footer.php    넣기-->
+	<?php	include "common/footer.php";  ?>
+
+</div>  <!--wrapper END-->
+</body>
+</html>

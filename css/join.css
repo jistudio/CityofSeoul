@@ -1,0 +1,80 @@
+#content{  min-height:700px; margin-top:0;  position:static;  background-color:#fff;  padding-bottom: 50px; }
+
+
+#content h2{position:absolute; left:9999%; width:1px; height:1px; overflow:hidden; font-size:0; line-height:0;}
+#content h3{font-size:50px; font-weight:normal; text-align:center; padding:70px; 
+	letter-spacing:5px; color:#0f94e1; border-bottom:5px solid #0f94e1; margin-bottom:10px;}
+#content .breadInner{width:100%;  border-top:1px solid #ddd;  border-bottom:1px solid #ddd; background-color:#f1f1f1;}
+#content .breadcrumb{width:1000px; margin:0 auto;  height:40px;}
+#content .breadcrumb li{display:inline; padding:10px 20px; border-right:1px solid #ddd; }
+#content .breadcrumb .gohome{border-left:1px solid #ddd; vertical-align:middle;}
+#content .breadcrumb .gohome img{width:20px;}
+#content .breadcrumb li a{line-height:40px; width:100%; height:100%; font-weight:bold; font-size:13px;}
+#content .breadcrumb .breadDown img{width:10px; margin-left:5px; vertical-align:middle;}
+
+
+#content .joinInner{width:700px; margin:0 auto 50px;  border-bottom:2px solid #ccc;}
+#content .joinInner .desc1{background-color:#f1f1f1; padding:80px 80px 0 80px;}
+#content .joinInner .desc1 span{ font-size:14px;}
+#content .joinInner .starrequired{color: #c30029;}
+#content .joinInner form{  background-color:#f1f1f1; padding:30px 80px 80px 80px;  }
+#content .joinInner form fieldset{border:0 none; overflow:hidden; }
+#content .joinInner form legend{position:absolute; left:9999%; width:1px; height:1px; overflow:hidden; font-size:0; line-height:0;}
+#content .joinInner form p{padding:10px 0;  width: 100%;}
+#content .joinInner form p label, #content .joinInner form .addinfo{font-weight:bold; }
+
+#content .joinInner form input{border-bottom:1px solid #ccc; border-top:none; 
+	border-left:none; border-right:none;}
+
+#username{width:71%; padding:15px; margin-left:74px;  font-size:12px;  }
+#userpass{width:71%; padding:17px; margin-left:45px;      line-height: 15px;}
+#userid{width:54%; padding:17px; margin-left:60px;  line-height: 15px;  }
+#idCheck{ padding:15px; background-color:#0f94e1; border:none; color:white; 
+	font-weight:bold;   }
+#using{display:inline-block; width:100%; color:red;  margin-left: 121px;
+    font-size: 12px;}
+
+
+
+#userpassre{width:71%; padding:15px; margin-left:16px;  font-size:12px; }
+
+#BoardEmail1{  padding:15px; margin-left:62px;  font-size:12px; width:30%;}
+
+#content .joinInner select#BoardEmail2{  
+	padding:15px;   font-size:12px; width:36%;}
+
+#usermobile1{width:17.5%; padding:15px; margin-left:74px;  font-size:12px;}
+#usermobile2, #usermobile3{ width: 18.3%; padding:15px;  font-size:12px; }
+
+#post strong{ font-weight:normal; color:#666;}
+#post label{margin-right:86px;}
+#post1, #post2{     width: 15.1%; padding:15px;  font-size:12px; 
+	}
+
+#findPost{ background-color:#0f94e1; border:none; color:white; 
+	font-weight:bold; width: 20%; padding:15px; font-size:12px; text-align:center;}
+
+#post .myaddress{margin-left:121px;}
+#post .myaddress input{padding:15px;  font-size:12px; 
+	 width:32.5%;}
+#content .joinInner form .addinfo{margin-right:57px; }
+#interestPart label{font-weight:normal; color:#666; margin-right: 14.7px;}
+#job{margin-left:88px; }
+#content .joinInner select{ padding:15px; 
+	font-size:12px; border-top:none; border-left:none; border-right:none; width:77%;     
+	border-color:#ccc;}
+#content .snsinfo span{margin-right:24px; font-weight:bold;}
+#content .snsinfo label{color:#666; margin-right:15px;}
+
+#content .joinResult{overflow:hidden; margin-top:50px;}
+#answer{width:50%; padding:15px; background-color:#0f94e1;  color:white;     line-height: 33px;
+	 font-size:25px;  float:left;  border:1px solid #0f94e1;}
+
+#content .joinInner form #cancel{width:50%; padding:14px 15px;  border:1px solid #999;  
+	box-sizing: border-box;     line-height: 33px;
+	 font-size:25px;  float:left; color:#999; 
+	background-color:#f1f1f1; }
+
+
+
+

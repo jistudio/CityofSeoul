@@ -1,0 +1,49 @@
+$(document).ready(function(){
+
+	 //  높이를 저장
+		
+		var heightWrapper=$(".newsWrapper").height();
+
+
+		var heightTab=heightWrapper+140;
+
+		
+		$(".newsTab").css("height",heightTab +"px");
+	
+		
+
+
+	$(window).bind( "resize reload",function(){   //  resizing 할때마다
+		heightWrapper=$(".newsWrapper").height();  //  높이를 저장
+		heightTab=heightWrapper+140;
+	
+
+	
+		$(".newsTab").animate({"height":heightTab +"px"},"fast");
+
+	});
+
+	// 1) 초기화
+	// 2) 내가 선택한 것만 효과
+	// 3) 탭키를 클릭하면 제목탭에 .selected클래스 적용
+
+	$(".newsWrapper:not(:first)").hide(); //클릭하기전 첫번패널만 빼고 숨기기
+	$(".newsTab>li:eq(0)>a").addClass("tabSelected"); //클릭하기전 첫번탭a만 선택
+	
+	$(".newsTab>li>a").click(function(){ // 	> 직계자식만
+
+		$(".newsWrapper").hide(); //초기화
+		$(".newsTab>li>a").removeClass("tabSelected"); //초기화 모든 탭 a
+
+		 //$(      	 "#tab1"		 ).show(); 
+		$( $(this).attr("href") ).show();	
+		// a href="#tab1" / a href="#tab2"	/	a href="#tab3"   => a 태그에 적용되어있는 href 검사해서 보여준다
+
+		$(this).addClass("tabSelected"); // 탭키를 클릭하면 제목탭에 .selected클래스 적용
+
+		return false //a 태그와 click이 만나면 페이지 올라가는것 방지
+
+		
+   });
+
+});

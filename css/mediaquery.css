@@ -1,0 +1,29 @@
+	@media all and ( min-width:1600px ){ 
+		body{ }
+		
+}
+	@media all and ( min-width:1023px ) and ( max-width:1599px ){
+		body{  }
+}
+
+	@media all and ( min-width:768px ) and ( max-width:1022px ){ 
+		body{ }
+	
+
+		
+	
+}
+
+	@media all and ( min-width:480px ) and ( max-width:767px ){ 
+		body{ }
+		
+	
+
+}
+	@media all and ( max-width:479px ){ 
+
+		body{}
+
+	
+
+}

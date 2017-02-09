@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" >
+<title> 자치구 주요뉴스 | 서울특별시 웹사이트</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet"  type="text/css" href="css/base.css"/>
+<link rel="stylesheet"  type="text/css" href="css/layout.css"/>
+<link rel="stylesheet"  type="text/css" href="css/header.css"/>
+<link rel="stylesheet"  type="text/css" href="css/local.css"/>
+<link rel="stylesheet"  type="text/css" href="css/footer.css"/>
+
+
+<link rel="stylesheet"  type="text/css" href="css/mediaLocal.css"/>
+																			
+
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="css/ie7.css"/>
+<![endif]-->
+
+<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="css/ie8.css"/>
+<![endif]-->
+
+<!--[if gt IE 7]>
+	<link rel="stylesheet" type="text/css" href="css/ie89.css"/>
+<![endif]-->
+
+<!-- html5shiv 플로그인 껴넣기-->
+<!--[if lt IE 9]>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+ </script>
+<![endif]-->
+
+<style>
+/* ie 10 과 ie edge 크로스 브라우징 핵*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+		#header .headerBot nav .gnb LI.allMenu {
+
+		padding-top: 20px;
+
+		}
+
+	#header .headerBot nav .gnb LI.search {
+		
+		padding-top: 20px;
+		}
+}  
+
+/*firefox only hack*/
+@-moz-document url-prefix() { 
+
+ }
+
+</style>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/scrollTop.js"></script>
+<script src="js/mainGnb.js"></script>
+<script src="js/jquery.color.js"></script> 
+ </head>
+ <body>
+
+<!--바로가기 메뉴 => skip navigation,  h태그 필요없음 , base.css에 있음-->
+<ul id="skipnav">
+	<li><a href="#gnba">주메뉴 바로가기</a></li><!--gnb의 첫 번째  a에 id gnba 넣어줌-->
+	<li><a href="#maina">본문내용 바로가기</a></li>
+</ul>
+<!--  skip nav END  -->
+
+ <div id="wrapper">
+	<!--  ############## header.php    넣기-->
+	<?php	include "common/header.php";  ?>
+
+ <div id="content">
+		<h2>주요 컨텐츠</h2>
+
+		<div class="breadInner">
+			<ul class="breadcrumb">
+				<li class="gohome"><a href="#" title="홈 바로가기"><img src="image/icon_home.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#"  title="서울뉴스 바로가기" >서울 뉴스</a></li>
+				<li id="bread3">
+					<a href="#"  title="새소식 바로가기">
+					새소식
+					<span class="breadDown"><img src="image/icon_arrowDown.png" alt="down arrow"/></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<section class="newsInner">
+			<h3>자치구 주요뉴스</h3>
+			<ul class="subnav">
+				<li class="subnavL"><a href="#" title="이전 페이지">previous</a></li>
+				<li class="subnavR"><a href="#" title="다음 페이지">next</a></li>
+			</ul>
+				<form action="#" method="post" >
+
+				<fieldset>
+					<legend>뉴스서치</legend>
+		
+
+							<p class="newSearch2"><!--table 대신 요즘엔 p 태그씀-->
+							
+								<label for="newS2" class="newsP2">뉴스검색</label> 
+								<input id="newS2" name="newS2" type="text"/>
+								<input type="button" value="검색" class="searchBtn"/>
+							</p>
+
+							<p class="newsOption">
+						
+								<select id="newsO" name="newsO">
+								<!--name은 가지고 있다가 서버로 보낸다. name의 속성을 세분화 할때 value-->
+									<option value="복지">전체 뉴스</option>
+									<option value="복지">복지</option>
+									<option value="여성·가족">여성·가족</option>
+									<option value="안전">안전</option>
+									<option value="주택·도시계획">주택·도시계획</option>
+									<option value="환경">환경</option>
+									<option value="문화관광">문화관광</option>
+									<option value="건강">건강</option>
+									<option value="교통건설">교통건설</option>
+									<option value="세금·재정">세금·재정</option>
+									<option value="행정">행정</option>
+								</select>
+							</p>
+					
+				</fieldset>
+			</form>
+		
+			<dl class="sNews n1">
+				<dt>
+					<a href="#"  title="뉴스 바로가기" ><img src="image/local1.jpg" alt="뉴스룸 이미지"/></a>
+				</dt>
+				<dd>
+					<strong>불법 현수막 수거하면 월 최고 300만원 보상</strong>
+					<p>
+대로변은 물론 좁은 골목마다 무분별하게 걸려있는 불법 현수막, 지나친 홍보 욕심이 빚어낸 거리 풍경은 눈살을 찌푸리게 합니다. 게다가 밤이나 주말 사이에 설치되는 불법 현수막은 단속하기도 어렵습니다. 그러다 작년 11월부터 주민들이 수시로 현수막을 수거해오면 보상금을 주는 `불법 현수막 수거 보상제`가 실시돼 단속에 큰 효과를 보고 있는데요. 이에 서울시가 24개 자치구</p>
+					<span>수정일 │ 2015/11/12</span>
+				</dd>
+			</dl>
+
+			<dl class="sNews ">
+				<dt>
+					<a href="#"  title="뉴스 바로가기" ><img src="image/local2.jpg" alt="뉴스룸 이미지"/></a>
+				</dt>
+				<dd>
+					<strong>“공부가 쉬웠어요” 시민대학 531곳 생긴다</strong>
+					<p>1789년 프랑스 시민들이 혁명을 통해 지키고자 했던 가치는 ‘자유’, ‘평등’, ‘박애’입니다. 그 중에서도 ‘평등’을 실현시키기 위해, 가장 먼저 오늘날 교육제도의 시초가 된 ‘공교육제도’를 제정했습니다. 시민들이 힘을 가질 수 있는 길은 교육에 있다고 판단했기 때문입니다. 서울시 역시 다르지 않습니다. 시대는 빠르게 변하고 있고, 고용, 주거 등 삶 전반에 걸쳐 다양한 사회·경제 문제가 발생하고 있습니다. 서울시는 급변하는 현대 사회에서 시민들의 살 자리와 일 자리를 지키는 원동 </p>
+					<span>수정일 │ 2015/11/12</span>
+				</dd>
+			</dl>
+
+			<dl class="sNews ">
+				<dt>
+					<a href="#"  title="뉴스 바로가기" ><img src="image/local3.jpg" alt="뉴스룸 이미지"/></a>
+				</dt>
+				<dd>
+					<strong>봄기운 물씬~ 미술관 옆 돌담길 걸어볼까?</strong>
+					<p>덕수궁 봄나들이 봄을 이기는 겨울은 없다고 하죠. 차갑기만 하던 바람 속에 따뜻한 봄기운이 느껴지기 시작했습니다. 어느새 매화나무에 꽃망울이 터지기 시작하는 3월입니다. 봄기운에 설레어 가족과 함께 나들이를 계획하고 있다...</p>
+					<span>수정일 │ 2015/11/12</span>
+				</dd>
+			</dl>
+				<dl class="sNews">
+				<dt>
+					<a href="#"  title="뉴스 바로가기" ><img src="image/local4.jpg" alt="뉴스룸 이미지"/></a>
+				</dt>
+				<dd>
+					<strong>토지대장-등기부 제각각, ‘진짜 땅주인’은 누구?</strong>
+					<p>
+# 건축업자인 A씨는 주택 4채와 주택 사이 도로를 합쳐 다세대주택으로 재건축하기로 했습니다. 도로의 소유자를 확인하던 중 토지대장과 등기부상 소유주가 각각 다르다는 사실을 알았습니다. 서울시에 문의한 결과, 해당 도로는 과거 ‘토지구획정리사업’으로 환지된 토지였습니다. 서울시는 당시 작성된 환지조서를 확인해 실 소유자를 찾아 등기신청을 완료했고, A씨는 비로소 재건축 사업을 진행할 수 있었습니다.</p>
+					<span>수정일 │ 2015/11/12</span>
+				</dd>
+			</dl>
+
+			<dl class="sNews">
+				<dt>
+					<a href="#"  title="뉴스 바로가기" ><img src="image/local5.jpg" alt="뉴스룸 이미지"/></a>
+				</dt>
+				<dd>
+					<strong>3·1운동 알린 특파원 집 ‘딜쿠샤’ 70년 만에 복원</strong>
+					<p>
+역사 도시 서울에는 오래된 것들 참으로 많습니다. 빽빽하게 채워진 새것들 사이에서 간신히 자리를 지키고 있는 옛 풍경을 볼 때마다 잊고 살았던 감성들이 새록새록 피워 올라와 기분 좋은 설렘을 주기도 하고, 또 한편으로는 잊지 말아야 할 것을 잊고 사는 건 아닌지 스스로 다그쳐도 봅니다. 그래서 사람들은 오래된 것들을 일부러 찾아다니며 저마다의 기록으로 남기는 게 아닐까요? 이제 곧 97주년 3.1절이 다가오는데요, 잊어서는 안 되는, 꼭 기억해야 하는 일을 위해 이번에 서울시가 특별한 건물의 복원을 추진합니다. 바로 ‘딜쿠샤’라는 불리는 가옥입니다. 70년 만에 복원되는 ‘딜쿠샤’ 이야기, 오늘 내 손안에 서울을 통해 만나보시죠!</p>
+					<span>수정일 │ 2015/11/12</span>
+				</dd>
+			</dl>
+
+			<dl class="sNews">
+				<dt>
+					<a href="#"  title="뉴스 바로가기" ><img src="image/local6.jpg" alt="뉴스룸 이미지"/></a>
+				</dt>
+				<dd>
+					<strong>낡은 고시원이 ‘반값월세 임대주택’으로 변신</strong>
+					<p>리모델링 사회주택(고시원) 변경 전후(사례) 등록금 1년에 1,000여만 원. 취업에 필요한 자격증이다 영어공부다 스펙의 종류가 늘어갈수록 이를 준비하는 비용 역시 만만치가 않습니다. 지난해 조사에 따르면 수도권 대학생 원룸의 평</p>
+					<span>수정일 │ 2015/11/12</span>
+				</dd>
+			</dl>
+				<dl class="sNews">
+				<dt>
+					<a href="#"  title="뉴스 바로가기" ><img src="image/local7.jpg" alt="뉴스룸 이미지"/></a>
+				</dt>
+				<dd>
+					<strong>모든 공공장소 무료 WiFi…디지털수도 만든다</strong>
+					<p>서울시가 앞으로 5년간 4,605억 원을 투입해 오는 2020년까지 글로벌 디지털 수도로 도약하겠다고 나섰습니다. 서울시는 중장기(2016년~2020년) 디지털 정책 로드맵인 ‘서울 디지털 기본계획 2020’을 본격적으로 시행한다고 </p>
+					<span>수정일 │ 2015/11/12</span>
+				</dd>
+			</dl>
+				
+
+			<p class="pageNum">
+				<a href="#" title="바로가기" ><img src="image/btn_first.gif" alt="왼쪽 화살표"/></a>
+				<a href="#" title="바로가기" class="pageDefault">1</a>
+				<a href="#" title="바로가기">2</a>
+				<a href="#" title="바로가기">3</a>
+				<a href="#" title="바로가기">4</a>
+				<a href="#" title="바로가기"><img src="image/btn_last.gif" alt="오른쪽 화살표"/></a>
+			</p>
+	
+
+		</section>
+	
+		
+	 </div><!--content END-->
+
+	<!--  ############## footer.php    넣기-->
+	<?php	include "common/footer.php";  ?>
+	
+ </div>  <!--wrapper END-->
+ </body>
+</html>

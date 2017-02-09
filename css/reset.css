@@ -1,0 +1,27 @@
+  @charset "utf8";/*reset.css 화일에 한번만 지정, character set 맞추기 */
+ /* @font-face 이용해서 글꼴 삽입*/  
+
+
+/* @ 는 시스템 설정, css에서 가장 위에 넣음, 글꼴 직접 삽임, font-family에서 이름 임의로 지정,
+		@font-face는 가장 안전하고, 확실하게 폰트 삽입 방법, 인터넷이 안되도 가능
+		예  @font-face{font-family:'JG'; src:url("../Fonts/JejuGothic-Regular.ttf");}
+*/
+  
+
+/* @font-face 주의사항
+	   1.	@로 시작하는것은 reset.css에 다 모아둠, 여러번 쓰면 오류남
+	   2.  공백 넣으면 않됨, 
+	   3.	sans-serif 넣으면 firefox에서 sans-serif로 나옴, 폰트이름 한가지만 지정
+	   4.	" " 나 ''도 따라서 똑같이 써줌
+*/
+
+@font-face{font-family:'NanumM'; src:url("../font/NanumMyeongjo.ttf");}
+
+  *{margin:0; padding:0;}
+  li{list-style-type:none;}
+  img{border:0 none;} /* ei 에 이미지 border 없애기*/
+
+
+
+  header, footer, section, article, aside, nav{display:block;} /*  html5에 추가된 태그*/
+

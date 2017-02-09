@@ -1,0 +1,88 @@
+#content{  min-height:700px; margin-top:0;  position:static;  background-color:#fff; 
+padding: 131px 0 50px 0; background:#fff url("../image/seoul_view7.jpg")no-repeat center bottom; }
+
+#content h2{position:absolute; left:9999%; width:1px; height:1px; overflow:hidden; font-size:0; line-height:0;}
+#content h3{font-size:50px; font-weight:normal; text-align:center; padding:70px; 
+	letter-spacing:5px; color:#0f94e1; border-bottom:5px solid #0f94e1; margin-bottom:10px;}
+#content .breadInner{width:100%;  border-top:1px solid #ddd;  border-bottom:1px solid #ddd; background-color:#f1f1f1;}
+#content .breadcrumb{width:1000px; margin:0 auto;  height:40px;}
+#content .breadcrumb li{display:inline; padding:10px 20px; border-right:1px solid #ddd; }
+#content .breadcrumb .gohome{border-left:1px solid #ddd; vertical-align:middle;}
+#content .breadcrumb .gohome img{width:20px;}
+#content .breadcrumb li a{line-height:40px; width:100%; height:100%; font-weight:bold; font-size:13px;}
+#content .breadcrumb .breadDown img{width:10px; margin-left:5px; vertical-align:middle;}
+
+#content .subnav {
+    overflow: hidden;
+    margin-top: -105px;
+    margin-bottom: 75px;
+}
+#content .subnavL{ display:inline-block;  float:left;  width:100px; height:30px;  }
+#content .subnavL a{display:block; width:100%; height:100%; padding-left:30px; color:#666;
+	background:#fff url("../image/subnav_arr01.png") no-repeat left center;}
+#content .subnavR{ display:inline-block;  float:right;  width:100px; height:30px; }
+#content .subnavR a{display:block; width:100%; height:100%; color:#666;
+ background: #fff url("../image/subnav_arr02.png") no-repeat right center; text-indent:3em;}
+
+
+#content .videoInner{width:1000px; margin:0 auto 50px ; }
+#content .videoList{ width:100%;  position:relative; margin-bottom:350px;}
+#content .videoList .vbT:after{content:""; display:block; clear:both; }
+#content .videoList .vbB:after{content:""; display:block; clear:both; }
+
+#content .videoBox{width:32%; margin-right:2%; margin-bottom:2%; 
+background-color:#eee; float:left;}
+
+
+#content .videoBox a{display:block; width:100%; height:100%;}
+
+
+#content .videoBox img{width:100%;}
+#content .videoBox>dd{padding:25px; font-weight:bold; font-size:18px; 
+    margin-top: -6px; color:#0f94e1;}
+.selectedVideo{	background-color:#0f94e1; color:white; }
+#content .videoBox span{display:block; font-size:12px; font-weight:bold; color:black; margin-top:5px; }
+#content .videoBox.videoNomargin{margin-right:0;}
+
+.videoInner .videoFull{width:100%;  background-color:#f1f1f1; 
+ margin-bottom: 20px; padding: 20px 0;
+ position:absolute; width:100%;  margin-top: 45px;
+    left: 0px;}
+
+.videoInner .videoFull:after{display:block; content:""; clear:both; }
+
+
+
+
+
+
+iframe {
+    width: 95%;
+    height: 400px;
+    text-align: right;
+    margin-left: 5%;
+}
+#content .videoFull dt{width:68%; float:left; text-align:center; padding: 20px 0 15px 0;
+}
+
+#content .videoFull dd{width:32%; float:left;  position:relative;}
+#content .videoFull dd strong {
+    display: block;
+	color:#0f94e1;
+    margin: 5% 0 0 9%;
+    font-size: 20px;
+}
+
+#content .videoFull dd .videoDesc{ margin:15px 30px; height:308px;  
+	overflow-y:scroll;   padding-right: 10px; color: black;}
+
+#content .videoFull dd .videoDesc span{display:block; margin-bottom:15px; font-size:14px;
+line-height:24px;}
+
+#content .videoFull dd .snsLink{ margin: 0 30px; height: 40px;}
+#content .videoFull dd .snsLink li{display:inline-block; margin:0 3px; }
+
+
+#content .videoFull dd .snsLink li img{width:35px;}
+#content .videoFull .videoClose{width:36px; height:36px; position:absolute; top:-20px; right:0;}
+#content .videoFull .videoClose a{display:block; width:100%; height:100%; }

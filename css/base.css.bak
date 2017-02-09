@@ -1,0 +1,32 @@
+body{ font-family:'맑은 고딕', 'Malgun Gothic', "돋움", dotum, "Century Gothic", "verdana",Sans-serif; 
+	font-size:15px; line-height:24px; background-color:#f2f2f2; } /* 폰트이름 한글로도 써줌, 인식 못할 수 도 있음 */
+
+html, body{overflow-x:hidden; overflow-y:auto;} /* 반응형 필수 코드, 스크린 가로크기로 커지는 것 방지*/
+/*   html, body{height:100%;}  스크린에 따라 높이가 화면에 꽉 안찰경우 높이값 계산 다르게 되는 것 방지*/
+
+a:link, a:visited{text-decoration:none; color:black;}
+a:hover, a:focus, a:active{}
+
+
+
+
+
+
+/* skip navigation, 탭바로가기 */
+  #skipnav li a:link, #skipnav li a:visited{
+	display:block; width:100%; background-color:black; 
+	color:white;  text-align:center; padding:10px 0;
+	position:absolute; top:-100px; left:0; z-index:100;
+  }/* skip nav 화면 위 밖으로 숨겨놨다가 focus하면 화면 안으로 보이게 */
+ #skipnav li a:focus{top:0;}
+
+ #skipnav li a:active{top:0;}/* ie7에서는 active 꼭 넣어줌, 아니면 작동 안함 */
+
+ h3, h4{letter-spacing:-1px;}
+
+ #header h2{position:absolute; left:9999%; width:1px; height:1px; overflow:hidden; font-size:0; line-height:0;}
+	box-sizing: border-box; 
+				-o-box-sizing: border-box;
+				-ms-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;

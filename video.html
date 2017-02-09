@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" >
+  <title> 영상으로 본 서울 | 서울특별시 웹사이트</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/base.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/layout.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/header.css"/>
+	<link rel="stylesheet"  type="text/css" href="css/video.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/footer.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/mediaVideo.css"/>
+																				
+
+<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie7.css"/>
+<![endif]-->
+
+<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie8.css"/>
+<![endif]-->
+
+<!--[if gt IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie89.css"/>
+<![endif]-->
+
+ <!-- html5shiv 플로그인 껴넣기-->
+  <!--[if lt IE 9]>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+	 </script>
+ <![endif]-->
+
+<style>
+/* ie 10 과 ie edge 크로스 브라우징 핵*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+		#header .headerBot nav .gnb LI.allMenu {
+
+		padding-top: 20px;
+
+		}
+
+	#header .headerBot nav .gnb LI.search {
+		
+		padding-top: 20px;
+		}
+}  
+
+/*firefox only hack*/
+@-moz-document url-prefix() { 
+
+ }
+
+</style>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/scrollTop.js"></script>
+<script src="js/mainGnb.js"></script>
+<script src="js/jquery.color.js"></script> 
+<script>
+
+$(document).ready(function(){
+
+	$(".videoFull").hide();
+	
+	
+	$(".videoBox>dt>a").click(function(){ // 	> 직계자식만
+		 //1) 초기화
+		$(".videoFull").hide();
+		$(".videoBox>dd").removeClass("selectedVideo").css("color","black");; //초기화 모든 탭 a
+		$(".videoFull").slideUp();
+		$(".vbT").animate({"paddingBottom":"0px"},"slow");
+		$(".vbB").animate({"paddingBottom":"0px"},"slow");
+	
+
+		//2)  내가 클릭한 것만 효과주기
+		 //$(      	 "#videoTab1"		 ).show(); 
+		$( $(this).attr("href") ).slideDown();	
+	
+
+		$(this).parent().next().addClass("selectedVideo").css("color","#fff");; // 탭키를 클릭하면 제목탭에 .selected클래스 적용
+
+
+		//3)  
+		// var height=($(".videoFull").height())+55;  //  높이를heightUl 저장
+		
+		$(this).parent().parent().parent().animate({"paddingBottom":"500px"},"slow");
+		
+
+
+
+	
+		
+		
+		
+		
+
+		
+
+		return false; //a 태그와 click이 만나면 페이지 올라가는것 방지
+
+		
+   });
+
+   $(".videoClose a").click(function(){
+	 $(".videoFull").slideUp();
+	 $(".vbT").animate({"paddingBottom":"0px"},"slow");
+	  $(".vbB").animate({"paddingBottom":"0px"},"slow");
+	 
+
+	 return false;
+   });
+
+
+   });
+
+</script>
+ </head>
+ <body>
+
+<!--바로가기 메뉴 => skip navigation,  h태그 필요없음 , base.css에 있음-->
+<ul id="skipnav">
+	<li><a href="#gnba">주메뉴 바로가기</a></li><!--gnb의 첫 번째  a에 id gnba 넣어줌-->
+	<li><a href="#maina">본문내용 바로가기</a></li>
+</ul>
+<!--  skip nav END  -->
+
+ <div id="wrapper">
+	<!--  ############## header.php    넣기-->
+	<?php	include "common/header.php";  ?>
+
+   <div id="content">
+		<h2>주요 컨텐츠</h2>
+
+		<div class="breadInner">
+			<ul class="breadcrumb">
+				<li class="gohome"><a href="#" title="홈 바로가기"><img src="image/icon_home.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#"  title="서울뉴스 바로가기" >서울 뉴스</a></li>
+				<li>
+					<a href="#"  title="새소식 바로가기">
+					새소식
+					<span class="breadDown"><img src="image/icon_arrowDown.png" alt="down arrow"/></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<section class="videoInner">
+			<h3>영상으로 본 서울</h3>
+			<ul class="subnav">
+				<li class="subnavL"><a href="#" title="이전 페이지">previous</a></li>
+				<li class="subnavR"><a href="#" title="다음 페이지">next</a></li>
+			</ul>
+			
+			<div class="videoList">
+				<div class="vbT">
+					<dl class="videoBox ">
+						<dt>
+							<a href="#videoTab1" title="비디오 보기"><img src="image/videoImg1.jpg" alt="시청광장앞 분수"></a>
+						</dt>
+						<dd>
+					
+							서울특별시 비전 영상
+							<span>2016년 8월</span>
+					
+							<dl class="videoFull v1" id="videoTab1">
+								<dt>
+									
+									 <iframe  src="https://www.youtube.com/embed/lwGOzgLjEpU" frameborder="0" allowfullscreen></iframe>
+								</dt>
+								<dd>
+									<strong>서울시 대표 비전영상</strong>
+									<p class="videoDesc">
+										
+										<span>▶ 해설자 : 한도시의 위대함은 어떻게 결정될까요. 한도시가 우리 서울이 위대해지려면 무엇보다 시민의 삶과 생명을 우선시해야합니다. 그리고 혁신적인 성장 동력으로 시대의 지평을 열어가야 하지요. 그 힘은 사람 시민에게서 나와야하고 위대한 도시 서울은 그렇게 사람중심의 서울이 되어야하는 것입니다.
+										</span>
+										<span>
+										안전한 도시
+										▶ 김준호 성북경찰서 길음 지구대/경사 : 사람을 근본으로 하는 인본행정 그 첫째는 안전입니다.
+										▶ 해설자 : 천만인구의 도시 서울은 예상치 못한 재난 재해 위험이 항상 존재합니다. 그러니 안전을 실현하기 위한 사회전반의 합의와 약속은 무엇보다 소중하지요. 서울은 이러한 합의와 약속의 과정을 거쳐 안전예산을 확보하고 현장을 중심으로 제도를 개선하였습니다.
+										▶ 강기수 주부 : 또한 중요한 것은
+										▶ 유양숙 마을활동가 : 아이들이 안전한
+										▶ 이주양 주부 : 어린이 안전도시 서울이 되는 것 입니다.
+										▶ 해설자 : 꿈이 있는 곳입니다. 특히 어린이 교통사고와 관련해서는 구체적인 목표를 이뤄나갈 것입니다
+										(화면설명 시작)어린이출연자 : 정홍민, 정호영, 임상우, 윤지연, 김동환, 홍세은, 홍예은, 김규림 어린이(화면설명 끝)
+										해설자 : 서울의 경우 시민주거의 안정 역시
+										(화면설명 시작)엄성흠 연구원/ 고려대학교스포츠과학(화면설명 끝)
+										▶ 김혜진 전 스피드스케이트 선수 : 시민들의 안정적인 삶의 큰 전제조건입니다.
+										▶ 해설자 : 전월세 대란의 원인으로 지적되는 소형주택 공급 부족문제 해결을 위해 서울시는 다시 한 번 힘을 내겠습니다.
+										(화면설명 시작)박성호 어린이 임은선 엄마 박서아 어린이 박경덕 아빠 박성윤 어린이(화면설명 끝)
+										</span>
+										<span>
+										따뜻한 도시
+										▶ 해설자 : 전 세계 도시는 섬세한 지원을 필요로 하는 분들이 많습니다. 서울 역시 예외는 아니죠.
+										▶ 허덕수 어르신 : 이 역시 해답은 현장에 있습니다.
+										▶ 유민 단국대학교 체육교육학과 : 이제 복지도 현장으로 찾아가야 합니다.
+										▶ 해설자 : 개별적 상황에 맞는 실질적인 지원이 이루어져야 합니다. 단순한 물질적 지원에서 시민의 존엄을 세우고 시민 삶의 전반을 응원할 수 있는 제도적 마련이 필요합니다. 지역의 복지와 돌봄 의료와 교육 문화자원 등이 잘 연계되어서 삶을 살뜰하게 살펴야하는 것입니다.
+										(화면설명 시작)정주희 건강가정사. 청정은 어린이(화면설명 끝)
+										▶ 해설자 : 베이비부머 세대를 위해서는 별도의 제도가 마련되어야 합니다. 
+										이는 어르신 인구와 잠재적 어르신 인구가 늘어날 서울시를 위해서는 꼭 필요한 일이겠습니다. 
+										(화면설명 시작)안무현 공무원. 김향분 주부. 임영희 주부. 이상숙 상담사(화면설명 끝)
+										▶ 해설자 : 또한 서울이 간과할 수 없는 것 중 하나는 여성 일자리입니다. 여성들의 일자리는 성 평등과 여성복지의 기초가 될 뿐 아니라 서울의 내일을 여는 새로운 성장 동력이 될 것이기 때문입니다 (화면설명 시작)김선지 두컨셉/디자이너. 박지현 두컨셉/대표이사((화면설명 끝)
+										</span>
+										<span>
+										꿈꾸는 도시
+										▶ 박기완 대학생 : 도시는 늘 새로운 성장 동력을 필요로 합니다.
+										▶ 해설자 : 이제 대한민국 경제 중심도시 서울은 창조경제의 메카가 될 것입니다. 서울의 5대 창조경제 클러스터들은 지역별 성장 엔진이 될 것입니다. 또한 3대 아시아 지식기반 허브를 구축하여 글로벌 경제 서울의 위상을 높여나갈 것입니다. 지난 2년여 동안 서울의 사회적 경제는 그 뿌리를 내려 왔지요. 이제 지역에 기반을 둔 12개의 사회적 경제 클러스터들은 서울의 혁신적 성장에 기여할 것입니다.
+										(화면설명 시작)김정혜 사회적경제지원센터 경영지원팀 / 매니저((화면설명 끝)
+										▶ 해설자 : 그뿐인가요 위대한 도시 서울로 가는 길에 있어 간과할 수 없는 것은 바로 문화의 힘이죠. 문화는 우리 시민과 도시의 존엄에 기여합니다. 문화의 힘, 혁신의 힘,. 창조의 힘으로 성장할 서울. 서울의 힘은 무엇보다 사람을 향해 있을 것입니다.
+										(화면설명 시작)이태모 팀장 / Y-Kick Ent 김현수 대금연주(화면설명 끝)
+										</span>
+										<span>
+										숨쉬는 도시
+										▶ 해설자 : 환경문제는 전 세계 도시 또한 서울이 증명하는 도전입니다. 우선 서울은
+										▶ 도지은 직장인 : 건강하게 숨쉴 수 있는 도시가 되어야 합니다.
+										(화면설명 시작)강민정 직장인(화면설명 끝)
+										▶ 해설자 : 이를 위해 베이징과 같은 동북아의 주요한 이웃 도시와 협력해야지요. 중국발 미세먼지 예방 및 대책을 위한 협력을 강화해야 합니다. 더불어 숲이 있는 도시 생명이 숨쉬는 도시가 되어야 하지요. 
+										(화면설명 시작)차동현 요리사 .김다은 대학생(화면설명 끝)
+										▶ 해설자 : 시민 가까이 서울의 푸르른 숲 또한 성장해 나갈 것입니다. 근본적으로는 에너지 문제에 대비해야 하는데요. 서울은 대체에너지 사용을 통해 에너지 소비도시에서 생산도시로 전환해 나갈 것입니다. 시민 여러분 또 서울을 사랑하는 모든 분들께서는 숨쉬는 도시 서울을 마음껏 누리시기 바랍니다.
+										위대한 도시 서울은 혼자서는 이룰 수 없습니다. 이는 무엇보다 서울이라는 도시는 시민이 시장이며 중요한 것은 성장의 속도가 아니라 방향이기 때문입니다. 시민 여러분의 힘으로 도시가 안전하고 복지가 따뜻하며 경제와 문화가 꿈꾸고 환경이 숨쉬는 서울 사람이 중심인 서울 시민이 행복한 서울이 될 것입니다. 그렇게 우리의 서울은 더욱 아름답고 위대한 도시가 될 것입니다.
+										영상제작에 참여해주신 시민여러분께 진심으로 감사드립니다.
+										</span>
+									</p>
+									<ul class="snsLink">
+										<li>
+											<a href="https://www.facebook.com/seoul.kr">
+											<img src="image/sns_facebook_off.png" alt="facebook"/>
+											</a>
+										</li>
+										<li>
+											<a href="http://blog.seoul.go.kr/">
+											<img src="image/sns_blog_off.png" alt="blog"/>
+											</a>
+										</li>
+										<li>
+											<a href="https://www.instagram.com/seoul_official/">
+											<img src="image/sns_instagram_off.png" alt="instagram"/>
+											</a>
+										</li>
+										<li>
+											<a href="https://www.instagram.com/seoul_official/">
+											<img src="image/sns_kakao_off.png" alt="kakao"/>
+											</a>
+										</li>
+										
+										<li>
+											<a href="https://www.youtube.com/watch?v=lwGOzgLjEpU&feature=youtu.be">
+											<img src="image/sns_youTube_off.png" alt="youtube"/>
+											</a>
+										</li>
+										
+									</ul>
+									<p class="videoClose">
+										<a href="#" title="close">
+										<img src="image/closeVideo.png" alt="close">
+										</a>
+									</p>
+								</dd>
+							</dl>
+
+						</dd>
+					</dl>
+					<dl class="videoBox">
+						<dt><a href="#videoTab2" title="스토리 바로가기"><img src="image/videoImg2.jpg" alt="서울 사람들"/></a>
+						</dt>
+						<dd>
+							"설이"의 서울 나들이
+							<span>2016년 8월</span>
+							<dl class="videoFull v2" id="videoTab2">
+								<dt>
+									
+									 <iframe  src="https://www.youtube.com/embed/fQvDwMaQY3Y" frameborder="0" allowfullscreen></iframe>
+								</dt>
+								<dd>
+									<strong>"설이의" 서울 나들이</strong>
+									<p class="videoDesc">
+										
+										<span>
+										▶ 설이 : 안녕하세요. 저는 설이라고 해요. 오늘은 오랜만에 서울나들이 하는 날. 이웃집 할머니는 요즘 웃음이 떠나지 않으세요. 서울시의 생활임금제도 때문이래요. 아 그리고 찾아가는 복지서비스가 시행돼서 더 힘이 나신다고 해요.
+										</span>
+										<span>
+										아! 이렇게 공기가 상쾌한 건 초미세먼지가 20%나 줄었기 때문이래요. 여기는 제 동생이 다니는 초등학교인데요. 학교 화장실이 집보다 좋다고 자랑을 해요. 이상한 녀석 서울시 보행로는 저희 가족 모두 손잡고 걸을 만큼 넓어졌어요.
+										</span>
+										<span>
+										우와 외국인 관광객으로 가득하네요. 한해에 2,000만이 찾는 세계적인 관광도시 같죠? 후흣
+										어 어 저기 사고가 났나 봐요. 사고현장에 황금시간 목표제가 시행된 덕분에 저렇게 금방 119 구조대가 도착 한답니다. 역시~
+										</span>
+										<span>
+										여기는 아빠가 일하시는 창조경제단지 멋지죠. 여성이나 청년 일자리가 창출돼서 경제 활성화에도 큰 역할을 한 대요.
+										서울의 마을 이 곳 저 곳도 둘러 봤어요. 제가 어렸을 때 살던 동네예요. 이제는 다 부수고 재개발 하지 않아도 살기 좋은 곳이 되고 있네요.
+										도심 속 공원은 언제 봐도 반가워요. 에구구구 다리야. 우와! 노을 지는 서울의 모습. 아 정말 너무 아름다워요. 
+										2018년 달라진 서울의 모습 기대되시죠. 우리 4년 뒤에 또 만나요. 안녕.
+										함께 만들어 가는 사람이 중심인 서울. 시민이 행복한 서울
+										</span>
+									</p>
+									<ul class="snsLink">
+										<li>
+											<a href="https://www.facebook.com/seoul.kr">
+											<img src="image/sns_facebook_off.png" alt="facebook"/>
+											</a>
+										</li>
+										<li>
+											<a href="http://blog.seoul.go.kr/">
+											<img src="image/sns_blog_off.png" alt="blog"/>
+											</a>
+										</li>
+										<li>
+											<a href="https://www.instagram.com/seoul_official/">
+											<img src="image/sns_instagram_off.png" alt="instagram"/>
+											</a>
+										</li>
+										<li>
+											<a href="https://www.instagram.com/seoul_official/">
+											<img src="image/sns_kakao_off.png" alt="kakao"/>
+											</a>
+										</li>
+										
+										<li>
+											<a href="https://www.youtube.com/watch?v=lwGOzgLjEpU&feature=youtu.be">
+											<img src="image/sns_youTube_off.png" alt="youtube"/>
+											</a>
+										</li>
+										
+									</ul>
+									<p class="videoClose">
+										<a href="#" title="close">
+										<img src="image/closeVideo.png" alt="close">
+										</a>
+									</p>
+								</dd>
+							</dl>
+						</dd>
+					</dl>
+					<dl class="videoBox videoNomargin">
+						<dt ><a href="#videoTab3" title="스토리 바로가기"><img src="image/videoImg3.jpg" alt="서울 사람들"/></a></dt>
+						<dd>
+							시민청방문 비디오 영상
+							<span>2016년 8월</span>
+							<dl class="videoFull v3 " id="videoTab3">
+								<dt>
+									
+									 <iframe src="https://www.youtube.com/embed/Klndq3bhUcQ" frameborder="0" allowfullscreen></iframe>
+								</dt>
+								<dd>
+									<strong>시민청 비디오 영상</strong>
+									<p class="videoDesc">
+										
+										<span>
+										▶ 정영희(39) 서울시 은평구 : 바깥이 많이 더운데 여기는 좀 시원하고 아이들이 구경할 거리도 많고 전시물도 되게 많고요 특별히 좋아 하는 거 같아요. 이 공간을요
+										▶ 윤현(25) 서울시 마포구 : 시청이라는 곳이 공무원만을 공간인 줄 알았는데 이렇게 오니까는 시민을 위한 공연도 하고 카페도 있고 이런 게 되게 인상적이더라고요
+										</span>
+										<span>
+
+										(자막 시작)이들이 말하는 장소는? 시민들을 위한 공간 ‘시민청’
+										시민청이 여름방학을 맞아 미술관으로 탈바꿈했다. 2014 시민청 예술축제 시끌벅적 미술관(자막 끝)
+										</span>
+										<span>
+										▶ 최정필 서울시 시민청 운영담당 : 이번 전시는 작가들과 또 민간단체 그리고 운영위원들의 모두가 재능기부로 참여를 했다는 거에 대해서 큰 의미가 있고요. 시민청 공간 특징에 맞게끔 맞춤형의 아트 페스티벌로 진행한다는 거에 대해서 그 의미가 있습니다.
+										</span>
+										<span>
+										(자막 시작) 시끌벅적 미술관 개막식. 2014 시민청 예술축제. 시끌벅적 미술관 미리 둘러보기! 
+										알록달록 팝아트. 마음으로 만든 조형전. 미디어 아트 전시 ‘잇다’. 이야기를 담은 그림전.
+										즐길거리와 볼거리가 언제나 가득한 ‘시민청’. 시민청으로 떠나보자(자막 끝)
+										</span>
+									</p>
+									<ul class="snsLink">
+										<li>
+											<a href="https://www.facebook.com/seoul.kr">
+											<img src="image/sns_facebook_off.png" alt="facebook"/>
+											</a>
+										</li>
+										<li>
+											<a href="http://blog.seoul.go.kr/">
+											<img src="image/sns_blog_off.png" alt="blog"/>
+											</a>
+										</li>
+										<li>
+											<a href="https://www.instagram.com/seoul_official/">
+											<img src="image/sns_instagram_off.png" alt="instagram"/>
+											</a>
+										</li>
+										<li>
+											<a href="https://www.instagram.com/seoul_official/">
+											<img src="image/sns_kakao_off.png" alt="kakao"/>
+											</a>
+										</li>
+										
+										<li>
+											<a href="https://www.youtube.com/watch?v=lwGOzgLjEpU&feature=youtu.be">
+											<img src="image/sns_youTube_off.png" alt="youtube"/>
+											</a>
+										</li>
+										
+									</ul>
+									<p class="videoClose">
+										<a href="#" title="close">
+										<img src="image/closeVideo.png" alt="close">
+										</a>
+									</p>
+								</dd>
+							</dl>
+						</dd>
+					</dl>
+				</div>
+			
+				<div class="vbB">
+					<dl class="videoBox ">
+						<dt>
+							<a href="#videoTab4" title="비디오 보기"><img src="image/videoImg4.jpg" alt="시청광장앞 분수"></a>
+						</dt>
+						<dd>
+					
+							서울시향-예술의 전당 콘서트홀
+							<span>2016년 8월</span>
+					
+							<dl class="videoFull v1 vfb" id="videoTab4">
+								<dt>
+									
+									 <iframe  src="https://www.youtube.com/embed/LBIXT_ZQPDo" frameborder="0" allowfullscreen></iframe>
+								</dt>
+								<dd>
+									<strong>서울시향- 베토벤 교향곡</strong>
+									<p class="videoDesc">
+										
+										<span>2013.01.18일 예술의 전당 콘서트홀, 서울시향의 베토벤 교향곡 5번 1악장 그리고 서울시향의 GS칼텍스 여수 예울마루에서의 공연 이야기!
+										지금 바로 확인해보세요.
+										</span>
+										
+									</p>
+									<ul class="snsLink">
+										<li>
+											<a href="https://www.facebook.com/seoul.kr">
+											<img src="image/sns_facebook_off.png" alt="facebook"/>
+											</a>
+										</li>
+										<li>
+											<a href="http://blog.seoul.go.kr/">
+											<img src="image/sns_blog_off.png" alt="blog"/>
+											</a>
+										</li>
+										<li>
+											<a href="https://www.instagram.com/seoul_official/">
+											<img src="image/sns_instagram_off.png" alt="instagram"/>
+											</a>
+										</li>
+										<li>
+											<a href="https://www.instagram.com/seoul_official/">
+											<img src="image/sns_kakao_off.png" alt="kakao"/>
+											</a>
+										</li>
+										
+										<li>
+											<a href="https://www.youtube.com/watch?v=lwGOzgLjEpU&feature=youtu.be">
+											<img src="image/sns_youTube_off.png" alt="youtube"/>
+											</a>
+										</li>
+										
+									</ul>
+									<p class="videoClose">
+										<a href="#" title="close">
+										<img src="image/closeVideo.png" alt="close">
+										</a>
+									</p>
+								</dd>
+							</dl>
+
+						</dd>
+					</dl>
+					<dl class="videoBox ">
+						<dt><a href="#videoTab5" title="스토리 바로가기"><img src="image/videoImg5.jpg" alt="서울 사람들"/></a>
+						</dt>
+						<dd>
+							[인터뷰] 박원순 서울시장 근황
+							<span>2016년 8월</span>
+							<dl class="videoFull v2 vfb" id="videoTab5">
+								<dt>
+									
+									 <iframe  src="https://www.youtube.com/embed/eNX8cmEWNsY" frameborder="0" allowfullscreen></iframe>
+								</dt>
+								<dd>
+									<strong>[인터뷰] 박원순 서울시장</strong>
+									<p class="videoDesc">
+										
+										<span>
+										박원순 서울시장과 만나겠습니다. 청년수당 문제, 또 새 브랜드도 그렇고… 여러 가지 서울시정을 놓고 찬반 논란이 뜨겁습니다. 의욕만 앞세우고 있다는 비판적인 시각도 있고, 야권의 유력 대선 후보에 대한 지나친 공세라는 지지세도 있습니다. 이런 와중에 아들의 병역 비리 의혹을 제기해 온 강용석 변호사를 상대로 억대 소송까지 제기해서 이래저래 뉴스의 중심에 서 계십니다.
+										</span>
+										<span>
+										직접 얘기를 좀 들어보도록 하겠습니다. 안녕하셨습니까?</span>
+										
+									</p>
+									<ul class="snsLink">
+										<li>
+											<a href="https://www.facebook.com/seoul.kr">
+											<img src="image/sns_facebook_off.png" alt="facebook"/>
+											</a>
+										</li>
+										<li>
+											<a href="http://blog.seoul.go.kr/">
+											<img src="image/sns_blog_off.png" alt="blog"/>
+											</a>
+										</li>
+										<li>
+											<a href="https://www.instagram.com/seoul_official/">
+											<img src="image/sns_instagram_off.png" alt="instagram"/>
+											</a>
+										</li>
+										<li>
+											<a href="https://www.instagram.com/seoul_official/">
+											<img src="image/sns_kakao_off.png" alt="kakao"/>
+											</a>
+										</li>
+										
+										<li>
+											<a href="https://www.youtube.com/watch?v=lwGOzgLjEpU&feature=youtu.be">
+											<img src="image/sns_youTube_off.png" alt="youtube"/>
+											</a>
+										</li>
+										
+									</ul>
+									<p class="videoClose">
+										<a href="#" title="close">
+										<img src="image/closeVideo.png" alt="close">
+										</a>
+									</p>
+								</dd>
+							</dl>
+						</dd>
+					</dl>
+					<dl class="videoBox videoNomargin">
+						<dt ><a href="#videoTab6" title="스토리 바로가기"><img src="image/videoImg6.jpg" alt="서울 사람들"/></a></dt>
+						<dd>
+							사람이 걷기 좋은 도시, 서울!
+							<span>2016년 8월</span>
+							<dl class="videoFull v3 vfb" id="videoTab6">
+								<dt>
+									
+									 <iframe src="https://www.youtube.com/embed/RY6FRPEk6xE" frameborder="0" allowfullscreen></iframe>
+								</dt>
+								<dd>
+									<strong>사람이 걷기 좋은 도시, 서울!</strong>
+									<p class="videoDesc">
+										
+										<span>
+										길을 걸으면 관객이 되고 주인공이 되는 곳
+										</span>
+										<span>
+										서울..
+										</span>
+										<span>
+										그 서울, 길은 걷는 것에 끝나는 것이 아니라
+										다양한 모습과 사람을 볼 수 있고, 담을 수 있으며
+										이야기를 만들어 내지요~
+										</span>
+										<span>
+
+										그 이야기는 아마 저마다 다를 것입니다..^^
+										당신의 서울, 길 이야기는 무엇인가요?
+										</span>
+										
+									</p>
+									<ul class="snsLink">
+										<li>
+											<a href="https://www.facebook.com/seoul.kr">
+											<img src="image/sns_facebook_off.png" alt="facebook"/>
+											</a>
+										</li>
+										<li>
+											<a href="http://blog.seoul.go.kr/">
+											<img src="image/sns_blog_off.png" alt="blog"/>
+											</a>
+										</li>
+										<li>
+											<a href="https://www.instagram.com/seoul_official/">
+											<img src="image/sns_instagram_off.png" alt="instagram"/>
+											</a>
+										</li>
+										<li>
+											<a href="https://www.instagram.com/seoul_official/">
+											<img src="image/sns_kakao_off.png" alt="kakao"/>
+											</a>
+										</li>
+										
+										<li>
+											<a href="https://www.youtube.com/watch?v=lwGOzgLjEpU&feature=youtu.be">
+											<img src="image/sns_youTube_off.png" alt="youtube"/>
+											</a>
+										</li>
+										
+									</ul>
+									<p class="videoClose">
+										<a href="#" title="close">
+										<img src="image/closeVideo.png" alt="close">
+										</a>
+									</p>
+								</dd>
+							</dl>
+						</dd>
+					</dl>
+				<div class="vbB">
+			</div>
+			
+			
+
+
+		</section><!-- videoInner END-->
+	
+		
+	 </div><!--content END-->
+
+	<!--  ############## footer.php    넣기-->
+	<?php	include "common/footer.php";  ?>
+
+ </div>  <!--wrapper END-->
+ </body>
+</html>

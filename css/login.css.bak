@@ -1,0 +1,38 @@
+#content{  min-height:700px; margin-top:0;  position:static;  background-color:#fff;  
+padding: 131px 0 50px 0;}
+ 
+#content h2{position:absolute; left:9999%; width:1px; height:1px; overflow:hidden; font-size:0; line-height:0;}
+#content h3{font-size:50px; font-weight:normal; text-align:center; padding:70px; 
+	letter-spacing:5px; color:#0f94e1; border-bottom:5px solid #0f94e1; margin-bottom:10px;}
+#content .breadInner{width:100%;  border-top:1px solid #ddd;  border-bottom:1px solid #ddd; background-color:#f1f1f1;}
+#content .breadcrumb{width:1000px; margin:0 auto;  height:40px;}
+#content .breadcrumb li{display:inline; padding:10px 20px; border-right:1px solid #ddd; }
+#content .breadcrumb .gohome{border-left:1px solid #ddd; vertical-align:middle;}
+#content .breadcrumb .gohome img{width:20px;}
+#content .breadcrumb li a{line-height:40px; width:100%; height:100%; font-weight:bold; font-size:13px;}
+#content .breadcrumb .breadDown img{width:10px; margin-left:5px; vertical-align:middle;}
+
+#content .loginInner{width:500px; margin:0 auto 50px;  border-bottom:2px solid #ccc;}
+#content .loginInner form{  background-color:#f1f1f1; padding:80px;  }
+#content .loginInner form fieldset{border:0 none; overflow:hidden;}
+#content .loginInner form legend{position:absolute; left:9999%; width:1px; height:1px; overflow:hidden; font-size:0; line-height:0;}
+#content .loginInner form p{padding:10px 0;}
+#content .loginInner form p label{font-weight:bold; }
+#userid{width:68%; padding:15px; margin-left:25px;  font-size:12px;  
+line-height:15px; border-bottom:1px solid #ccc; border-top:none; border-left:none;}
+#userpass{width:68%; padding:15px; margin-left:10px; line-height:15px;  font-size:12px; border-bottom:1px solid #ccc; border-top:none; border-left:none;}
+
+#answer{width:100%; padding:15px; background-color:#0f94e1; border:none; color:white; 
+	 font-size:25px;  margin-top:20px;     line-height: 33px;}
+
+#content .loginInner ul {width:100%; overflow:hidden;  border-top:1px solid #ccc; }
+#content .loginInner ul li{width:33%; height:80px; float:left; border-right:1px solid #ccc; box-sizing: border-box;}
+#content .loginInner .loginL{ border-right:none; width:34%;}
+#content .loginInner ul li img{vertical-align:middle; width:15%; margin-right:10px; opacity: 0.6;}
+#content .loginInner ul li a:link, #content .loginInner ul li a:visited{width:100%; display:block; text-align:center;  line-height:80px;  
+	background-color:#f1f1f1; font-size:13px; color:#666; }
+
+#content .loginInner ul li a:hover, #content .loginInner ul li a:focus{background-color:#ddd;}
+
+
+

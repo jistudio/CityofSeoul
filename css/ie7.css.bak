@@ -1,0 +1,114 @@
+/*  line-height조절, 폰트 크기 조절, position:absolute-> position static, 마진, 패딩조심, 레이아웃 밑으로 떨어지면 width값 줄이기*/
+
+#wrapper{margin-top:-50px; }
+
+#header .headerBot .headerBotInner {
+   
+    position: static; margin-top:5px; overflow:hidden;
+}
+#header .logo{position: static; float:left;}
+#header .headerBot nav{width:700px; height:80px; margin-left:0px; float:left;  margin-top: -7px;}
+
+
+
+
+#header .headerBot nav .gnb LI.allMenu {
+
+    padding-top: 22px;
+
+}
+
+#header .headerBot nav .gnb LI.search {
+    
+    padding-top: 22px;
+}
+
+#content {
+
+    position: static;
+
+}
+#content .s1.section .news, #content .a31, #content .a33, #content .event {
+
+       position: static;
+}
+
+
+
+
+#content .section.s1 .weather{height:208px; }
+#content .section.s1 .weatherToday{ height:106px;}
+
+  #content .s1.section .traffic {
+
+    height: 118px;
+	border-bottom:1px solid #ddd;
+    
+}
+
+
+
+#content .section.s1 .news {
+    width: 65%;
+    border-right: 9px solid #fff;
+}
+
+#content .s1.section .news .newsCategory {
+    padding-top: 37px;
+}
+
+#content .s1.section .news .newsCategory SPAN {
+
+    line-height: 25px;
+}
+
+#content .a31 P {
+    line-height: 26px;
+}
+
+
+
+#content .a33 {
+    width: 32%;
+    border-right: 9px solid #fff;
+}
+
+
+#content .a33 H3, #content .event H3 {
+
+    line-height: 24px;
+}
+#content .event .eventSlide LI{width:31%;}
+
+/*    서브 페이지*/
+#content .breadcrumb .gohome IMG {
+    width: 20px;
+    padding-top: 4px;
+    padding-left: 9px;
+}
+
+#content #bread3 {
+   
+
+	border:none;
+}
+
+
+#content .breadcrumb LI A {
+    line-height: 58px;
+ 
+}
+
+#content .newsInner FORM FIELDSET .newSearch .newsP {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#footer .footerL .call {
+    font-size: 27px;
+
+}
+#footer .footerR UL LI A {
+   
+    line-height: 17px;
+}

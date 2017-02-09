@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" >
+  <title> 찾아오시는 길 | 서울특별시 웹사이트</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/base.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/layout.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/header.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/visit.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/footer.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/mediaVisit.css"/>
+																				
+
+<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie7.css"/>
+<![endif]-->
+
+<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie8.css"/>
+<![endif]-->
+
+<!--[if gt IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie89.css"/>
+<![endif]-->
+
+ <!-- html5shiv 플로그인 껴넣기-->
+  <!--[if lt IE 9]>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+	 </script>
+ <![endif]-->
+
+<style>
+/* ie 10 과 ie edge 크로스 브라우징 핵*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+		#header .headerBot nav .gnb LI.allMenu {
+
+		padding-top: 20px;
+
+		}
+
+	#header .headerBot nav .gnb LI.search {
+		
+		padding-top: 20px;
+		}
+}  
+
+/*firefox only hack*/
+@-moz-document url-prefix() { 
+
+ }
+
+</style>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/scrollTop.js"></script>
+<script src="js/mainGnb.js"></script>
+<script src="js/jquery.color.js"></script> 
+
+
+<script src="http://maps.google.com/maps/api/js"></script>  <!-- google map -->
+<script src="js/gmaps.js"></script>   <!-- google map -->
+
+<script>
+$(function(){
+	var map=null;  // 매번 실행할때마다 비우려고
+	// 위도,경도:37.566535,126.97796919999996
+	var lat= 37.566535; var lng=126.97796919999996;
+	// [1 지도 설정]
+	map = new GMaps({   
+		//지도 id   / 위도   / 경도 /// 줌컨트롤 사용
+		"el":"#map" , "lat":lat,  "lng":lng, "zoomControl":true
+	
+	});
+
+	
+
+
+
+	//[ 2 ] 위치 (마커)표시
+	map.addMarker({
+		"lat":lat,  "lng":lng,
+		"title":"회사찾아오기",
+		"click":function(e){ },
+		"infoWindow":{"content":"<p>서울특별시 중구 세종대로 110 <br/>대표전화: 02) 120</p>"}
+	
+	});
+});
+/*  
+1. gmaps.js 구글링
+2. https://hpneo.github.io/gmaps/ 
+3. 다운로드
+4. 위도 경도 찾기   http://www.iegate.net/maps/rgeogoogle.php
+*/
+</script>
+
+
+
+ </head>
+ <body>
+
+<!--바로가기 메뉴 => skip navigation,  h태그 필요없음 , base.css에 있음-->
+<ul id="skipnav">
+	<li><a href="#gnba">주메뉴 바로가기</a></li><!--gnb의 첫 번째  a에 id gnba 넣어줌-->
+	<li><a href="#maina">본문내용 바로가기</a></li>
+</ul>
+<!--  skip nav END  -->
+
+ <div id="wrapper">
+	<!--  ############## header.php    넣기-->
+	<?php	include "common/header.php";  ?>
+
+ <div id="content">
+		<h2>주요 컨텐츠</h2>
+
+		<div class="breadInner">
+			<ul class="breadcrumb">
+				<li class="gohome"><a href="#" title="홈 바로가기"><img src="image/icon_home.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#"  title="서울뉴스 바로가기" >서울 뉴스</a></li>
+				<li>
+					<a href="#"  title="새소식 바로가기">
+					새소식
+					<span class="breadDown"><img src="image/icon_arrowDown.png" alt="down arrow"/></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<section class="visitInner">
+			<h3>찾아오시는 길</h3>
+			<ul class="subnav">
+				<li class="subnavL"><a href="#" title="이전 페이지">previous</a></li>
+				<li class="subnavR"><a href="#" title="다음 페이지">next</a></li>
+			</ul>
+			<div class="mapWrapper">
+				<div class="hallPic"><img src="image/citihall2.jpg" alt="서울시청 사진"/></div>
+				
+				<article class="googleMap" id="map">
+					 <h4>서울시청 구글맵</h4>
+				
+				 </article>
+
+			 </div><!--mapWrapper END-->
+			 <!--   
+				1. summary : 테이블 요약( html4.0 + xhtml1.0 에서만 사용)
+				2. caption: 테이블 제목
+				3. colgroup: 컬럼의 가로사이즈  => 컬럼
+				4. thead / tbody  /  tfoot : 테이블 영역
+				5.  tr: table row => 가로줄   td: table data     th: table head  테이블 제목
+				6.  th의 방향  scope="col"  scope="row"
+			 -->
+			 <table class="drivingInfo">  
+			 
+
+					<caption>서울시청 교통 정보표</caption>
+
+					<colgroup>
+						<col style="width:30%"/>  
+						<col style="width:70%"/>
+					</colgroup>
+
+					<tbody>
+						<tr class="tableF">
+							<th scope="row">주소</th>
+							<td >서울특별시 중구 세종대로 110</td>
+						</tr>
+						<tr>
+							<th scope="row">전화번호</th>
+							<td >02) 120</td>
+						</tr>
+						<tr>
+							<th scope="row">팩스</th>
+							<td>02-2133-4904</td>
+						</tr>
+						<tr>
+							<th scope="row">시청 이용시간</th>
+							<td >월~금 09:00~18:00 </td>
+						</tr>	
+						<tr>
+							<th scope="row" class="busIcon"><img src="image/train.jpg" alt="지하철"/>지하철</th>
+							<td >1호선 또는 2호선 시청역 ⑤번 출구</td>
+						</tr>
+						<tr>
+							<th scope="row" class="busIcon"><img src="image/bus.jpg" alt="공항버스"/>공항버스</th>
+							<td >6001, 6002, 6005, 6015, 6701</td>
+						</tr>	
+						<tr>
+							<th scope="row" class="busIcon"><img src="image/bus.jpg" alt="공항버스"/>간선버스</th>
+							<td >101, 150, 402, 405, 501, 506</td>
+						</tr>	
+						<tr>
+							<th scope="row" class="busIcon"><img src="image/bus.jpg" alt="공항버스"/>지선버스</th>
+							<td >172, 472, 504, 700, 1020, 1711, 7016, 7017, 7018, 7019, 7022</td>
+						</tr>
+						<tr>
+							<th scope="row" class="busIcon"><img src="image/bus.jpg" alt="공항버스"/>광역버스</th>
+							<td >9703, 9714, 9714</td>
+						</tr>
+						<tr>
+							<th scope="row" class="busIcon"><img src="image/bus.jpg" alt="공항버스"/>M버스</th>
+							<td >M4101, M4102, M4108, M5107, M5115, M7106, M7111</td>
+						</tr>
+						<tr>
+							<th scope="row" class="busIcon"><img src="image/bus.jpg" alt="공항버스"/>직행버스</th>
+							<td >1000, 1100, 1150, 1200, 1900, 2000, 9001, 9003, 9300, 9301</td>
+						</tr>
+					</tbody>
+			</table>
+			 <article class="parking">
+				<h4>서울시청 주차장 안내</h4>
+				<div class="parkingWrapper">
+					<ul>
+						<li><span class="licircle">◎</span>  주차공간이 많이 부족하오니 되도록 대중교통을 이용해 주시기 바랍니다.</li>
+						<li><span class="licircle">◎</span>  주차정보안내시스템(http://parking.seoul.go.kr/)에서 실시간 주차 가능면을 확인하실 수 있습니다.</li>
+						<li><span class="licircle">◎</span>  청사 시설물을 보호하기 위해 높이 2.3m 이상 차량은 주차장으로 진입할 수 없습니다.</li>
+						<li><span class="licircle">◎</span>  <strong>개방시간 :</strong> 매일 07:00~21:00(직원 05:00~23:00, 그 외 시간 청사 방호를 위해 출·입구 폐쇄)</li>
+						<li><span class="licircle">◎</span>  <strong>주차요금 :</strong> 10분당 1,000원 (평일 09:00~18:00만 부과)</li>
+						<li><span class="licircle">◎</span>  <strong>위치 :</strong> 지하 4층(101면)</li>
+					
+					
+					</ul>
+					<p><img src="image/map_img.gif" alt="진입로"/></p>
+
+					
+				</div><!--parkingWrapper END-->
+				<table>
+						<caption>할인 및 면제대상표</caption>
+						<colgroup>
+							<col style="width:15%"/>
+							<col style="width:15%"/>
+							<col style="width:70%"/>
+						</colgroup>
+						<thead>
+							<tr class="tableF">
+								<th scope="col" colspan="2">할인 및 면제</th>
+								<th scope="col">대상</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th rowspan="7" scope="rowgroup">할인</th>
+								<th rowspan="3" scope="row" class="discount">80%</th>
+								<td>장애인</td>
+							</tr>
+							<tr>
+								<td>국가유공자</td>
+							</tr>
+							<tr>
+								<td>고엽제후유의증환자 차량</td>
+							</tr>
+							<tr>
+								<th rowspan="3" scope="row" class="discount">50%</th>
+								<td>경형승용차</td>
+							</tr>
+							<tr>
+								<td>저공해차량</td>
+							</tr>
+							<tr>
+								<td>「다둥이 행복카드」 소지자차량 중 3자녀 이상</td>
+							</tr>
+							<tr>
+								<th scope="row" class="discount">30%</th>
+								<td>「다둥이 행복카드」 소지자차량 중 2자녀</td>
+							</tr>
+							<tr>
+								<th colspan="2" rowspan="4" scope="row">면제</th>
+								<td>공무수행 로고를 부착한 관용차량</td>
+							</tr>
+							<tr>
+								<td>언론기관 로고 부착 등 외관상 식별이 가능한 보도차량</td>
+							</tr>
+							<tr>
+								<td>국회의원, 시·구의원 차량</td>
+							</tr>
+							<tr>
+								<td>외국사절 등 외빈차량, 단체견학차량, 물품납품 화물차량</td>
+							</tr>
+						</tbody>
+					 </table>
+				
+			 </article><!--parking END-->
+			
+
+		</section><!--Inner END-->
+	</div><!--content END-->
+
+	<!--  ############## footer.php    넣기-->
+	<?php	include "common/footer.php";  ?>
+
+ </div>  <!--wrapper END-->
+ </body>
+</html>

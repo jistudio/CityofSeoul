@@ -1,0 +1,155 @@
+	/*1. mediaquery 쓸때 css맨뒤에 붙임 (앞에 쓰면 로딩속도 드려짐) 
+	2. [space] 과 [;] 주의
+	3. 디바이스별로 고치는부분만 첨가 
+	4. 바뀌는 거 없는 디바이스들도 남겨둠, 지우면 안됨, 에러남
+	5. min-width에 맞춘다*/
+
+
+
+	@media all and ( min-width:1600px ){ 
+		body{ }
+		
+}
+	@media all and ( min-width:1023px ) and ( max-width:1599px ){
+		body{  }
+}
+
+	@media all and ( min-width:768px ) and ( max-width:1022px ){ 
+		body{ }
+		#content{  padding:70px 0 50px 0;}
+
+		#content h3 {
+			font-size: 50px;
+				
+			padding: 60px 0;
+			
+			}
+		#content .subnav {
+
+			margin-top: -100px;
+			margin-bottom: 70px;
+		}
+	
+		#content .videoInner {
+			width: 90%;}
+
+		.videoInner .videoFull{ margin-top: 43px; }
+
+		#content .videoFull dd strong {
+			
+			margin: 5% 20% 0 9%;
+	
+		}
+		#content .videoFull dt {
+			width: 68%;
+			float: left;
+			text-align: center;
+			padding: 20px 0 15px 0;
+		}
+		#content .videoFull dd {
+			width: 32%;
+			float: left;
+			position: relative;
+		}
+		#content .videoFull dd .videoDesc {
+			
+			height: 270px;
+			
+		}
+		#content .videoFull dd strong {
+		margin: 7% 20% 0 9%;
+	}
+
+	
+	
+	
+
+
+}
+
+	@media all and ( min-width:480px ) and ( max-width:767px ){ 
+		body{ }
+	
+		#content{  padding:70px 0 50px 0;}
+		#content .videoInner {
+			width: 90%;}
+		
+		#content h3 {
+				font-size:35px;
+				
+				padding: 40px;
+				letter-spacing:0;
+			
+			}
+		#content .subnav {
+		margin-top: -75px;
+		margin-bottom: 45px;
+		}
+
+		.videoInner .videoFull{ margin-top: 32px; padding-top:0px;
+	
+		}
+
+		#content .videoFull dd strong {
+			
+			margin: 3% 9% 0 9%;
+	
+		}
+		#content .videoFull dt {
+			width: 100%;
+			float: none;
+			
+			padding:0;
+			margin:0;
+		}
+		#content .videoFull dd {
+			width: 100%;
+			float: none;
+			
+			
+		
+		
+		}
+		#content .videoFull dd .videoDesc {
+			
+			height: 145px;
+			
+		}
+		#content .videoFull dd strong {
+		margin: 20px 20px 0 20px;
+		}
+		iframe {
+			width: 100%;
+			height: 250px;
+			
+			margin-left: 0%;
+		}
+		#content .videoFull .videoClose {
+
+			top: 0px;
+	
+		}
+		#content .videoFull dd .snsLink {
+			
+			display:none;
+		}
+
+	
+
+		
+
+}
+	@media all and ( max-width:479px ){ 
+
+		body{}
+		#content{  padding:70px 0 50px 0;}
+		#wrapper{min-width:320px;}
+		#content .videoInner {
+			width: 90%;}
+
+		#content h3 { font-size: 30px; padding: 35px 0; letter-spacing:0px;}
+		#content .subnav {
+			display:none;
+		}
+
+}

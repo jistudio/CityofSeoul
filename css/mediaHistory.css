@@ -1,0 +1,227 @@
+	/*1. mediaquery 쓸때 css맨뒤에 붙임 (앞에 쓰면 로딩속도 드려짐) 
+	2. [space] 과 [;] 주의
+	3. 디바이스별로 고치는부분만 첨가 
+	4. 바뀌는 거 없는 디바이스들도 남겨둠, 지우면 안됨, 에러남
+	5. min-width에 맞춘다*/
+
+
+
+	@media all and ( min-width:1600px ){ 
+		body{ }
+		
+}
+	@media all and ( min-width:1023px ) and ( max-width:1599px ){
+		body{  }
+}
+
+	@media all and ( min-width:768px ) and ( max-width:1022px ){ 
+		body{ }
+		#content{  padding:0px 0 50px 0;}
+
+		#content .historyInner {
+			width: 90%;}
+
+		#content .subnav {
+
+			margin-top: -100px;
+			margin-bottom: 70px;
+		}
+		#content h3 {
+			font-size: 50px;
+				
+				padding: 60px;
+			
+			}
+	
+		#content .historyTop {
+			
+			margin-bottom: -10px;
+		}
+		#content .historyTop img{width:100%; }
+		.historyInner .historyWrap{width:100%; }
+
+		.historyInner .historyTab {
+		
+		height: 2200px;
+		}
+	
+
+
+}
+
+	@media all and ( min-width:480px ) and ( max-width:767px ){ 
+		body{ }
+	#content{  padding:0px 0 50px 0;}
+
+		#content .historyInner {
+			width: 90%;}
+	
+		
+		#content h3 {
+				font-size:35px;
+				
+				padding: 40px;
+			
+			}
+		#content .subnav {
+		margin-top: -75px;
+		margin-bottom: 45px;
+		}
+
+	
+		#content .historyTop {
+			
+			margin-bottom: -5px;
+		}
+
+		#content .historyTop img{width:100%; }
+		.historyInner .historyWrap{width:100%; }
+
+		.historyInner .historyTab {
+		
+			height: 2600px;
+		}
+		.historyInner .historyTab>li a {
+		
+		letter-spacing: 0px;
+	}
+	.historyInner .hisNum {
+    font-size: 80px;
+    color: #ccc;
+    font-weight: bold;
+    border-top: 3px solid black;
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0px;
+    padding-top: 10px;
+    position: relative;
+    top: 0;
+    right: 0px;
+}
+.historyInner .historyWrap .history dt strong, .history dt span {
+
+    width: 100%;
+}
+
+	.historyInner .historyWrap .history dd strong {
+		font-size: 24px;
+		margin-bottom: 20px;
+		line-height:30px;
+		margin-top: 10px;
+	}
+	.historyInner .historyWrap .history dt {
+    width: 100%;
+    float: none;
+    text-align: left;
+
+	}
+	.historyInner .historyWrap .history dd {
+    width: 100%;
+    float: none;
+    text-align: left;
+	}
+	#content h3 {
+    letter-spacing:0;
+	}
+	.historyInner .historyWrap .history dt strong {
+  
+    margin:  0;
+	}
+
+
+
+}
+	@media all and ( max-width:479px ){ 
+
+		body{}
+		#content{  padding:0px 0 50px 0;}
+		#wrapper{min-width:320px;}
+
+		#content .historyInner {
+			width: 90%;}
+
+		#content .subnav {
+			display:none;
+		}
+
+		#content h3 { font-size: 30px; padding: 35px; letter-spacing:0;}
+
+		#content .historyTop {
+			
+			margin-bottom: -5px;
+		}
+		.historyInner .historyTab>li a {
+		
+		letter-spacing: 0px;
+	}
+
+			#content .historyTop {
+			
+			margin-bottom: -5px;
+		}
+
+		#content .historyTop img{width:100%; }
+		.historyInner .historyWrap{width:100%; }
+
+		.historyInner .historyTab {
+		
+			height: 3000px;
+		}
+		.historyInner .historyTab>li a {
+		
+		letter-spacing: 0px;
+	}
+	.historyInner .hisNum {
+    font-size: 80px;
+    color: #ccc;
+    font-weight: bold;
+    border-top: 3px solid black;
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0px;
+    padding-top: 0px;
+    position: relative;
+    top: 0;
+    right: 0px;
+}
+.historyInner .historyWrap .history dt strong, .history dt span {
+
+    width: 100%;
+}
+
+	.historyInner .historyWrap .history dd strong {
+		font-size: 24px;
+		margin-bottom: 20px;
+		line-height:30px;
+		margin-top: 10px;
+	}
+	.historyInner .historyWrap .history dt {
+    width: 100%;
+    float: none;
+    text-align: left;
+
+	}
+	.historyInner .historyWrap .history dd {
+    width: 100%;
+    float: none;
+    text-align: left;
+	}
+	#content h3 {
+    letter-spacing:0;
+	}
+	.historyInner .historyWrap .history dt strong {
+  
+    margin:  0;
+	}
+	.historyInner .historyTab>li a {
+
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+	
+
+}

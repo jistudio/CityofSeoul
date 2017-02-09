@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" >
+<title> 서울뉴스 | 서울특별시 웹사이트</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet"  type="text/css" href="css/base.css"/>
+<link rel="stylesheet"  type="text/css" href="css/layout.css"/>
+<link rel="stylesheet"  type="text/css" href="css/header.css"/>
+<link rel="stylesheet"  type="text/css" href="css/news.css"/>
+<link rel="stylesheet"  type="text/css" href="css/footer.css"/>
+
+
+<link rel="stylesheet"  type="text/css" href="css/mediaNews.css"/>
+																			
+
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="css/ie7.css"/>
+<![endif]-->
+
+<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="css/ie8.css"/>
+<![endif]-->
+
+<!--[if gt IE 7]>
+	<link rel="stylesheet" type="text/css" href="css/ie89.css"/>
+<![endif]-->
+
+<!-- html5shiv 플로그인 껴넣기-->
+<!--[if lt IE 9]>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+ </script>
+<![endif]-->
+
+<style>
+/* ie 10 과 ie edge 크로스 브라우징 핵*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+		#header .headerBot nav .gnb LI.allMenu {
+
+		padding-top: 20px;
+
+		}
+
+	#header .headerBot nav .gnb LI.search {
+		
+		padding-top: 20px;
+		}
+}  
+
+/*firefox only hack*/
+@-moz-document url-prefix() { 
+
+ }
+
+</style>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/scrollTop.js"></script>
+<script src="js/mainGnb.js"></script>
+<script src="js/jquery.color.js"></script> 
+ </head>
+ <body>
+
+<!--바로가기 메뉴 => skip navigation,  h태그 필요없음 , base.css에 있음-->
+<ul id="skipnav">
+	<li><a href="#gnba">주메뉴 바로가기</a></li><!--gnb의 첫 번째  a에 id gnba 넣어줌-->
+	<li><a href="#maina">본문내용 바로가기</a></li>
+</ul>
+<!--  skip nav END  -->
+
+ <div id="wrapper">
+	<!--  ############## header.php    넣기-->
+	<?php	include "common/header.php";  ?>
+
+ <div id="content">
+		<h2>주요 컨텐츠</h2>
+
+		<div class="breadInner">
+			<ul class="breadcrumb">
+				<li class="gohome"><a href="#" title="홈 바로가기"><img src="image/icon_home.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#"  title="서울뉴스 바로가기" >서울 뉴스</a></li>
+				<li id="bread3">
+					<a href="#"  title="새소식 바로가기">
+					새소식
+					<span class="breadDown"><img src="image/icon_arrowDown.png" alt="down arrow"/></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<section class="newsInner">
+			<h3>새소식</h3>
+			<ul class="subnav">
+				<li class="subnavL"><a href="#" title="이전 페이지">previous</a></li>
+				<li class="subnavR"><a href="#" title="다음 페이지">next</a></li>
+			</ul>
+
+			<form action="#" method="post" >
+
+				<fieldset>
+					<legend>뉴스서치</legend>
+		
+
+							<p class="newSearch2"><!--table 대신 요즘엔 p 태그씀-->
+							
+								<label for="newS2" class="newsP2">뉴스검색</label> 
+								<input id="newS2" name="newS2" type="text"/>
+								<input type="button" value="검색" class="searchBtn"/>
+							</p>
+
+							<p class="newsOption">
+						
+								<select id="newsO" name="newsO">
+								<!--name은 가지고 있다가 서버로 보낸다. name의 속성을 세분화 할때 value-->
+									<option value="복지">전체 뉴스</option>
+									<option value="복지">복지</option>
+									<option value="여성·가족">여성·가족</option>
+									<option value="안전">안전</option>
+									<option value="주택·도시계획">주택·도시계획</option>
+									<option value="환경">환경</option>
+									<option value="문화관광">문화관광</option>
+									<option value="건강">건강</option>
+									<option value="교통건설">교통건설</option>
+									<option value="세금·재정">세금·재정</option>
+									<option value="행정">행정</option>
+								</select>
+							</p>
+					
+				</fieldset>
+			</form>
+			<dl class="sNews n1">
+				<dt>
+					<a href="#"  title="뉴스 바로가기" ><img src="image/newsroom1.jpg" alt="뉴스룸 이미지"/></a>
+				</dt>
+				<dd>
+					<strong>서울시민이 직접 뽑은 '2015년 서울시 10대 뉴스'는?</strong>
+					<p>1위는 서울시민의 1%를 위기 시 초기대응 역량을 갖춘 시민으로 양성하는 내용의 '10만 시민안전파수꾼'(15.8%)이 꼽혔다. 지난 4월 심폐소생술로 50대 남성을 살려내 화제가 된 이수빈 양(수명초 4)이 바로 4시간 전에 심폐소생술 교육을 받은 것으로 알려진 사례에서 보듯 위기 상황에서 초기대응이 중요하다는 시민들의 인식이 투표 결과에 반영된 것으로 분석된다.</p>
+					<span>수정일 │ 2015/11/12</span>
+				</dd>
+			</dl>
+
+			<dl class="sNews ">
+				<dt>
+					<a href="#"  title="뉴스 바로가기" ><img src="image/newsroom2.jpg" alt="뉴스룸 이미지"/></a>
+				</dt>
+				<dd>
+					<strong>서울 노동 권리장전 발간 입사부터 퇴사까지..</strong>
+					<p>1위는 서울시민의 1%를 위기 시 초기대응 역량을 갖춘 시민으로 양성하는 내용의 '10만 시민안전파수꾼'(15.8%)이 꼽혔다. 지난 4월 심폐소생술로 50대 남성을 살려내 화제가 된 이수빈 양(수명초 4)이 바로 4시간 전에 심폐소생술 교육을 받은 것으로 알려진 사례에서 보듯 위기 상황에서 초기대응이 중요하다는 시민들의 인식이 투표 결과에 반영된 것으로 분석된다.</p>
+					<span>수정일 │ 2015/11/12</span>
+				</dd>
+			</dl>
+
+			<dl class="sNews ">
+				<dt>
+					<a href="#"  title="뉴스 바로가기" ><img src="image/newsroom3.jpg" alt="뉴스룸 이미지"/></a>
+				</dt>
+				<dd>
+					<strong>동대문 문구‧완구 거리, 장난감 30~40% 할인</strong>
+					<p>장난감 가격이 장난이 아닌 요즘, 크리스마스를 앞두고 자녀의 선물을 고민하는 부모님들 많으실 텐데요, 이번 주말 종로구 창신동 동묘앞역에 가면 그 고민을 말끔히 해결할 수 있을 것 같습니다.서울시는 크리스마스를 앞둔 19일, 20일 양일간 자녀들 선물로 알맞은 다양한 문구와 완구를 한자리에서 만날 수 있는 동대문 문구·완구 거리 축제-토이크리스마스를 개최한다고 밝혔습니다.</p>
+					<span>수정일 │ 2015/11/12</span>
+				</dd>
+			</dl>
+				<dl class="sNews">
+				<dt>
+					<a href="#"  title="뉴스 바로가기" ><img src="image/newsroom4.jpg" alt="뉴스룸 이미지"/></a>
+				</dt>
+				<dd>
+					<strong>지하철 안전, 어르신들이 지킨다 전해라</strong>
+					<p>지하철 5~8호선을 운영하는 서울도시철도공사가 만 60세 이상 어르신으로 구성된 시니어보안관을 선발하고 20일부터 활동을 시작한다고 밝혔습니다. 앞으로 6개월간 활동하게 될 총 36명의 시니어보안관은 주말·공휴일동안 5호선부터 8호선까지 전동차 내 물품 판매 같은 무질서 행위와 기지입고열차의 잔류 승객 확인 등 지하철 질서 유지·안전 업무를 담당하게 됩니다. 시니어보안관에</p>
+					<span>수정일 │ 2015/11/12</span>
+				</dd>
+			</dl>
+
+			<dl class="sNews">
+				<dt>
+					<a href="#"  title="뉴스 바로가기" ><img src="image/newsroom5.jpg" alt="뉴스룸 이미지"/></a>
+				</dt>
+				<dd>
+					<strong>“밥맛에서 일본에 밀리는 건 참을 수 없다”</strong>
+					<p>일본은 어디를 가든 밥이 맛있다. 대중음식점이건 고급 음식점이건 가리지 않고 밥이 맛있다. 심지어는 일반 가정집에서 지어 먹는 밥 조차도 맛있다. 더러는 눈물 나게 맛있는 밥을 만날 때도 있었다. 처음엔 그 맛에 감동했지만 시간이 지날수록 화가 나기 시작했다. 일본이나 우리나 밥상의 주인은 밥이다. 일본에 쌀 재배법을 전해준 것 또한 한반도였다. 한국인으로서 다른 건 몰라도 밥맛에서 일본에 밀리는 건 참을 수 없었다.</p>
+					<span>수정일 │ 2015/11/12</span>
+				</dd>
+			</dl>
+
+			<dl class="sNews">
+				<dt>
+					<a href="#"  title="뉴스 바로가기" ><img src="image/newsroom6.jpg" alt="뉴스룸 이미지"/></a>
+				</dt>
+				<dd>
+					<strong>고액·상습체납자 7,278명 명단 공개</strong>
+					<p>서울시에 밀린 지방세가 자그마치 3,000만 원 이상 되는 체납자가 7,000명을 넘어섰습니다. 서울시는 이들의 명단 및 체납내용을 14일 시 홈페이지와 자치구별 홈페이지 등을 통해 공개하기로 했습니다. 앞으로 시는 명단공개 후에도 납부하지 않는 체납자들은 지속적으로 특별 관리하는 것은 물론, 내년부터는 명단공개의 기준을 더욱 강화할 계획입니다. 자세한 내용을 지금부터 살펴보</p>
+					<span>수정일 │ 2015/11/12</span>
+				</dd>
+			</dl>
+				<dl class="sNews">
+				<dt>
+					<a href="#"  title="뉴스 바로가기" ><img src="image/newsroom7.jpg" alt="뉴스룸 이미지"/></a>
+				</dt>
+				<dd>
+					<strong>서울 의료관광 정보를 한 곳에 모았다!</strong>
+					<p>의료 목적으로 서울을 찾는 외국인 관광객 수가 매년 증가하고 있는 가운데 서울시가 서울의료관광 정보를 한 곳에서 볼 수 있는 홈페이지를 18일에 개설하고 4개 국어(영어, 중국어, 일본어, 러시아어)로 본격 서비스합니다. 이는 서울시가 고부가가치를 창출하는 의료관광객을 2018년까지 연 40만명을 유치한다는 목표로 지난 10월 의료기관 협업으로 발표한 ‘의료관광 활성화 지원</p>
+					<span>수정일 │ 2015/11/12</span>
+				</dd>
+			</dl>
+				<dl class="sNews n2">
+				<dt>
+					<a href="#"  title="뉴스 바로가기" ><img src="image/newsroom8.jpg" alt="뉴스룸 이미지"/></a>
+				</dt>
+				<dd>
+					<strong>서울에서 권리금이 가장 ‘쎈’ 곳은?</strong>
+					<p>서울시가 강남, 신촌, 홍대, 명동 등 서울의 주요 상권을 대상으로 ‘상가임대정보 및 권리금 실태조사’를 실시하고 그 결과를 발표했습니다. 조사에 따르면 서울에서 권리금이 가장 높은 지역이자 가장 빨리 권리금을 회수할 수 있는 지역은 ‘강남’인 것으로 나타났습니다. 하지만, 단위면적(㎡)당 임대료가 가장 높은 곳은 ‘명동’이었습니다. 그밖에 지역별 보증금과 권리금, 계약 기간 등</p>
+					<span>수정일 │ 2015/11/12</span>
+				</dd>
+			</dl>
+
+			<p class="pageNum">
+				<a href="#" title="바로가기" ><img src="image/btn_first.gif" alt="왼쪽 화살표"/></a>
+				<a href="#" title="바로가기" class="pageDefault">1</a>
+				<a href="#" title="바로가기">2</a>
+				<a href="#" title="바로가기">3</a>
+				<a href="#" title="바로가기">4</a>
+				<a href="#" title="바로가기"><img src="image/btn_last.gif" alt="오른쪽 화살표"/></a>
+			</p>
+	
+
+		</section>
+	
+		
+	 </div><!--content END-->
+
+	<!--  ############## footer.php    넣기-->
+	<?php	include "common/footer.php";  ?>
+	
+ </div>  <!--wrapper END-->
+ </body>
+</html>

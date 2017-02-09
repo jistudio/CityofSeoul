@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" >
+<title> 사실이 궁금해요 | 서울특별시 웹사이트</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet"  type="text/css" href="css/base.css"/>
+<link rel="stylesheet"  type="text/css" href="css/layout.css"/>
+<link rel="stylesheet"  type="text/css" href="css/header.css"/>
+<link rel="stylesheet"  type="text/css" href="css/fact.css"/>
+<link rel="stylesheet"  type="text/css" href="css/footer.css"/>
+<link rel="stylesheet"  type="text/css" href="css/mediaFact.css"/> 
+																				
+
+<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie7.css"/>
+<![endif]-->
+
+<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie8.css"/>
+<![endif]-->
+
+<!--[if gt IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie89.css"/>
+<![endif]-->
+
+ <!-- html5shiv 플로그인 껴넣기-->
+  <!--[if lt IE 9]>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+	 </script>
+ <![endif]-->
+
+<style>
+/* ie 10 과 ie edge 크로스 브라우징 핵*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+		#header .headerBot nav .gnb LI.allMenu {
+
+		padding-top: 20px;
+
+		}
+
+	#header .headerBot nav .gnb LI.search {
+		
+		padding-top: 20px;
+		}
+}  
+
+/*firefox only hack*/
+@-moz-document url-prefix() { 
+
+ }
+
+</style>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/scrollTop.js"></script>
+<script src="js/mainGnb.js"></script>
+<script src="js/jquery.color.js"></script> 
+
+</head>
+ <body>
+
+<!--바로가기 메뉴 => skip navigation,  h태그 필요없음 , base.css에 있음-->
+<ul id="skipnav">
+	<li><a href="#gnba">주메뉴 바로가기</a></li><!--gnb의 첫 번째  a에 id gnba 넣어줌-->
+	<li><a href="#maina">본문내용 바로가기</a></li>
+</ul>
+<!--  skip nav END  -->
+
+ <div id="wrapper">
+	 <!--  ############## header.php    넣기-->
+	 <?php	include "common/header.php";  ?>
+
+	 <div id="content">
+			<h2>주요 컨텐츠</h2>
+
+			<div class="breadInner">
+				<ul class="breadcrumb">
+					<li class="gohome"><a href="#" title="홈 바로가기"><img src="image/icon_home.png" alt="홈 아이콘"/></a></li>
+					<li><a href="#"  title="서울뉴스 바로가기" >서울 뉴스</a></li>
+					<li>
+						<a href="#"  title="새소식 바로가기">
+						새소식
+						<span class="breadDown"><img src="image/icon_arrowDown.png" alt="down arrow"/></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<section class="reportInner">
+				<h3>사실이 궁금해요</h3>
+				<ul class="subnav">
+				<li class="subnavL"><a href="#" title="이전 페이지">previous</a></li>
+				<li class="subnavR"><a href="#" title="다음 페이지">next</a></li>
+				</ul>
+				<p class="reportTop"><img src="image/factTop.jpg" alt="서울시 사진"/></p>
+				
+				<table>
+
+					<caption>사실이 궁금해요 테이블</caption>
+
+					<colgroup>
+						<col style="width:10%"/>
+						<col style="width:40%"/>
+						<col style="width:18%"/>
+						<col style="width:12%"/>
+						<col style="width:10%"/>
+					</colgroup>
+
+
+					<thead>
+					<tr class="reportF">
+						<th scope="col" >번호</th>
+						<th scope="col">제목</th>
+						<th scope="col">부서</th>
+					
+						<th scope="col" >자료</th>
+					</tr>
+					</thead>
+
+
+
+					<tbody>
+					<tr>
+						<td class="num" >1000</td>
+						<td class="title"><a href="#">도시 인프라 전환을 위한 신진건축사 대상 첫 설계</a></td>
+						<td>도시공간개선단</td>
+					
+						<td><img src="image/btn_download.gif" alt="다운로드"></td>
+					</tr>
+
+
+
+					<tr>
+						<td  class="num" class="reportNum">999</td>
+						<td class="title"><a href="#">	경칩(驚蟄), 개구리가 전하는 ‘서울대공원의 봄’</a></td>
+						<td>서울대공원</td>
+					
+						<td><img src="image/btn_download.gif" alt="다운로드"></td>
+					</tr>
+
+					<tr>
+						<td  class="num" >998</td>
+						<td class="title"><a href="#">	시인의 감성과 울림이 있는 詩가 있는 카페로</a></td>
+						<td>문화본부</td>
+					
+						<td><img src="image/btn_download.gif" alt="다운로드"></td>
+					</tr>
+
+					
+					<tr>
+						<td  class="num" >997</td>
+						<td class="title"><a href="#">월드컵공원 여성마라톤대회 30일까지 신청하세요</a></td>
+						<td>여성정책담당</td>
+						
+						<td><img src="image/btn_download.gif" alt="다운로드"></td>
+					</tr>	
+					<tr>
+						<td  class="num">996</td>
+						<td class="title"><a href="#">	에스플렉스센터, 서울시 디지털의 새시대를 연다</a></td>
+						<td>서울산업진흥원</td>
+					
+						<td><img src="image/btn_download.gif" alt="다운로드"></td>
+					</tr>
+					<tr>
+						<td class="num" >995</td>
+						<td class="title"><a href="#">도시 인프라 전환을 위한 신진건축사 대상 첫 설계</a></td>
+						<td>도시공간개선단</td>
+					
+						<td><img src="image/btn_download.gif" alt="다운로드"></td>
+					</tr>
+
+
+
+					<tr>
+						<td  class="num" >994</td>
+						<td class="title"><a href="#">	경칩(驚蟄), 개구리가 전하는 ‘서울대공원의 봄’</a></td>
+						<td>서울대공원</td>
+					
+						<td><img src="image/btn_download.gif" alt="다운로드"></td>
+					</tr>
+
+					<tr>
+						<td  class="num" >993</td>
+						<td class="title"><a href="#">	시인의 감성과 울림이 있는 詩가 있는 카페로 </a></td>
+						<td>문화본부</td>
+					
+						<td><img src="image/btn_download.gif" alt="다운로드"></td>
+					</tr>
+
+					
+					<tr>
+						<td  class="num" >992</td>
+						<td class="title"><a href="#">월드컵공원 여성마라톤대회 30일까지 신청하세요</a></td>
+						<td>여성정책담당</td>
+					
+						<td><img src="image/btn_download.gif" alt="다운로드"></td>
+					</tr>	
+					<tr>
+						<td  class="num" >991</td>
+						<td class="title"><a href="#">	에스플렉스센터, 서울시 디지털의 새시대를 연다</a></td>
+						<td>서울산업진흥원</td>
+						
+						<td><img src="image/btn_download.gif" alt="다운로드"></td>
+					</tr>
+
+
+					
+				
+
+
+
+
+					</tbody>
+
+				 </table>
+				
+				<p class="pageNum">
+					<a href="#" title="바로가기" ><img src="image/btn_first.gif" alt="왼쪽 화살표"/></a>
+					<a href="#" title="바로가기" class="pageDefault">1</a>
+					<a href="#" title="바로가기">2</a>
+					<a href="#" title="바로가기">3</a>
+					<a href="#" title="바로가기">4</a>
+					<a href="#" title="바로가기"><img src="image/btn_last.gif" alt="오른쪽 화살표"/></a>
+				</p>
+			</section><!--Inner END-->
+	</div><!--content END-->
+
+	<!--  ############## footer.php    넣기-->
+	<?php	include "common/footer.php";  ?>
+
+ </div>  <!--wrapper END-->
+ </body>
+</html>

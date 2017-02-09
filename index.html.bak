@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" ><!--  모든 디바이스에서 같이 보니게 설정 -->
+<title> 서울특별시 웹사이트 </title>
+<!--  favicon 크로스 브라우징 -->
+<link href="image/favi16.png" rel="shortcut icon" /> <!--안드로이드폰 기본 사이즈-->
+<link href="image/favi16.png" rel="apple-touch-icon" /> <!--아이폰-->
+
+<!-- favicon만들때  IE 는 사이즈별로  하지만 HTML마크업 검사 에러남
+<link href="image/favi16.png" rel="icon" size="16*16" /> 
+<link href="image/favi32.png" rel="icon" size="32*32" />
+<link href="image/favi48.png" rel="icon" size="48*48" />
+<link href="image/favi64.png" rel="icon" size="64*64" />
+<link href="image/favi128.png" rel="icon" size="128*128"/>
+<link href="image/favi152.png" rel="icon" size="152*152"/>
+-->
+
+
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet"  type="text/css" href="css/base.css"/>
+<link rel="stylesheet"  type="text/css" href="css/layout.css"/>
+<link rel="stylesheet"  type="text/css" href="css/header.css"/>
+
+<link rel="stylesheet"  type="text/css" href="css/content.css"/>
+
+<link rel="stylesheet"  type="text/css" href="css/footer.css"/>
+
+<link rel="stylesheet"  type="text/css" href="css/media.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-sakura.css" />
+
+
+<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie7.css"/>
+<![endif]-->
+
+<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie8.css"/>
+<![endif]-->
+
+ <!-- html5shiv 플로그인 껴넣기-->
+  <!--[if lt IE 9]>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+	 </script>
+ <![endif]-->
+
+<style>
+/*   ---------------------      크로스 브라우징  -------------------------------    */
+
+/* ie 10 과 ie edge 크로스 브라우징 핵*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+  #content .section.s1 .weather{height:227px; }
+  #content .section.s1 .weatherToday{ height:110px;}
+  #content .s1.section .traffic {
+
+  
+ }
+
+  #content .s1.section .issue ol {
+   
+    }
+
+}  
+
+/*firefox only hack*/
+@-moz-document url-prefix() { 
+
+	#content .section.s1 .news .newsList dl {
+	margin-bottom: 12px; 
+	}
+ }
+</style>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/cookies.js"></script>
+<script src="js/popUp.js"></script>
+<script src="js/scrollTop.js"></script>	
+<script src="js/mainGnb.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/mainSlider.js"></script>  
+<script src="js/bannerSlider.js"></script>
+
+<script src="js/keycontrol.js"></script>
+
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/jquery.color.js"></script> 
+<script src="js/newsTAb.js"></script> 
+<script src="js/jquery.easy-ticker.js"></script>
+<script >
+	$(document).ready(function(){
+		$('.newsTicker').easyTicker({
+			direction: 'up', // up or down
+			easing: 'swing', // easing function
+			speed: 'slow', // the speed of transition
+			interval: 3000, // the time for the next transition to take place. 
+			height: 'auto', // the height of the elements
+			visible: 0, // the number of visible elements of the list
+			mousePause: 1, // pause on mouse hover
+			controls:{ // assign the elements which control the transition. 
+			up: '',
+			down: '',
+			toggle: ''
+			}
+		});
+	});
+</script>
+
+</head>
+<body>
+
+<!--바로가기 메뉴 => skip navigation,  h태그 필요없음 , base.css에 있음-->
+<ul id="skipnav">
+	<li><a href="#gnba">주메뉴 바로가기</a></li><!--gnb의 첫 번째  a에 id gnba 넣어줌-->
+	<li><a href="#maina">본문내용 바로가기</a></li>
+</ul>
+<!--  skip nav END  -->
+
+ <div id="wrapper">
+	<!--  ############## header.php    넣기-->
+	<?php	include "common/header.php";  ?>
+
+	<section id="visual">
+			<h2>비쥬얼 영역</h2>
+			<div class="sliding">
+				<div class="tunnel">
+					<ul class="train">
+						<li class="trainbox1">
+							
+							<img src="image/visual1.jpg" alt="광화문 빛너울"/>
+					
+									<span class="sm_mv_text"> 
+										<strong>CULTURE</strong>
+										<span  class="visualTitle">
+											빛으로 소통하는 <br> "광화문 빛너울"
+										</span>
+							
+										<span  class="visualDesc">
+										문화유산의 아름다움을 홍보하고, 증가하는<br> 
+										국내외 관광 수요에 능동적으로 대처하기 위한...
+										</span>
+										<a href="#" title="자세히 보기">자세히 보기 →</a>
+									</span>
+						
+						</li>
+						<li class="trainbox2">
+						
+								<img src="image/visual2.jpg" alt="새청사"/>
+								<span class="sm_mv_text">
+									<strong>CULTURE</strong>
+									<span  class="visualTitle">서울시와 함께하는<br>
+									 시청사 통통투어</span>
+									<span  class="visualDesc">2012년 10월에 새롭게 태어난 서울시 <br>
+									청사는 한국 전통가옥의 처마를 ...
+									</span>
+									<a href="#" title="자세히 보기">자세히 보기 →</a>
+								</span>
+								
+					
+						</li>
+						<li class="trainbox3">
+							
+								<img src="image/visual3.jpg" alt="우리가족"/>
+								<span class="sm_mv_text">
+									<strong>FAMILY</strong>
+									<span  class="visualTitle">지구를 살리는 미션<br> 
+										 수행 세상패밀리</span>
+									<span  class="visualDesc">모든 미션을 완수한 가족들에게는<br>
+									기념품 등 ‘에코 패키지’ 증정...
+									</span>
+									<a href="#" title="자세히 보기">자세히 보기 →</a>
+								</span>
+								
+					
+						</li>
+						<li class="trainbox4">
+								<img src="image/visual4.jpg" alt="서울 봄 축제"/>
+								
+								<span class="sm_mv_text">
+									<strong>TRAVEL</strong>
+									<span  class="visualTitle">서울, 봄꽃으로 <br>물들다</span>
+									<span  class="visualDesc">면적 605㎢, 인구 천만의 대한민국 <br>수도 서울,
+										서울이 봄꽃으로 물듭니다.
+									</span>
+									<a href="#" title="자세히 보기">자세히 보기 →</a>
+								</span>
+					
+						</li>
+					</ul>
+				</div>
+			
+				<p class="prev"><a href="#"><img src="image/direct_l.png" alt="이전버튼"/></a></p>
+				<p class="next"><a href="#"><img src="image/direct_r.png" alt="다음버튼"/></a></p>
+
+				<div class="sliderControl">
+			
+					<ul class="button">
+						<li><a href="#"> 1 </a></li>
+						<li><a href="#"> 2 </a></li>
+						<li><a href="#"> 3 </a></li>
+						<li><a href="#"> 4 </a></li>
+					</ul>
+					<span class="playStop"><a href="#"></a></span>
+				</div> 
+			
+			</div><!--sliding END-->
+		
+	 </section><!--visual END-->
+
+	<div id="content">
+		
+	<div class="conInner1">
+		
+		<section class="section s1">
+			<h2>오늘의 날씨와 뉴스</h2>
+			<div class="s1Left">
+				<article class="weather">
+					<h3>날씨</h3>
+					<ul class="weatherToday">
+						<li class="wDetail">
+							<a href="#"  title="날씨 더보기 바로가기" >
+								<img src="image/partly_cloudy.png" alt="날씨 아이콘"/>
+								3.4°
+								
+							</a> 
+						</li>
+						<li class="wDesc">
+		
+							<span>강수확율: 0%</span>
+							
+							<span>미세먼지: 43㎍/㎥</span>
+							
+						</li>
+					
+			
+					</ul>
+	
+					<ul class="traffic">
+						<li><a href="#"  title="지하철 정보 바로가기" class="subway"><img src="image/subway.png" alt="지하철" />지하철</a></li>
+						<li><a href="#"  title="도로소통 정보 바로가기" class="road"><img src="image/car.png" alt="자동차" />자동차</a></li>
+						<li class="gobike"><a href="#"  title="자전거 도로 바로가기" class="bike"><img src="image/bike.png" alt="자전거" />자전거</a></li>
+						<li><a href="#"  title="버스정보 바로가기" class="bus"><img src="image/bus.png" alt="버스" />버스</a></li>
+					</ul>
+		
+
+	
+				
+				</article>
+				<article class="issue">
+					<h3>서울 실시간 이슈</h3>
+					<div class="newsTicker" >
+						<ol >
+							<li class="issueF">
+								<a href="#"  title="이슈1 바로가기" >
+								<span class="issueNum num123">1</span> 
+								<span class="issueTitle">서울 대기환경</span>
+								<span class="issueRank redNew">new</span>
+								</a>
+							</li>
+							<li class="issue2th">
+								<a href="#"  title="이슈2 바로가기">
+								<span class="issueNum num123">2</span>
+								<span class="issueTitle">12월 문화달력</span>
+								<span class="issueRank"><span class="redNew">↑</span>175</span>
+								</a>
+							</li>
+							<li class="issue3th">
+								<a href="#">
+								<span class="issueNum num123">3</span>
+								<span class="issueTitle">서울 CCTV 운영고도화</span>
+								<span class="issueRank"><span class="redNew">↑</span>200</span>
+								</a>
+							</li>
+							<li class="issue4th">
+								<a href="#"  title="이슈3 바로가기">
+								<span class="issueNum">4</span>
+								<span class="issueTitle">서울 시립 미술관</span>
+								<span class="issueRank redNew">new</span>
+								</a>
+							</li>
+							<li class="issueL">
+								<a href="#"  title="이슈4 바로가기">
+								<span class="issueNum">5</span>
+								<span class="issueTitle">북촌 "동지" 행사 안내</span>
+								<span class="issueRank"><span class="redNew">↓</span>2</span>
+								</a>
+							</li>
+						</ol>
+					</div>
+				</article><!--issue END-->
+			</div><!--s1Left END-->
+			<article class="news">
+				<h3>뉴스</h3>
+				<ul class="newsTab">
+					<li class="tabFirst">
+						<a href="#newsTab1" title="새소식보기">새소식</a>
+						<div id="newsTab1" class="newsWrapper" >
+							<p class="newsFirst">
+									<span class="newsfImg"><img src="image/mainNews1.jpg" alt="서울상상나라 겨울방학 프로그램"/></span>
+									<span class="newsfDesc">
+										<strong>상상나라에서 준비한 겨울방학 프로그램!</strong>
+										<span class="newsfDesc2">서울상상나라에서 겨울방학을 맞아 과학, 예술, 인체 분야를 접목한 전시회와 교육 프로그램을 다채롭게 마련했습니다. 보고 만지며 놀다보면 우리 아이의 상상력이 쑥쑥 자라납니다.</span> 
+										<span class="newsDate">[내 손안에 서울] │ 2016/03/14</span>	
+									</span>
+
+								</p>
+								<div class="newsList">
+									<dl>
+										<dt class="newsImg">
+											<a href="#" title="바로가기">
+											<img src="image/news2.jpg" alt="서울시"/>
+											</a>
+										</dt>
+										<dd class="newsDesc">
+											<p> 
+											<a href="#" title="뉴스바로가기">
+											<strong class="newsTitle">보라매공원에도 드디어 반려견 놀이터가 생겨요</strong>
+											<span class="newsDate">[정보] │ 2015/02/21</span>
+											</a>
+											</p>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="newsImg">
+											<a href="#" title="바로가기">
+											<img src="image/news3.jpg" alt="서울시"/>
+											</a>
+										</dt>
+										<dd class="newsDesc">
+											<p> 
+											<a href="#" title="뉴스바로가기">
+											<strong class="newsTitle">추위 녹여줄 ‘달달한’ 12월 문화행사들</strong>
+											<span class="newsDate">[소통방통] │ 2016/03/01</span>
+											</a>
+											</p>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="newsImg">
+											<a href="#" title="바로가기">
+											<img src="image/news4.jpg" alt="서울시"/>
+											</a>
+										</dt>
+										<dd class="newsDesc">
+											<p> 
+											<a href="#" title="뉴스바로가기">
+											<strong class="newsTitle">〈암살〉에 나온 최고급 한옥, ‘백인제 가옥’ 개방</strong>
+											<span class="newsDate">[내 손안에 서울] │ 2015/12/10</span>
+											</a>
+											</p>
+										</dd>
+									</dl>
+									<dl class="newsListL">
+										<dt class="newsImg">
+											<a href="#" title="바로가기">
+											<img src="image/news5.jpg" alt="서울시"/>
+											</a>
+										</dt>
+										<dd class="newsDesc">
+											<p> 
+											<a href="#" title="뉴스바로가기">
+											<strong class="newsTitle">서울브랜드 시민들의 현장투표 “제 점수는요”</strong>
+											<span class="newsDate">[소통방통] │ 2016/03/10</span>
+											</a>
+											</p>
+										</dd>
+									</dl>
+							</div>
+
+						</div>
+					</li>
+					<li>
+						<a href="#newsTab2" title="많이본 뉴스 보기">많이본</a>
+						<div id="newsTab2" class="newsWrapper">
+							<p class="newsFirst">
+									<span class="newsfImg"><img src="image/mainNews2.jpg" alt="서울상상나라 겨울방학 프로그램"/></span>
+									<span class="newsfDesc">
+										<strong>설날, 서울은 축제로 들썩입니다.</strong>
+										<span class="newsfDesc2">이번 설은 유난히 짧다. 부모님이 먼 곳에 있는 사람들에게는 피곤한 연휴가 될 수도 있다. 그래서인지 이번 명절은 서울에서 보내겠다는 이들이 많다. 반대로 부모님이 역귀경한다는 이들도 눈에 띈다. </span> 
+										<span class="newsDate">[내 손안에 서울] │ 2016/03/14</span>	
+									</span>
+
+							</p>
+							<div class="newsList">
+								<dl>
+									<dt class="newsImg">
+										<a href="#" title="바로가기">
+										<img src="image/w1.jpg" alt="서울시"/>
+										</a>
+									</dt>
+									<dd class="newsDesc">
+										<p> 
+										<a href="#" title="뉴스바로가기">
+										<strong class="newsTitle">기차 타고 떠나는 독서 여행, 어때요?</strong>
+										<span class="newsDate">[정보] │ 2015/02/21</span>
+										</a>
+										</p>
+									</dd>
+								</dl>
+								<dl>
+									<dt class="newsImg">
+										<a href="#" title="바로가기">
+										<img src="image/w2.jpg" alt="서울시"/>
+										</a>
+									</dt>
+									<dd class="newsDesc">
+										<p> 
+										<a href="#" title="뉴스바로가기">
+										<strong class="newsTitle">신규채용 줄줄이! 시 산하기관 3,198명</strong>
+										<span class="newsDate">[소통방통] │ 2016/03/01</span>
+										</a>
+										</p>
+									</dd>
+								</dl>
+								<dl>
+									<dt class="newsImg">
+										<a href="#" title="바로가기">
+										<img src="image/w3.jpg" alt="서울시"/>
+										</a>
+									</dt>
+									<dd class="newsDesc">
+										<p> 
+										<a href="#" title="뉴스바로가기">
+										<strong class="newsTitle">청계천 ‘청혼의 벽’에서 마음을 전하세요!</strong>
+										<span class="newsDate">[내 손안에 서울] │ 2015/12/10</span>
+										</a>
+										</p>
+									</dd>
+								</dl>
+								<dl class="newsListL">
+									<dt class="newsImg">
+										<a href="#" title="바로가기">
+										<img src="image/w4.jpg" alt="서울시"/>
+										</a>
+									</dt>
+									<dd class="newsDesc">
+										<p> 
+										<a href="#" title="뉴스바로가기">
+										<strong class="newsTitle">서울 세계 3대 MICE 도시로 ‘우뚝’</strong>
+										<span class="newsDate">[소통방통] │ 2016/03/10</span>
+										</a>
+										</p>
+									</dd>
+								</dl>
+							</div>
+							
+
+						</div>
+					</li>
+					<li class="tabThird">
+						<a href="#newsTab3" title="내손안의 뉴스 보기">내손안의</a>
+						<div id="newsTab3" class="newsWrapper" >
+							<p class="newsFirst">
+									<span class="newsfImg"><img src="image/mainNews3.jpg" alt="서울상상나라 겨울방학 프로그램"/></span>
+									<span class="newsfDesc">
+										<strong>티머니 충전만 해도 2% 돌려받는다.</strong>
+										<span class="newsfDesc2">대중교통 이용금액의 0.2%, 티머니 충전금액의 2%를 T마일리지로 적립해주는 티머니 교통카드 가계부에서 늘 빠지지 않는 지출항목이 있다면 바로 ‘교통비’일 겁니다. 대중교통도 매일 이용하면, 아무리 저렴...</span> 
+										<span class="newsDate">[내 손안에 서울] │ 2016/03/14</span>	
+									</span>
+
+								</p>
+								<div class="newsList">
+									<dl>
+										<dt class="newsImg">
+											<a href="#" title="바로가기">
+											<img src="image/s1.jpg" alt="서울시"/>
+											</a>
+										</dt>
+										<dd class="newsDesc">
+											<p> 
+											<a href="#" title="뉴스바로가기">
+											<strong class="newsTitle">보라매공원에도 드디어 반려견 놀이터가 생겨요</strong>
+											<span class="newsDate">[정보] │ 2015/02/21</span>
+											</a>
+											</p>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="newsImg">
+											<a href="#" title="바로가기">
+											<img src="image/s2.jpg" alt="서울시"/>
+											</a>
+										</dt>
+										<dd class="newsDesc">
+											<p> 
+											<a href="#" title="뉴스바로가기">
+											<strong class="newsTitle">추위 녹여줄 ‘달달한’ 12월 문화행사들</strong>
+											<span class="newsDate">[소통방통] │ 2016/03/01</span>
+											</a>
+											</p>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="newsImg">
+											<a href="#" title="바로가기">
+											<img src="image/s3.jpg" alt="서울시"/>
+											</a>
+										</dt>
+										<dd class="newsDesc">
+											<p> 
+											<a href="#" title="뉴스바로가기">
+											<strong class="newsTitle">〈암살〉에 나온 최고급 한옥, ‘백인제 가옥’ 개방</strong>
+											<span class="newsDate">[내 손안에 서울] │ 2015/12/10</span>
+											</a>
+											</p>
+										</dd>
+									</dl>
+									<dl class="newsListL">
+										<dt class="newsImg">
+											<a href="#" title="바로가기">
+											<img src="image/s4.jpg" alt="서울시"/>
+											</a>
+										</dt>
+										<dd class="newsDesc">
+											<p> 
+											<a href="#" title="뉴스바로가기">
+											<strong class="newsTitle">서울브랜드 시민들의 현장투표 “제 점수는요”</strong>
+											<span class="newsDate">[소통방통] │ 2016/03/10</span>
+											</a>
+											</p>
+										</dd>
+									</dl>
+								</div>
+
+						</div>
+					</li>
+					<li class="tabLast">
+						<a href="#newsTab4" title="소셜 SNS 보기">소셜SNS</a>
+						<div id="newsTab4" class="newsWrapper" >
+							<p class="newsFirst">
+									<span class="newsfImg"><img src="image/mainNews4.jpg" alt="서울상상나라 겨울방학 프로그램"/></span>
+									<span class="newsfDesc">
+										<strong>달라지는 서울생활’ 미리 챙겨두세요.</strong>
+										<span class="newsfDesc2">2월에는 서울 경제의 허리에 해당하는 소상공인들이 안정적으로 경제활동을 할 수 있도록 과도한 임대료 인상 없이 상가를 장기임대하는 건물주에게 최대 3,000만 원까지 리모델링 비용을 지원하는...</span> 
+										<span class="newsDate">[facebook] │ 2016/03/14</span>	
+									</span>
+
+								</p>
+
+								<div class="newsList">
+									<dl>
+										<dt class="newsImg">
+											<a href="#" title="바로가기">
+											<img src="image/e1.jpg" alt="서울시"/>
+											</a>
+										</dt>
+										<dd class="newsDesc">
+											<p> 
+											<a href="#" title="뉴스바로가기">
+											<strong class="newsTitle">방학동 양말목으로 알록달록 얘기 나눠요</strong>
+											<span class="newsDate">[twitter] │ 2015/02/21</span>
+											</a>
+											</p>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="newsImg">
+											<a href="#" title="바로가기">
+											<img src="image/e2.jpg" alt="서울시"/>
+											</a>
+										</dt>
+										<dd class="newsDesc">
+											<p> 
+											<a href="#" title="뉴스바로가기">
+											<strong class="newsTitle">달이 차오른다! 한강 달맞이 명소 BEST 7</strong>
+											<span class="newsDate">[blog] │ 2016/03/01</span>
+											</a>
+											</p>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="newsImg">
+											<a href="#" title="바로가기">
+											<img src="image/e3.jpg" alt="서울시"/>
+											</a>
+										</dt>
+										<dd class="newsDesc">
+											<p> 
+											<a href="#" title="뉴스바로가기">
+											<strong class="newsTitle">낡은 고시원이 '반값월세 임대주택'으로 변신</strong>
+											<span class="newsDate">[facebook] │ 2015/12/10</span>
+											</a>
+											</p>
+										</dd>
+									</dl>
+									<dl class="newsListL">
+										<dt class="newsImg">
+											<a href="#" title="바로가기">
+											<img src="image/e4.jpg" alt="서울시"/>
+											</a>
+										</dt>
+										<dd class="newsDesc">
+											<p> 
+											<a href="#" title="뉴스바로가기">
+											<strong class="newsTitle">우리동네 주민센터가 이렇게 달라졌어요!</strong>
+											<span class="newsDate">[instagram] │ 2016/03/10</span>
+											</a>
+											</p>
+										</dd>
+									</dl>
+								</div>
+
+						</div>
+					</li>
+
+				</ul>
+				<span class="plus"><a href="#" title="더보기">더보기</a></span>
+			
+				
+				
+			
+			</article><!--news END-->
+			
+		</section><!--section s1 END-->
+
+		<section class="section s2">
+			<h2>서울시 추천정보 영역</h2>
+			<article class="article3 a31">
+				<h3><a href="#"  title="시장실 바로가기">소셜 시장실</a></h3>
+				<p>다시, 시민이 시장입니다!</p>
+				
+			</article><!-- article3 a31 END-->
+			<article class="article3 a32">
+			
+				<h3>한눈에 보는 서울</h3>
+				<p>서울시민이 즐겨 찾는 100대 통계는?
+					분야별 주요 통계를 한 곳에 모아 놓은 통계서비스
+					
+				</p>
+				<img src="image/statics.jpg" alt="서울시 남산"/>
+				<span class="plus"><a href="#" title="더보기">더보기</a></span>
+				
+			</article><!-- article3 a32 END-->
+			<article class="article3 a33">
+				<h3>공지사항</h3>
+				<ul>
+						<li class="announceF"><a href="#" title=" 한강공원 나들목증설공사 바로가기"><span>[new]</span> 한강공원 나들목 증설공사 연장안</a></li>
+						<li><a href="#"  title="대학로 지구단위계획 바로가기"><span>[new]</span> 대학로 지구단위계획 변경 결정안</a></li>
+						<li><a href="#"  title="시민정원사 이론실습 바로가기">[발표] 내부순환로 정릉천고가 교통통제 </a></li>
+						<li><a href="#"  title="시민정원사 이론실습 바로가기">서울시청 하늘광장 갤러리 자원봉사 모집 </a></li>
+						<li class="announceL"><a href="#"  title="안내표지판 제작 바로가기">스탠리 큐브릭展 전시연계 심포지움 참가</a></li>
+					
+				</ul>
+				<span class="plus"><a href="#" title="더보기">더보기</a></span>
+			
+			</article><!-- article3 a33 END-->
+		</section><!--section s2 END-->
+
+		<section class="section s3">
+			<h2>배너와 이벤트 영역</h2>
+			<article class="bannerZone">
+				<h3>배너존</h3>
+				<div class="sliding2">
+					<div class="tunnel2">
+						<ul class="train2">
+							<li><a href="#" title="친환경 꿈농장 가꾸기"><img src="image/banner1.jpg" alt="친환경 꿈농장 가꾸기"/></a></li>
+							<li><a href="#" title="함께꿈 웹툰공모"><img src="image/banner2.jpg" alt="함께꿈 웹툰공모"/></a></li>
+							<li><a href="#" title="만화로 산책하다"><img src="image/banner3.jpg" alt="만화로 산책하다"/></a></li>
+							<li><a href="#" title="남산골 한옥마을 세시맞이"><img src="image/banner4.jpg" alt="남산골 한옥마을 세시맞이"/></a></li>
+						
+						</ul>
+					</div>
+					<p class="prev2"><a href="#"><img src="image/mbtn_prev.png" alt="이전버튼"/></a></p>
+					<p class="next2"><a href="#"><img src="image/mbtn_next.png" alt="다음버튼"/></a></p>
+					<!--  버튼추가  -->
+					<ul class="button2">
+						<li><a href="#"> 1 </a></li>
+						<li><a href="#"> 2 </a></li>
+						<li><a href="#"> 3 </a></li>
+						<li><a href="#"> 4 </a></li>
+					</ul>
+				</div><!--sliding2 END-->
+				
+			</article><!-- bannerZone END-->
+
+			<article class="event">
+				<h3>이달의 이벤트와 행사</h3>
+				
+					<ul class="eventSlide">
+						<li>
+							<div class="flip">
+								<div class="upper">
+				
+										<img src="image/event1.jpg" alt="이벤트1"/>
+										
+					
+								</div>
+								<div class="lower">
+									<img src="image/event1.jpg" alt="이벤트1"/>
+										<span class="bg"></span>
+										<span class="posterText">
+											<strong>국제아트 페스티벌</strong>
+											
+											<span>4월 25일~5월 27일</span>
+											<span>세종문화회관</span>
+										</span>
+								
+								</div>
+							</div><!--flip END-->
+						</li>
+						<li>
+							<div class="flip">
+								<div class="upper">
+								
+									<img src="image/event2.jpg" alt="이벤트2"/>
+								
+						
+								</div>
+								<div class="lower">
+									<img src="image/event2.jpg" alt="이벤트2"/>
+									<span class="bg"></span>
+									<span class="posterText">
+										<strong>그레이트 시리즈 </strong>
+										
+										<span>4월 26일(금)</span>
+										<span> 예술의전당</span>
+									</span>
+									
+							
+							
+									
+
+									
+								</div>
+							</div>
+						</li>
+						<li class="eventL"  title="이벤트3 바로가기">
+							<div class="flip">
+								<div class="upper">
+						
+									<img src="image/event3.jpg" alt="이벤트3"/>
+										
+						
+								</div>
+								<div class="lower">
+									<img src="image/event3.jpg" alt="이벤트3"/>
+									<span class="bg"></span>
+									<span class="posterText">
+										<strong>한성백제 뮤지컬</strong>
+										
+										<span>9월 1일~9월 30일</span>
+										<span>백제박물관</span>
+									</span>
+								
+							
+								
+									
+
+									
+								</div>
+							</div>
+						</li>
+						
+					
+					</ul>
+					<span class="plus"><a href="#" title="더보기">더보기</a></span>
+					
+			
+
+			</article><!-- event END-->
+			<article class="quickMenu" >
+				
+			
+				<h3>서비스 바로가기</h3>
+				<ul>
+					<li class="qlink1">
+						<a href="#" title="온라인민원 바로가기">E-민원</a>
+					</li>
+					<li class="qlink2">
+						<a href="#" title="서비스 예약 바로가기">서비스</a>
+					</li>
+					<li class="qlink3">
+						<a href="#" title="일자리 바로가기">일자리+</a>
+					</li>
+					<li class="qlink4">
+						<a href="#" title="서울관광 바로가기">관광정보</a>
+					</li>
+					<li class="qlink5">
+						<a href="#" title="서울교통 바로가기">교통정보</a>
+					</li>
+					<li class="qlink6">
+						<a href="#">평생학습</a>
+					</li>
+					<li class="qlink7">
+						<a href="#" title="부동산 바로가기">부동산</a>
+					</li>
+					<li class="qlink8">
+						<a href="#" title="서울문화 바로가기">문화포털</a>
+					</li>
+				</ul>
+		
+			</article><!-- quickMenu END -->
+			
+		
+		</section><!--section s3 END-->
+
+			
+
+		</div><!--conInner1 END-->
+
+	
+
+		<div class="conInner2">
+		<section class="section s4">
+			<h3>개인별 정보보기</h3>
+			<div class="tunnel3">
+				<ul class="train3">
+					<li>
+						<a href="#"  title="스크랩 바로가기">
+							<span class="scrapImg"><img src="image/scrap1.jpg" alt="어린아이"/></span>
+							
+							<strong>육아휴직과 출산휴가 직장맘과 직장대디의 고민을 함께하다</strong>
+							<span class="scrapDesc">혹시 ‘글자수 세기’ 프로그램이라고 들어보셨나요? ‘자소서(자기소개서)’를 1,000자 이내로 쓰라고 해서 요즘 취업 준비생들에게 꼭 필요한 프로그램이라고 합니다. </span>
+						</a>
+					
+					</li>
+					<li>
+						<a href="#"  title="스크랩 바로가기">
+							<span class="scrapImg"><img src="image/scrap2.jpg" alt="여자"/></span>
+						
+							<strong>서울시, 어린이 홈런왕 야구 교실 3월 개강 모집을 시작합니다.</strong>
+						
+							<span class="scrapDesc">
+								막막한 현실을 반영한 얘기에 그저 마음이 무겁기만 합니다. 서울시가 작년에 이어 올해도 일자리대장정을 시작합니다. 일자리 현장에서 직접 시민들의 이야기를 들으며, 정책 
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#"  title="스크랩 바로가기">
+							<span class="scrapImg"><img src="image/scrap3.jpg" alt="어린아이"/></span>
+						
+							<strong>점심시간 소규모 음식점 앞 주정차 단속완화 기준을 완화합니다</strong>
+							<span class="scrapDesc">지난해 진행된 ‘일자리대장정’이 한 달간 현장에서 일자리 문제를 파악하고 시정책 중심으로 문제해결 방법을 찾았다면, 올해는 매월 마지막주를 일자리대장정 </span>
+						</a>
+					
+					</li>
+					<li>
+						<a href="#"  title="스크랩 바로가기">
+							<span class="scrapImg"><img src="image/scrap4.jpg" alt="어린아이"/></span>
+						
+							<strong>'서울에 미학을 입히자! ' 탐방프로그램 추진 문화예술을 사랑하는</strong>
+							<span class="scrapDesc">첫 현장은 오는 29일, 성신여대에서 개최되는 청년 실업해소를 위한 5개 대학(건국대, 상명대, 성신여대, 숙명여대, 외국어대)총장과의 청년 취·창업 활성화 서밋회의로 </span>
+						</a>
+					
+					
+					</li>
+					<li>
+						<a href="#"  title="스크랩 바로가기">
+							<span class="scrapImg"><img src="image/scrap5.jpg" alt="어린아이"/></span>
+						
+							<strong>육아휴직과 출산휴가 직장맘과 직장대디의 고민을 함께하다</strong>
+							<span class="scrapDesc">혹시 ‘글자수 세기’ 프로그램이라고 들어보셨나요? ‘자소서(자기소개서)’를 1,000자 이내로 쓰라고 해서 요즘 취업 준비생들에게 꼭 필요한 프로그램이라고 합니다. </span>
+						</a>
+					
+					</li>
+					<li>
+						<a href="#"  title="스크랩 바로가기">
+							<span class="scrapImg"><img src="image/scrap6.jpg" alt="여자"/></span>
+							
+							<strong>서울시, 어린이 홈런왕 야구 교실 3월 개강 모집합니다</strong>
+						
+							<span class="scrapDesc">
+								막막한 현실을 반영한 얘기에 그저 마음이 무겁기만 합니다. 서울시가 작년에 이어 올해도 일자리대장정을 시작합니다. 일자리 현장에서 직접 시민들의 이야기를 들으며, 정책 
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#"  title="스크랩 바로가기">
+							<span class="scrapImg"><img src="image/scrap7.jpg" alt="어린아이"/></span>
+							
+							<strong>점심시간 소규모 음식점 앞 주정차 단속완화 기준 시작합니다</strong>
+							<span class="scrapDesc">지난해 진행된 ‘일자리대장정’이 한 달간 현장에서 일자리 문제를 파악하고 시정책 중심으로 문제해결 방법을 찾았다면, 올해는 매월 마지막주를 일자리대장정 </span>
+						</a>
+					
+					</li>
+					<li>
+						<a href="#"  title="스크랩 바로가기">
+							<span class="scrapImg"><img src="image/scrap8.jpg" alt="어린아이"/></span>
+							
+							<strong>'서울에 미학을 입히자! ' 탐방프로그램 추진 문화예술을</strong>
+							<span class="scrapDesc">첫 현장은 오는 29일, 성신여대에서 개최되는 청년 실업해소를 위한 5개 대학(건국대, 상명대, 성신여대, 숙명여대, 외국어대)총장과의 청년 취·창업 활성화 서밋회의로 </span>
+						</a>
+					
+					
+					</li>
+					
+				</ul>
+			</div>
+		
+			<span class="keyleft">
+					<a href="#" title="왼쪽 방향키"><img src="image/leftArrow.png" alt="왼쪽 으로"/></a>
+				</span>
+			<span class="keyright">
+					<a href="#" title="오른쪽 방향키"><img src="image/rightArrow.png" alt="오른쪽 으로"/></a>
+			</span>
+	
+		</section><!--section s4 END-->
+		</div><!--conInner2 END-->
+		
+	 </div><!--content END-->
+	
+	<!--  ############## footer.php    넣기-->
+	<?php	include "common/footer.php";  ?>
+	
+
+ </div>  <!--wrapper END-->
+
+ <!--			 http://qr.naver.com/  -->
+
+	<div id="popWrap">
+		<h3><img src="image/megaph.png" alt="아이콘">공지</h3>
+		<div class="qrwrap">
+			<p class="popdesc">
+				<span>"This website is created only for the personal portfolio not for commercial uses. Some images and contents found on this website originally came from others."</span>
+			</p>
+			<p class="qrcode">
+				<img src="image/QRCodeImg.jpg" alt="qrcode">
+				<a href="http://validator.kldp.org/check?uri=referer"
+			  onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img
+			  src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80">
+			  </a>
+			</p>
+			
+			
+		
+		</div>
+		
+		<p class="todayclose">
+			<input type="checkbox" id="subpop" name="subpop" 
+				title="close for the day" onclick="controlCookies();"/>
+			<label for="subpop">close pop-up for the day</label>
+			<a href="#"  onclick="controlCookies(); return false;">CLOSE</a>
+		</p>
+		
+	</div>
+ <!--			 http://qr.naver.com/  END-->
+
+ </body>
+</html>

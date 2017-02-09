@@ -1,0 +1,221 @@
+	/*1. mediaquery 쓸때 css맨뒤에 붙임 (앞에 쓰면 로딩속도 드려짐) 
+	2. [space] 과 [;] 주의
+	3. 디바이스별로 고치는부분만 첨가 
+	4. 바뀌는 거 없는 디바이스들도 남겨둠, 지우면 안됨, 에러남
+	5. min-width에 맞춘다*/
+
+
+
+	@media all and ( min-width:1600px ){ 
+		body{ }
+		
+}
+	@media all and ( min-width:1023px ) and ( max-width:1599px ){
+		body{  }
+}
+
+	@media all and ( min-width:768px ) and ( max-width:1022px ){ 
+		body{ }
+		#content{  padding:0px 0 50px 0;}
+		#content h3 { font-size: 50px; padding: 60px 0;}
+}
+
+	@media all and ( min-width:480px ) and ( max-width:767px ){ 
+		body{ }
+		#content{  padding:0px 0 50px 0;}
+		#content .joinInner{width:440px; margin:0 auto 50px auto;   }
+		#content h3 {font-size:35px; padding: 40px; }
+	
+		#content .joinInner form{  padding:30px 50px 50px 50px;
+		width:340px; }
+		#content .joinInner form label{display:block; margin-bottom:10px;}
+		#content .joinInner .desc1 {
+			background-color: #f1f1f1;
+			padding: 50px 50px 0 50px;
+		}
+		#content .joinInner .desc1 span{display:block;}
+		#username {
+			width:310px; 
+			margin-left:0px;
+			 }
+		#userid {
+			width:254px; 
+			margin-left: 0px;
+			}
+		#idCheck{  
+			width:50px;
+			text-indent:-9999px;
+			background:  #0f94e1 url("../image/basic14.png") no-repeat center;
+		
+		}
+		#using{  margin-left:0px;}
+
+		#userpass {
+				width:310px; 
+			margin-left:0;
+			}
+		#userpassre {
+				width:310px; 
+		
+			margin-left:0;
+		
+			}
+		#BoardEmail1 {
+
+			margin-left:0;
+			width:47%;
+		
+		}
+		#usermobile1,#usermobile2,#usermobile3 {
+			width:72px; 
+			padding: 15px;
+			margin-left:0;
+		}
+	
+		#post p strong {
+			
+		}
+		#post .myaddress {
+			margin-left:0;
+		}
+		#post .myaddress input {
+			width:98px; 
+		}
+		#post1,#post2{ width:70px; }
+		#findPost {
+			 width:50px; 
+			border: none;
+			color: white;
+			text-indent:-9999%;
+			background:  #0f94e1 url("../image/magnifying.png") no-repeat center;
+		}
+		#interestPart span{display:block; margin-bottom:10px; }
+		#interestPart input{vertical-align:middle;}
+		#content .joinInner form #interestPart label {
+			display:inline-block;
+			margin-right: 27.7px;
+		}
+		#content .joinInner select {
+			
+			width: 100%;
+		
+		}
+		#job {
+			margin-left:0;
+		}
+		.snsinfo span{display:block; margin:10px 0;}
+		#content .joinInner form .snsinfo input, 
+		#content .joinInner form .snsinfo label{display:inline-block; }
+		#content .joinResult{ margin-top:10px;}
+		
+		#answer{ letter-spacing:0px;}
+
+		#cancel{ letter-spacing:0px; }
+
+
+}
+	@media all and ( max-width:479px ){ 
+
+		body{}
+
+		#wrapper{min-width:320px;} 
+		#content{  padding:0px 0 50px 0;}
+		#content h3 { font-size: 30px; padding: 35px;}
+		#content .joinInner{width:320px; margin:0 auto 50px auto;   }
+	
+	
+		#content .joinInner form{  padding:30px 20px 50px 20px;
+		width:280px; }
+
+		#content .joinInner form label{display:block; margin-bottom:10px;}
+		#content .joinInner .desc1 {
+			background-color: #f1f1f1;
+			padding: 50px 20px 0 20px;
+		}
+		#content .joinInner .desc1 span{display:block;}
+		#username {
+			width:250px; 
+			margin-left:0px;
+			 }
+		#userid {
+			width:194px; 
+			margin-left: 0px;
+			}
+		#idCheck{  
+			width:50px;
+			text-indent:-9999px;
+			background:  #0f94e1 url("../image/basic14.png") no-repeat center;
+		
+		}
+		#using{  margin-left:0px;}
+		#userpass {
+			width:250px; 
+			margin-left:0;
+			}
+		#userpassre {
+			width:250px; 
+			margin-left:0;
+		
+			}
+		#BoardEmail1 {
+
+			margin-left:0;
+			width:44%;
+		
+		}
+		#usermobile1,#usermobile2,#usermobile3 {
+			width:52px; 
+			padding: 15px;
+			margin-left:0;
+		}
+	
+		#post p .postNum{
+			display:block;
+		}
+		#post .myaddress .addDetail{
+			display:block;
+		}
+		#post .myaddress {
+			margin-left:0;
+		}
+		#post .myaddress input {
+			width:101px; 
+		}
+		#post1,#post2{ width:74px; }
+
+		#findPost {
+			width:50px; 
+			border: none;
+			color: white;
+			text-indent:-9999%;
+			background:  #0f94e1 url("../image/magnifying.png") no-repeat center;
+		}
+		#interestPart span{display:block; margin-bottom:10px; }
+		#interestPart input{vertical-align:middle;}
+		#content .joinInner form #interestPart label {
+			display:inline-block;
+			
+		}
+		#content .joinInner form #responseLabel{margin-right:100px;}
+
+		#content .joinInner select {
+			
+			width:280px;
+		
+		}
+		#job {
+			margin-left:0;
+		}
+		.snsinfo span{display:block; margin:10px 0;}
+		#content .joinInner form .snsinfo input, 
+		#content .joinInner form .snsinfo label{display:inline-block; }
+		#content .joinResult{ margin-top:10px;}
+		
+		#answer{ letter-spacing:0px;}
+
+		#cancel{ letter-spacing:0px; }
+
+	
+	
+
+}

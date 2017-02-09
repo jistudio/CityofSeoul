@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" >
+  <title> 스토리 인 서울 | 서울특별시 웹사이트</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/base.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/layout.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/header.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/story.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/footer.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/mediaStory.css"/>
+
+<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie7.css"/>
+<![endif]-->
+
+<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie8.css"/>
+<![endif]-->
+
+<!--[if gt IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie89.css"/>
+<![endif]-->
+
+ <!-- html5shiv 플로그인 껴넣기-->
+  <!--[if lt IE 9]>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+	 </script>
+ <![endif]-->
+<style>
+/* ie 10 과 ie edge 크로스 브라우징 핵*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+		#header .headerBot nav .gnb LI.allMenu {
+
+		padding-top: 20px;
+
+		}
+
+	#header .headerBot nav .gnb LI.search {
+		
+		padding-top: 20px;
+		}
+}  
+
+/*firefox only hack*/
+@-moz-document url-prefix() { 
+
+ }
+
+</style>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/scrollTop.js"></script>
+<script src="js/mainGnb.js"></script>
+<script src="js/jquery.color.js"></script> 
+ </head>
+ <body>
+
+<!--바로가기 메뉴 => skip navigation,  h태그 필요없음 , base.css에 있음-->
+<ul id="skipnav">
+	<li><a href="#gnba">주메뉴 바로가기</a></li><!--gnb의 첫 번째  a에 id gnba 넣어줌-->
+	<li><a href="#maina">본문내용 바로가기</a></li>
+</ul>
+<!--  skip nav END  -->
+
+ <div id="wrapper">
+	<!--  ############## header.php    넣기-->
+	<?php	include "common/header.php";  ?>
+
+ <div id="content">
+		<h2>주요 컨텐츠</h2>
+
+		<div class="breadInner">
+			<ul class="breadcrumb">
+				<li class="gohome"><a href="#" title="홈 바로가기"><img src="image/icon_home.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#"  title="서울뉴스 바로가기" >서울 뉴스</a></li>
+				<li>
+					<a href="#"  title="새소식 바로가기">
+					새소식
+					<span class="breadDown"><img src="image/icon_arrowDown.png" alt="down arrow"/></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<section class="storyInner">
+			<h3>스토리 인 서울</h3>
+			<ul class="subnav">
+				<li class="subnavL"><a href="#" title="이전 페이지">previous</a></li>
+				<li class="subnavR"><a href="#" title="다음 페이지">next</a></li>
+			</ul>
+			<p class="storySample"><a href="#" title="통계로 보는 서울 사람들 바로가기"><img src="image/storyTop.jpg" alt=" 보통 서울 사람들 "/></a></p>
+			<div class="storyList">
+				<dl class="storyBox">
+					<dt><a href="#" title="스토리 바로가기"><img src="image/story1.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox">
+					<dt><a href="#" title="스토리 바로가기"><img src="image/story2.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox storyNomargin">
+					<dt ><a href="#" title="스토리 바로가기"><img src="image/story3.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox">
+					<dt><a href="#" title="스토리 바로가기"><img src="image/story4.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox">
+					<dt><a href="#" title="스토리 바로가기"><img src="image/story5.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox storyNomargin">
+					<dt ><a href="#" title="스토리 바로가기"><img src="image/story6.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox">
+					<dt><a href="#" title="스토리 바로가기"><img src="image/story7.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox">
+					<dt><a href="#" title="스토리 바로가기"><img src="image/story8.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox storyNomargin">
+					<dt ><a href="#" title="스토리 바로가기"><img src="image/story9.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox">
+					<dt><a href="#" title="스토리 바로가기"><img src="image/story10.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox">
+					<dt><a href="#" title="스토리 바로가기"><img src="image/story11.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox storyNomargin">
+					<dt ><a href="#" title="스토리 바로가기"><img src="image/story12.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox">
+					<dt><a href="#" title="스토리 바로가기"><img src="image/story13.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox">
+					<dt><a href="#" title="스토리 바로가기"><img src="image/story14.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox storyNomargin">
+					<dt ><a href="#" title="스토리 바로가기"><img src="image/story15.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox">
+					<dt><a href="#" title="스토리 바로가기"><img src="image/story16.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox">
+					<dt><a href="#" title="스토리 바로가기"><img src="image/story17.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+				<dl class="storyBox storyNomargin">
+					<dt ><a href="#" title="스토리 바로가기"><img src="image/story18.jpg" alt="서울 사람들"/></a></dt>
+					<dd>
+						<span>한강 스토리</span>
+						<strong>한강, 긴 세월 가까운 이야기</strong>
+						<p>2천년 서울의 역사와 풍류가 흐르는 한강. 물로 이루어진 역사책인 한강의 이야기를 들어보세요.</p>
+					</dd>
+				</dl>
+			
+			
+			
+			</div>
+
+
+		</section><!-- storyInner END-->
+	
+		
+	 </div><!--content END-->
+
+	<!--  ############## footer.php    넣기-->
+	<?php	include "common/footer.php";  ?>
+
+ </div>  <!--wrapper END-->
+ </body>
+</html>
